@@ -1,0 +1,88 @@
+.bg-possibilidade_de_solicitar_acompanhamento {
+    width: 119px; height: 119px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+x
+.bg-1_a_essencia_de_todo_relacionamento {
+    width: 118px; height: 118px;
+    background: url('css_sprites.png') -10px -288px;
+}
+
+x
+.bg-2_sua_identidade_e_proposito_no_casamento {
+    width: 117px; height: 118px;
+    background: url('css_sprites.png') -427px -286px;
+}
+
+x
+.bg-3_produndo_amor {
+    width: 118px; height: 118px;
+    background: url('css_sprites.png') -148px -288px;
+}
+
+x
+.bg-4_relacionando_se_com_liberdade {
+    width: 117px; height: 118px;
+    background: url('css_sprites.png') -10px -426px;
+}
+
+x
+.bg-5_a_alianca_no_casamento {
+    width: 118px; height: 118px;
+    background: url('css_sprites.png') -286px -288px;
+}
+
+x
+.bg-6_o_poder_da_palavra_no_casamento {
+    width: 117px; height: 118px;
+    background: url('css_sprites.png') -147px -426px;
+}
+
+x
+.bg-7_combinando_papeis {
+    width: 118px; height: 118px;
+    background: url('css_sprites.png') -427px -10px;
+}
+
+x
+.bg-8_unidade_completa {
+    width: 117px; height: 118px;
+    background: url('css_sprites.png') -284px -426px;
+}
+
+x
+.bg-9_aulas_bonus {
+    width: 118px; height: 118px;
+    background: url('css_sprites.png') -427px -148px;
+}
+
+x
+.bg-acesse_material_no_conforto_do_seu_lar {
+    width: 119px; height: 119px;
+    background: url('css_sprites.png') -149px -10px;
+}
+
+x
+.bg-acesso_exclusivo_para_noivo_e_para_noiva {
+    width: 119px; height: 119px;
+    background: url('css_sprites.png') -10px -149px;
+}
+
+x
+.bg-aulas_em_video {
+    width: 119px; height: 119px;
+    background: url('css_sprites.png') -149px -149px;
+}
+
+x
+.bg-conteudo_pratico_e_objetivo {
+    width: 119px; height: 119px;
+    background: url('css_sprites.png') -288px -10px;
+}
+
+x
+.bg-perguntas_para_alinhar_as_expectativas {
+    width: 119px; height: 119px;
+    background: url('css_sprites.png') -288px -149px;
+}
