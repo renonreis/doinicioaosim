@@ -8,4 +8,6 @@
   </header>
 </template>
 
-<style src="./styles.scss" lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import Main from '@/components/Main'
+import Main from '@/components/_global/main.vue'
 
 export default {
   components: {
