@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/curso-de-noives-presencial", {data:[{}],fetch:{},mutations:void 0});
