@@ -4,11 +4,11 @@
       <picture>
         <source
           media="(min-width:768px)"
-          srcset="~assets/images/curso-online/curso-de-noivos-online.jpg"
+          srcset="~assets/images/curso-de-noivos-online.jpg"
         />
         <img
           class="img-banner"
-          src="~assets/images/curso-online/curso-de-noivos-online-mobile.jpg"
+          src="~assets/images/curso-de-noivos-online-mobile.jpg"
         />
       </picture>
       <div class="container">
