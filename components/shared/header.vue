@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import Menu from '@/components/_global/menu'
+import Menu from '@/components/shared/menu'
 import IconMenu from '@/components/svg/icon-menu'
 
 export default {
