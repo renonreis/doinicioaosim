@@ -6,15 +6,22 @@ on:
       - develop
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    name: Deploying to surge
+  cd:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [12.18.3]
+
     steps:
-      - uses: actions/checkout@v1
-      - name: Install surge and fire deployment
-        uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Setup node env
+        uses: actions/setup-node@v2.1.2
         with:
-          node-version: 8
+          node-version: ${{ matrix.node }}
 
       - name: Install dependencies
         run: npm install
@@ -22,5 +29,8 @@ jobs:
       - name: Generate
         run: npm run generate
 
-      - run: npm install -g surge
-      - run: surge dist/ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
