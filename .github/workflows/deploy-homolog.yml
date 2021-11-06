@@ -1,9 +1,10 @@
-name: Deploy Website Homolog
+name: cd
 
 on:
   push:
     branches:
       - develop
+#on: [push, pull_request]
 
 jobs:
   cd:
