@@ -71,5 +71,11 @@ export default {
     babel: {
       compact: true,
     },
+  },
+
+  router: {
+    linkActiveClass: 'active-link',
+    target: 'static',
+    base: '/doinicioaosim/'
   }
 }
