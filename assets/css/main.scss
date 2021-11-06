@@ -1,1 +1,122 @@
+section {
+  padding: 90px 0;
+}
 
+.darken {
+  mix-blend-mode: darken;
+}
+
+@media screen and (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1270px;
+  }
+}
+
+.possibilidade_de_solicitar_acompanhamento {
+  min-width: 119px;
+  max-width: 119px;
+  height: 119px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -10px -10px;
+}
+
+.essencia_de_todo_relacionamento {
+  min-width: 118px;
+  max-width: 118px;
+  height: 118px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -10px -288px;
+}
+
+.identidade_e_proposito_no_casamento {
+  min-width: 117px;
+  max-width: 117px;
+  height: 118px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -427px -286px;
+}
+
+.produndo_amor {
+  min-width: 118px;
+  max-width: 118px;
+  height: 118px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -148px -288px;
+}
+
+.relacionando_se_com_liberdade {
+  min-width: 117px;
+  max-width: 117px;
+  height: 118px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -10px -426px;
+}
+
+.alianca_no_casamento {
+  min-width: 118px;
+  max-width: 118px;
+  height: 118px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -286px -288px;
+}
+
+.poder_da_palavra_no_casamento {
+  min-width: 117px;
+  max-width: 117px;
+  height: 118px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -147px -426px;
+}
+
+.combinando_papeis {
+  min-width: 118px;
+  max-width: 118px;
+  height: 118px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -427px -10px;
+}
+
+.unidade_completa {
+  min-width: 117px;
+  max-width: 117px;
+  height: 118px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -284px -426px;
+}
+
+.aulas_bonus {
+  min-width: 118px;
+  max-width: 118px;
+  height: 118px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -427px -148px;
+}
+
+.bg-acesse_material_no_conforto_do_seu_lar {
+  min-width: 119px;
+  max-width: 119px;
+  height: 119px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -149px -10px;
+}
+
+.bg-acesso_exclusivo_para_noivo_e_para_noiva {
+  min-width: 119px;
+  max-width: 119px;
+  height: 119px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -10px -149px;
+}
+
+.bg-aulas_em_video {
+  min-width: 119px;
+  max-width: 119px;
+  height: 119px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -149px -149px;
+}
+
+.bg-conteudo_pratico_e_objetivo {
+  min-width: 119px;
+  max-width: 119px;
+  height: 119px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -288px -10px;
+}
+
+.bg-perguntas_para_alinhar_as_expectativas {
+  min-width: 119px;
+  max-width: 119px;
+  height: 119px;
+  background: url('../images/icons/sprite-modulos-do-curso.png') -288px -149px;
+}

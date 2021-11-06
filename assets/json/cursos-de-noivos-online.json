@@ -1,0 +1,114 @@
+{
+  "modulos": [
+    {
+      "id": 1,
+      "class": "col-md-6",
+      "sprite": "essencia_de_todo_relacionamento",
+      "title": "1. A ESSÊNCIA DE TODO RELACIONAMENTO",
+      "subtitle": "3 AULAS DE APROXIMADAMENTE 15 MIN CADA",
+      "description": "Por que casar? Como o casamento pode ser bom? Qual é sua motivação para casar? Qual a vontade de Deus para o casamento?"
+    },
+    {
+      "id": 2,
+      "class": "col-md-6",
+      "sprite": "identidade_e_proposito_no_casamento",
+      "title": "2. SUA IDENTIDADE E PROPÓSITO NO CASAMENTO",
+      "subtitle": "3 AULAS DE APROXIMADAMENTE 15 MIN CADA",
+      "description": "Saiba quem você é, do ponto de vista de Deus, e deixe essa verdade mudar a forma como você vive, e como você se relaciona com as pessoas."
+    },
+    {
+      "id": 3,
+      "class": "col-md-6",
+      "sprite": "produndo_amor",
+      "title": "3. PROFUNDO AMOR",
+      "subtitle": "3 AULAS DE APROXIMADAMENTE 15 MIN CADA",
+      "description": "É possível sim se entregar por alguém incondicionamelnte. Comece uma nova história na sua vida, sem deixar que problemas do passado afetem sua forma de viver, pensar e se relacionar."
+    },
+    {
+      "id": 4,
+      "class": "col-md-6",
+      "sprite": "relacionando_se_com_liberdade",
+      "title": "4. RELACIONANDO-SE COM LIBERDADE",
+      "subtitle": "3 AULAS DE APROXIMADAMENTE 15 MIN CADA",
+      "description": "Conheça o amor que só é possível viver ao receber o amor de Deus. Viva pelo Espírito e tenha um relacionamento sem ciúmes, sem medo e cheio de amor e paz."
+    },
+    {
+      "id": 5,
+      "class": "col-md-6",
+      "sprite": "alianca_no_casamento",
+      "title": "5. A ALIANÇA NO CASAMENTO",
+      "subtitle": "3 AULAS DE APROXIMADAMENTE 15 MIN CADA",
+      "description": "Saiba o real significado da aliança e como o seu casamento pode ser firmado dentro das bases inquebráveis de aliança estabelecidas por Deus para o casamento."
+    },
+    {
+      "id": 6,
+      "class": "col-md-6",
+      "sprite": "poder_da_palavra_no_casamento",
+      "title": "6. O PODER DA PALAVRA NO CASAMENTO",
+      "subtitle": "3 AULAS DE APROXIMADAMENTE 15 MIN CADA",
+      "description": "O poder que criou o mundo e está disponível para você usufruir em todas as áreas da sua vida."
+    },
+    {
+      "id": 7,
+      "class": "col-md-6",
+      "sprite": "combinando_papeis",
+      "title": "7. COMBINANDO PAPÉIS",
+      "subtitle": "3 AULAS DE APROXIMADAMENTE 15 MIN CADA",
+      "description": "Qual é o papel do homem e o da mulher no casamento, conforme a Bíblia? Como o entendimento destes papéis pode trazer harmonia conjugal e paz ao seu lar?"
+    },
+    {
+      "id": 7,
+      "class": "col-md-6",
+      "sprite": "unidade_completa",
+      "title": "8. UNIDADE COMPLETA",
+      "subtitle": "3 AULAS DE APROXIMADAMENTE 15 MIN CADA",
+      "description": "Saiba como viver o casamento em perfeita unidade, conforme o plano de Deus para o casamento."
+    },
+    {
+      "id": 7,
+      "class": "col-md-12",
+      "sprite": "aulas_bonus",
+      "title": "3 AULAS BÔNUS",
+      "subtitle": "",
+      "description": "Além destes módulos teremos alguns bônus que você poderá aproveitar, sobre finanças, casamento civil e como fazer um planejamento de 10 anos e alcançar seus maiores objetivos e propósitos."
+    }
+  ],
+  "como_funciona": [
+    {
+      "id": 1,
+      "sprite": "aulas_bonus",
+      "title": "VOCÊS ACESSAM TODO MATERIAL NO CONFORTO DOS SEUS LARES",
+      "description": "Vocês podem assisitir às aulas nos dias e horários que desejarem no conforto de suas casas. É possível assistir quantas vocês acharem necessário para aprofundar os temas e ficam disponíveis por dois anos."
+    },
+    {
+      "id": 2,
+      "sprite": "aulas_bonus",
+      "title": "ACESSO EXCLUSIVO PARA O NOIVO E PARA A NOIVA",
+      "description": "Ambos receberão acesso individual à plataforma, possibilitando o casal assistir às aulas individualmente de forma exclusiva."
+    },
+    {
+      "id": 3,
+      "sprite": "aulas_bonus",
+      "title": "CONTEÚDO PRÁTICO E OBJETIVO",
+      "description": "No curso falaremos sobre os principais temas da vida conjugal e familiar que marcará para sempre a vida de vocês. Um tempo especial e edificante."
+    },
+    {
+      "id": 4,
+      "sprite": "aulas_bonus",
+      "title": "AULAS EM VÍDEO (8 MÓDULOS + 3 BÔNUS)",
+      "description": "O Curso de Noivos Online Do Início ao Sim é ministrado através de aulas em vídeo. São oito módulos principais e mais algumas aulas bônus. Todos os módulos já estão disponíveis no início do curso"
+    },
+    {
+      "id": 5,
+      "sprite": "aulas_bonus",
+      "title": "PERGUNTAS PARA ALINHAR ÀS EXPECTATIVAS",
+      "description": "Em cada módulos do curso vocês poderão copartilhar suas expectativas um com o outro. Trata-se de perguntas e respostas referente ao módulo estudado que ajudará vocês no dia a dia e nas tomadas de decisões futuras."
+    },
+    {
+      "id": 6,
+      "sprite": "aulas_bonus",
+      "title": "POSSIBILIDADE DE SOLICITAR ACOMPANHAMENTO",
+      "description": "Vocês poderão, se quiserem receber o contato de um casal de líderes da equipe Do Início ao Sim. Momento para compartilhar experiências e testemunhos, expor as dúvidas e medos e receber conselhos e dicas da nossa equipe."
+    }  
+  ]
+}

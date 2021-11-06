@@ -1,11 +1,11 @@
 <template>
-  <header>
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col">TESTE</div>
       </div>
     </div>
-  </header>
+  </footer>
 </template>
 
 <style lang="scss" scoped>

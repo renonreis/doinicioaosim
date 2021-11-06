@@ -18,7 +18,7 @@ export default {
       menus: [
         {
           nome: 'Início',
-          url: '/',
+          url: '/doinicioaosim',
           class: ''
         },
         {

@@ -59,7 +59,7 @@ export default {
   googleFonts: {
     display: 'swap',
     families: {      
-      Montserrat: [100, 400, 700]
+      Montserrat: [100, 400, 500, 600, 700]
     }
   },
 

@@ -3,14 +3,18 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <b-navbar>
+          <b-navbar class="d-none d-lg-flex">
             <b-collapse id="nav-collapse" is-nav>
               <Menu />
 
               <b-navbar-nav class="ml-auto">
                 <b-nav-item>Blog</b-nav-item>
                 <b-nav-item class="btn-login">Entrar</b-nav-item>
-                <b-nav-item v-b-toggle.mobile-sidebar><IconMenu /></b-nav-item>
+                <b-nav-item
+                  v-b-toggle.mobile-sidebar
+                  class="menu-mobile d-md-none"
+                  ><IconMenu
+                /></b-nav-item>
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>
@@ -40,17 +44,54 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 header {
   background-color: $white;
-
-  .navbar {
-    padding: 1rem 0rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  
+  .container {
+    max-width: 1360px;
   }
 
-  @media screen and (max-width: 768px) {
-    display: none;
+  .navbar {
+    padding: 12px 0 ;
+    .navbar-nav {
+      .nav-link {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 5px 15px;  
+        &:hover {
+          color: $primary;
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          font-size: 14px;
+        }
+
+        @media screen and (min-width: 1200px) and (max-width: 1440px) {
+          font-size: 16px;
+        }
+      }
+
+      .btn-login {
+        a {
+          background-color: $primary;
+          border-radius: 4px;
+          color: $white;
+          min-width: 125px;
+          text-align: center;
+          &:hover {
+            background-color: $secondary;
+            color: $white;
+          }
+        }
+      }
+    }
+    
   }
 }
 

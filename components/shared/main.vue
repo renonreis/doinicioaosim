@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header />
-    <slot />
+    <main>
+      <slot />
+    </main>
     <Footer />
   </div>
 </template>
@@ -19,5 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+main {
+  margin-top: 70px;
+}
 </style>
