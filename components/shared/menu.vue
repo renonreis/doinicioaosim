@@ -33,7 +33,7 @@ export default {
         },
         {
           nome: 'Curso de noivos presencial',
-          url: '/curso-de-noives-presencial',
+          url: '/curso-de-noivos-presencial',
           class: ''
         },
         {
