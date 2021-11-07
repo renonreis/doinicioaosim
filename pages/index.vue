@@ -587,6 +587,7 @@ export default {
   }
 
   @media screen and (max-width: 991px){
+    padding: 180px 0 0;
     h1 {
       font-size: 38px;
       line-height: 50px;
@@ -613,6 +614,10 @@ export default {
       }
 
     }
+  }
+
+  @media screen and (max-width: 991px){
+    padding: 90px 0;
   }
 }
 </style>
