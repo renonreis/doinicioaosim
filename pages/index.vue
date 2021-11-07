@@ -3,7 +3,7 @@
     <section class="banner">
       <picture>
         <source
-          media="(min-width:768px)"
+          media="(min-width:992px)"
           srcset="~assets/images/curso-online/curso-de-noivos-online.jpg"
         />
         <img
@@ -12,8 +12,8 @@
         />
       </picture>
       <div class="container">
-        <div class="row">
-          <div class="col text-center content">
+        <div class="row justify-content-center">
+          <div class="col-10 text-center content">
             <picture>
               <img
                 class="banner-logo"
@@ -27,7 +27,7 @@
             <a href="" class="btn large mt-2 mb-5"
               >Faça sua Inscrição Curso de Noivos
             </a>
-            <div class="mt-5 pt-5">
+            <div class="video mt-5 pt-5">
               <iframe
                 width="900"
                 height="510"
@@ -122,18 +122,24 @@
             </p>
           </div>
 
-          <div
-            v-for="modulo in modulos"
-            :key="modulo.id"
-            :class="modulo.class"
-            class="lista-modulos"
-          >
-            <div class="box">
-              <div :class="modulo.sprite" class="icon"></div>
-              <div class="description">
-                <h3>{{ modulo.title }}</h3>
-                <p class="subtitle">{{ modulo.subtitle }}</p>
-                <p>{{ modulo.description }}</p>
+          <div class="col-md-12">
+            <div class="container-full">
+              <div class="row lista-modulos">
+                <div
+                  v-for="modulo in modulos"
+                  :key="modulo.id"
+                  :class="modulo.class"
+                  class="modulo"
+                >
+                  <div class="box">
+                    <div :class="modulo.sprite" class="icon"></div>
+                    <div class="description">
+                      <h3>{{ modulo.title }}</h3>
+                      <p class="subtitle">{{ modulo.subtitle }}</p>
+                      <p>{{ modulo.description }}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -151,14 +157,115 @@
           <div class="col-md-12 text-center mb-4">
             <h2>COMO FUNCIONA O CURSO DE NOIVOS ON-LINE?</h2>
           </div>
-          <div
-            v-for="item in como_funciona"
-            :key="item.id"
-            class="lista-como-funciona col-md-4 mb-5 text-center"
-          >
-            <div :class="item.sprite" class="icon"></div>
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.description }}</p>
+          <div class="lista-como-funciona">
+            <div
+              v-for="item in como_funciona"
+              :key="item.id"
+              class="lista col-md-4 mb-5 text-md-center"
+            >
+              <div :class="item.sprite" class="icon"></div>
+              <div class="description">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section v-for="curso in cursos" :key="curso.id" class="cursos">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-5 text">
+            <h2>{{ curso.title }}</h2>
+            <p>{{ curso.description }}</p>
+          </div>
+          <div class="col-md-6 image">
+            <picture>
+              <source
+                media="(min-width:992px)"
+                :srcset="require(`~/assets/images/curso/${curso.image}.jpg`)"
+              />
+              <img
+                :src="
+                  require(`~/assets/images/curso/${curso.image}-mobile.jpg`)
+                "
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comece-agora">
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="~assets/images/curso-online/curso-de-noivos-online.jpg"
+        />
+        <img
+          class="img-comece"
+          src="~assets/images/curso-online/curso-de-noivos-online-mobile.jpg"
+        />
+      </picture>
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-10">
+            <h1>COMEÇAR BEM, FAZ BEM.</h1>
+          </div>
+          <div class="col-md-8">
+            <p>
+              Ao dizer sim no dia do seu casamento, é possível sim viver em paz
+              e alegria todos os dias, esta é a vontade do nosso pai celestial
+              que é boa, perfeita e agradável.
+            </p>
+            <a href="" class="btn large mt-4">Comece agora o curso de Noivos</a>
+          </div>
+          <div class="col-md-12">
+            <div class="mt-5 pt-5">
+              <iframe
+                width="900"
+                height="510"
+                src="https://www.youtube-nocookie.com/embed/uilkmUoXoLU?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-11 text-center">
+            <h2>
+              MAIS DE 500 CASAIS JÁ REALIZARAM O CURSO VEJA ALGUNS DEPOIMENTOS
+            </h2>
+          </div>
+          <div class="col-md-11">
+            <client-only placeholder="Carregando...">
+              <VueAgile :options="myOptions">
+                <div
+                  v-for="testimonial in testimonials"
+                  :key="testimonial.id"
+                  class="slide"
+                >
+                  <div class="box text-center">
+                    <div class="cinco_estrelas"></div>
+                    <p>{{ testimonial.description }}</p>
+                    <p class="autor">{{ testimonial.autor }}</p>
+                  </div>
+                </div>
+
+                <template slot="prevButton"><ArrowLeft /></template>
+                <template slot="nextButton"><ArrowRight /></template>
+              </VueAgile>
+            </client-only>
           </div>
         </div>
       </div>
@@ -167,18 +274,34 @@
 </template>
 
 <script>
+import { VueAgile } from 'vue-agile'
 import cursoNoivosOnline from '@/assets/json/cursos-de-noivos-online.json'
 
 import Main from '@/components/shared/main.vue'
+import ArrowLeft from '@/components/svg/arrow-left.vue'
+import ArrowRight from '@/components/svg/arrow-right.vue'
 
 export default {
   components: {
-    Main
+    VueAgile,
+
+    Main,
+    ArrowLeft,
+    ArrowRight
   },
   data(){
     return {
       modulos: cursoNoivosOnline.modulos,
-      como_funciona: cursoNoivosOnline.como_funciona
+      como_funciona: cursoNoivosOnline.como_funciona,
+      cursos: cursoNoivosOnline.cursos,
+      testimonials: cursoNoivosOnline.depoimentos,
+
+      myOptions: {
+        navButtons: true,
+        dots: false,
+        infinite: false,
+        autoplay: true
+      }
     }
   }
 }
@@ -221,11 +344,18 @@ export default {
     p {
       color: $white;
     }
-
-    iframe {
-      border-radius: 10px;
-    }
   }
+
+  @media screen and (max-width: 991px){ 
+    min-height: 1120px;   
+    .video {
+        width: calc(100% + 110px);
+        margin-left: -55px;
+        iframe {
+          border-radius: 0;
+        }      
+    }
+  }  
 }
 
 .about {
@@ -255,6 +385,12 @@ export default {
     z-index: -1;
   }
 
+  @media screen and (max-width: 991px){
+    padding: 160px 0 45px;
+    &::before {
+      content: url(@/assets/images/elements/curso-de-noivos-mobile.png);
+    }
+  }
 }
 
 .sem-brigas {
@@ -309,7 +445,37 @@ export default {
         line-height: 30px;
         margin: 0 0 0 0;
       }
+
     }
+
+    @media screen and (max-width: 991px){
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: overlay;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;      
+
+      .modulo {
+        flex: 0 0 85%;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+      }
+      
+      .box {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 470px;
+        padding: 35px 10px 55px;
+
+        .description {
+          padding: 0 25px;
+        }
+      }
+    }
+  
   }
 
 
@@ -329,6 +495,124 @@ export default {
     font-size: 16px;
     line-height: 30px;
     margin: 0;
+  }
+
+  @media screen and (max-width: 991px){
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: overlay;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;      
+
+    .lista {
+      flex: 0 0 85%;
+      scroll-snap-align: start;
+      flex-shrink: 0;
+      .icon {
+        margin: 0;
+      }
+
+      .description {
+        padding: 0 25px;
+      }
+    }
+    
+  }
+}
+
+.cursos {
+  padding: 45px 0;
+  &:nth-child(even){
+    background-color: $bg-light;
+    .image {
+      order: -1;
+    }
+  }
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 991px){
+    text-align: center;
+    .text {
+      order: -1;
+    }
+    .image {
+      margin-left: -15px;
+      padding: 0;
+      width: calc(100% + 30px);
+      img {
+        max-width: initial;
+        width: initial;
+      }
+    }
+  }
+}
+
+.comece-agora {
+  padding: 180px 0 90px;
+  background-color: $bg-neutral;
+  position: relative;
+
+  .img-comece {
+    position: absolute;
+    height: 660px;
+    margin-left: 50%;
+    object-fit: cover;
+    object-position: top;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 0;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+      transform: initial;
+      iframe {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        border-radius: 0;
+      }
+    }
+  }
+
+  h1 {
+    color: $white;
+  }
+
+  p {
+    color: $white;
+  }
+
+  @media screen and (max-width: 991px){
+    h1 {
+      font-size: 38px;
+      line-height: 50px;
+    }
+  }
+}
+
+.testimonial {
+  background-color: $bg-light;
+  .slide {
+    .box {
+      max-width: 725px;
+      margin: 0 auto;
+      font-style: italic;
+      z-index: 99;
+
+      .cinco_estrelas {
+        margin: 0 auto;
+      }
+
+      .autor {
+        font-weight: 600;
+        font-style: normal;
+      }
+
+    }
   }
 }
 </style>

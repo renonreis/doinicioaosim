@@ -1,9 +1,54 @@
 section {
   padding: 90px 0;
+
+  @media screen and (max-width: 991px) {
+    padding: 45px 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border-radius: 10px;
+
+  @media screen and (max-width: 991px) {
+    height: 275px;
+    max-width: 480px;
+    width: 100%;
+  }
 }
 
 .darken {
   mix-blend-mode: darken;
+}
+
+.agile__actions {
+  button {
+    background: #0000;
+    border: none;
+    padding: 8.5px;
+    margin-top: -30px;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+
+    @media screen and (max-width: 991px) {
+      top: initial;
+      margin-top: -60px;
+    }
+  }
+  .agile__nav-button--prev {
+    left: 0;
+  }
+  .agile__nav-button--next {
+    right: 0;
+  }
+  .agile__nav-button[disabled] {
+    opacity: 0.5;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -16,107 +61,216 @@ section {
   }
 }
 
-.possibilidade_de_solicitar_acompanhamento {
-  min-width: 119px;
-  max-width: 119px;
-  height: 119px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -10px -10px;
-}
+$modulos: url('../images/icons/sprite-modulos-do-curso.png');
+$icons: url('../images/icons/sprite-icons.png');
 
 .essencia_de_todo_relacionamento {
   min-width: 118px;
   max-width: 118px;
   height: 118px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -10px -288px;
+  background: $modulos -10px -288px;
 }
 
 .identidade_e_proposito_no_casamento {
   min-width: 117px;
   max-width: 117px;
   height: 118px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -427px -286px;
+  background: $modulos -427px -286px;
 }
 
 .produndo_amor {
   min-width: 118px;
   max-width: 118px;
   height: 118px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -148px -288px;
+  background: $modulos -148px -288px;
 }
 
 .relacionando_se_com_liberdade {
   min-width: 117px;
   max-width: 117px;
   height: 118px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -10px -426px;
+  background: $modulos -10px -426px;
 }
 
 .alianca_no_casamento {
   min-width: 118px;
   max-width: 118px;
   height: 118px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -286px -288px;
+  background: $modulos -286px -288px;
 }
 
 .poder_da_palavra_no_casamento {
   min-width: 117px;
   max-width: 117px;
   height: 118px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -147px -426px;
+  background: $modulos -147px -426px;
 }
 
 .combinando_papeis {
   min-width: 118px;
   max-width: 118px;
   height: 118px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -427px -10px;
+  background: $modulos -427px -10px;
 }
 
 .unidade_completa {
   min-width: 117px;
   max-width: 117px;
   height: 118px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -284px -426px;
+  background: $modulos -284px -426px;
 }
 
 .aulas_bonus {
   min-width: 118px;
   max-width: 118px;
   height: 118px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -427px -148px;
+  background: $modulos -427px -148px;
 }
 
-.bg-acesse_material_no_conforto_do_seu_lar {
+.acesse_material_no_conforto_do_seu_lar {
   min-width: 119px;
   max-width: 119px;
   height: 119px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -149px -10px;
+  background: $modulos -149px -10px;
 }
 
-.bg-acesso_exclusivo_para_noivo_e_para_noiva {
+.acesso_exclusivo_para_noivo_e_para_noiva {
   min-width: 119px;
   max-width: 119px;
   height: 119px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -10px -149px;
+  background: $modulos -10px -149px;
 }
 
-.bg-aulas_em_video {
+.aulas_em_video {
   min-width: 119px;
   max-width: 119px;
   height: 119px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -149px -149px;
+  background: $modulos -149px -149px;
 }
 
-.bg-conteudo_pratico_e_objetivo {
+.conteudo_pratico_e_objetivo {
   min-width: 119px;
   max-width: 119px;
   height: 119px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -288px -10px;
+  background: $modulos -288px -10px;
 }
 
-.bg-perguntas_para_alinhar_as_expectativas {
+.perguntas_para_alinhar_as_expectativas {
   min-width: 119px;
   max-width: 119px;
   height: 119px;
-  background: url('../images/icons/sprite-modulos-do-curso.png') -288px -149px;
+  background: $modulos -288px -149px;
+}
+
+.possibilidade_de_solicitar_acompanhamento {
+  min-width: 119px;
+  max-width: 119px;
+  height: 119px;
+  background: $modulos -10px -10px;
+}
+
+.evonline {
+  min-width: 77px;
+  max-width: 77px;
+  height: 17px;
+  background: $icons -151px -150px;
+}
+
+.icon_ {
+  min-width: 15px;
+  max-width: 15px;
+  height: 17px;
+  background: $icons -319px -193px;
+}
+
+.icon_amo {
+  min-width: 16px;
+  max-width: 16px;
+  height: 13px;
+  background: $icons -325px -150px;
+}
+
+.icon_apostilas {
+  min-width: 18px;
+  max-width: 18px;
+  height: 18px;
+  background: $icons -281px -193px;
+}
+
+.icon_aulas_bonus {
+  min-width: 19px;
+  max-width: 19px;
+  height: 19px;
+  background: $icons -202px -193px;
+}
+
+.icon_computador_celular {
+  min-width: 18px;
+  max-width: 18px;
+  height: 16px;
+  background: $icons -287px -150px;
+}
+
+.icon_dois_acessos {
+  min-width: 20px;
+  max-width: 20px;
+  height: 18px;
+  background: $icons -241px -193px;
+}
+
+.icon_facebook {
+  min-width: 44px;
+  max-width: 44px;
+  height: 44px;
+  background: $icons -10px -193px;
+}
+
+.icon_instagram {
+  min-width: 44px;
+  max-width: 44px;
+  height: 44px;
+  background: $icons -74px -193px;
+}
+
+.icon_videos_aulas {
+  min-width: 19px;
+  max-width: 19px;
+  height: 17px;
+  background: $icons -248px -150px;
+}
+
+.icon_youtube {
+  width: 44px;
+  height: 44px;
+  background: $icons -138px -193px;
+}
+
+.ummense {
+  width: 148px;
+  height: 50px;
+  background: $icons -197px -10px;
+}
+
+.cinco_estrelas {
+  width: 141px;
+  height: 22px;
+  background: $icons -197px -80px;
+}
+
+.comunhao_crista_abba_aj_abba_jovem {
+  width: 121px;
+  height: 23px;
+  background: $icons -10px -150px;
+}
+
+.download_get_it_on_google_play {
+  width: 166px;
+  height: 50px;
+  background: $icons -10px -80px;
+}
+
+.download_on_the_app_store {
+  width: 167px;
+  height: 50px;
+  background: $icons -10px -10px;
 }

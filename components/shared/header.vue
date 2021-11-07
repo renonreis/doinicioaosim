@@ -3,16 +3,18 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <b-navbar class="d-none d-lg-flex">
+          <b-navbar>
             <b-collapse id="nav-collapse" is-nav>
-              <Menu />
+              <Menu class="d-none d-lg-flex" />
 
               <b-navbar-nav class="ml-auto">
-                <b-nav-item>Blog</b-nav-item>
-                <b-nav-item class="btn-login">Entrar</b-nav-item>
+                <b-nav-item class="d-none d-lg-flex">Blog</b-nav-item>
+                <b-nav-item class="btn-login d-none d-lg-flex"
+                  >Entrar</b-nav-item
+                >
                 <b-nav-item
                   v-b-toggle.mobile-sidebar
-                  class="menu-mobile d-md-none"
+                  class="menu-mobile d-lg-none"
                   ><IconMenu
                 /></b-nav-item>
               </b-navbar-nav>
@@ -46,9 +48,8 @@ export default {
 
 <style lang="scss">
 
-header {
-  background-color: $white;
-  position: fixed;
+header {  
+  position: absolute;  
   top: 0;
   width: 100%;
   z-index: 999;
@@ -92,6 +93,11 @@ header {
       }
     }
     
+  }
+
+  @media screen and (min-width: 992px){
+    background-color: $white;
+    position: fixed;
   }
 }
 

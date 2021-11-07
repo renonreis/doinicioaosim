@@ -22,6 +22,8 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  margin-top: 70px;
+  @media screen and (min-width: 992px) {
+    margin-top: 70px;
+  }
 }
 </style>

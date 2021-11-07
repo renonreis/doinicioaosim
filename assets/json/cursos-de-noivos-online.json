@@ -66,7 +66,7 @@
     },
     {
       "id": 7,
-      "class": "col-md-12",
+      "class": "col-12 col-md-12",
       "sprite": "aulas_bonus",
       "title": "3 AULAS BÔNUS",
       "subtitle": "",
@@ -76,39 +76,82 @@
   "como_funciona": [
     {
       "id": 1,
-      "sprite": "aulas_bonus",
+      "sprite": "acesse_material_no_conforto_do_seu_lar",
       "title": "VOCÊS ACESSAM TODO MATERIAL NO CONFORTO DOS SEUS LARES",
       "description": "Vocês podem assisitir às aulas nos dias e horários que desejarem no conforto de suas casas. É possível assistir quantas vocês acharem necessário para aprofundar os temas e ficam disponíveis por dois anos."
     },
     {
       "id": 2,
-      "sprite": "aulas_bonus",
+      "sprite": "acesso_exclusivo_para_noivo_e_para_noiva",
       "title": "ACESSO EXCLUSIVO PARA O NOIVO E PARA A NOIVA",
       "description": "Ambos receberão acesso individual à plataforma, possibilitando o casal assistir às aulas individualmente de forma exclusiva."
     },
     {
       "id": 3,
-      "sprite": "aulas_bonus",
+      "sprite": "conteudo_pratico_e_objetivo",
       "title": "CONTEÚDO PRÁTICO E OBJETIVO",
       "description": "No curso falaremos sobre os principais temas da vida conjugal e familiar que marcará para sempre a vida de vocês. Um tempo especial e edificante."
     },
     {
       "id": 4,
-      "sprite": "aulas_bonus",
+      "sprite": "aulas_em_video",
       "title": "AULAS EM VÍDEO (8 MÓDULOS + 3 BÔNUS)",
       "description": "O Curso de Noivos Online Do Início ao Sim é ministrado através de aulas em vídeo. São oito módulos principais e mais algumas aulas bônus. Todos os módulos já estão disponíveis no início do curso"
     },
     {
       "id": 5,
-      "sprite": "aulas_bonus",
+      "sprite": "perguntas_para_alinhar_as_expectativas",
       "title": "PERGUNTAS PARA ALINHAR ÀS EXPECTATIVAS",
       "description": "Em cada módulos do curso vocês poderão copartilhar suas expectativas um com o outro. Trata-se de perguntas e respostas referente ao módulo estudado que ajudará vocês no dia a dia e nas tomadas de decisões futuras."
     },
     {
       "id": 6,
-      "sprite": "aulas_bonus",
+      "sprite": "possibilidade_de_solicitar_acompanhamento",
       "title": "POSSIBILIDADE DE SOLICITAR ACOMPANHAMENTO",
       "description": "Vocês poderão, se quiserem receber o contato de um casal de líderes da equipe Do Início ao Sim. Momento para compartilhar experiências e testemunhos, expor as dúvidas e medos e receber conselhos e dicas da nossa equipe."
     }  
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "title": "UMA IMERSÃO INESQUECÍVEL",
+      "description": "De forma objetiva e prática, iremos conversar sobre diversos temas como propósito do casamento, compaherismo, unidade, papéis, filhos, perdão, finananças, saúde, relacionamento sexual e outros temas pertinentes à vida conjugal. Tudo com base na palavra de Deus.",
+      "image": "uma-imersao-inesquecivel"
+    },
+    {
+      "id": 2,
+      "title": "FAÇA NO SEU TEMPO E DO SEU JEITO",
+      "description": "O curso foi preparado para proporcionar uma excelente experiência para você, conforme seu tempo e disponibilidade. Aproveite cada momento deste tempo tão especial da vida de vocês.",
+      "image": "faça-o-curso-de-noivos-no-seu-tempo"
+    },
+    {
+      "id": 3,
+      "title": "GOSTOU DAS AULAS E DESEJA SE APROFUNDAR?",
+      "description": "A cada módulo disponibilizamos o material em PDF para a download e leitura, para aqueles que querem se aprofundar um pouco mais nos temas abordados.",
+      "image": "gostou-das-aulas-e-deseja-se-aprofundar-pdf"
+    },
+    {
+      "id": 4,
+      "title": "RECEBA UM CERTIFICADO DE PARTICIPAÇÃO",
+      "description": "Todos os casais que concluem o curso recebem um certificado de participação, que será enviado por Correios.",
+      "image": "certificado-curso-de-noivos"
+    }
+  ],
+  "depoimentos": [
+    {
+      "id": 1,
+      "description": "Através do Curso de Noivos pude ter mais certeza ainda do propósito de Deus para a minha vida como pessoa, como noiva e futura esposa. O curso trabalhou diversos assuntos que já havia escutado falar na igreja mas de forma mais amplificada e esclarecedora. Gostei muito!",
+      "autor": "Tammy Massolin | Chapecó/SC"
+    },
+    {
+      "id": 2,
+      "description": "Através do Curso de Noivos pude ter mais certeza ainda do propósito de Deus para a minha vida como pessoa, como noiva e futura esposa. O curso trabalhou diversos assuntos que já havia escutado falar na igreja mas de forma mais amplificada e esclarecedora. Gostei muito!",
+      "autor": "Chapecó/SC | Tammy Massolin"
+    },
+    {
+      "id": 3,
+      "description": "Através do Curso de Noivos pude ter mais certeza ainda do propósito de Deus para a minha vida como pessoa, como noiva e futura esposa. O curso trabalhou diversos assuntos que já havia escutado falar na igreja mas de forma mais amplificada e esclarecedora. Gostei muito!",
+      "autor": "Massolin Tammy | Chapecó/SC"
+    }
   ]
 }

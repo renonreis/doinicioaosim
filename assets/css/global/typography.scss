@@ -37,13 +37,12 @@ h4,
 h5,
 h6 {
   font-size: 20px;
-  font-weight: 35px;
+  line-height: 35px;
 }
 
 .btn {
   background-color: $primary;
   color: $white;
-  font-weight: 300;
   padding: 15px;
 
   &.large {
@@ -53,5 +52,29 @@ h6 {
 
   &:hover {
     background-color: $secondary;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 20px;
+    line-height: 35px;
   }
 }
