@@ -153,5 +153,94 @@
       "description": "Através do Curso de Noivos pude ter mais certeza ainda do propósito de Deus para a minha vida como pessoa, como noiva e futura esposa. O curso trabalhou diversos assuntos que já havia escutado falar na igreja mas de forma mais amplificada e esclarecedora. Gostei muito!",
       "autor": "Massolin Tammy | Chapecó/SC"
     }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "Não sou noivo ainda. Posso fazer o Curso?",
+      "answer": "Alguma resposta aqui"
+    },
+    {
+      "id": 2,
+      "question": "Este curso de noivos é de alguma igreja?",
+      "answer": "Alguma resposta aqui"
+    },
+    {
+      "id": 3,
+      "question": "Qual a duração do Curso de Noivos Online?",
+      "answer": "Alguma resposta aqui"
+    },
+    {
+      "id": 4,
+      "question": "Não sou Evangélico, posso fazer o curso?",
+      "answer": "Alguma resposta aqui"
+    },
+    {
+      "id": 5,
+      "question": "O Curso Online é tão bom quanto o presencial?",
+      "answer": "Alguma resposta aqui"
+    },
+    {
+      "id": 6,
+      "question": "A igreja católica aceita o curso?",
+      "answer": "Alguma resposta aqui"
+    },
+    {
+      "id": 7,
+      "question": "Vou me casar em breve, será que da tempo?",
+      "answer": "Alguma resposta aqui"
+    },
+    {
+      "id": 8,
+      "question": "Quanto tempo para receber o certificado?",
+      "answer": "Alguma resposta aqui"
+    },
+    {
+      "id": 9,
+      "question": "Posso implantar o curso na minha igreja?",
+      "answer": "Alguma resposta aqui"
+    },
+    {
+      "id": 10,
+      "question": "Tem como fazer o curso gratuitamente?",
+      "answer": "Alguma resposta aqui"
+    }
+  ],
+  "inclusos": [
+    {
+      "id": 1,
+      "text": "8 horas de vídeo aula",
+      "icon": "icon_videos_aulas"
+    },
+    {
+      "id": 2,
+      "text": "8 apostilas em PDF para aprofundamento",
+      "icon": "icon_apostilas"
+    },
+    {
+      "id": 3,
+      "text": "3 aulas bônus",
+      "icon": "icon_aulas_bonus"
+    },
+    {
+      "id": 4,
+      "text": "Acesso total por 2 anos",
+      "icon": "icon_calendario"
+    },
+    {
+      "id": 5,
+      "text": "Receba 2 acessos (Para o noivo e para noiva)",
+      "icon": "icon_dois_acessos"
+    },
+    {
+      "id": 6,
+      "text": "Acesso no computador e no dispositivo móvel",
+      "icon": "icon_computador_celular"
+    },
+    {
+      "id": 7,
+      "text": "Certificado de conclusão impresso",
+      "icon": "icon_coracao"
+    }
   ]
 }

@@ -15,7 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'doinicioaosim/favicon.ico' }
     ]
   },
 
@@ -29,6 +29,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/vue-agile'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -67,10 +68,11 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+  build: {    
     babel: {
       compact: true,
     },
+    transpile: ['vue-agile']
   },
 
   router: {

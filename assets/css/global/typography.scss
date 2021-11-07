@@ -9,7 +9,7 @@ p,
 a {
   color: $text;
   font-size: 19px;
-  line-height: 35px;
+  line-height: 36px;
 }
 
 a {
@@ -29,7 +29,6 @@ h2 {
 
 h3 {
   font-size: 22px;
-  font-weight: 300;
   line-height: 30px;
 }
 
@@ -44,9 +43,23 @@ h6 {
   background-color: $primary;
   color: $white;
   padding: 15px;
+  max-width: 300px;
+  width: 100%;
+
+  &.small {
+    max-width: initial;
+    width: auto;
+    padding: 10px 15px;
+    line-height: 20px;
+  }
 
   &.large {
     max-width: 455px;
+    width: 100%;
+  }
+
+  &.xlarge {
+    max-width: 515px;
     width: 100%;
   }
 

@@ -169,21 +169,21 @@ $icons: url('../images/icons/sprite-icons.png');
   background: $modulos -10px -10px;
 }
 
-.evonline {
+.icon_evonline {
   min-width: 77px;
   max-width: 77px;
   height: 17px;
   background: $icons -151px -150px;
 }
 
-.icon_ {
+.icon_calendario {
   min-width: 15px;
   max-width: 15px;
   height: 17px;
   background: $icons -319px -193px;
 }
 
-.icon_amo {
+.icon_coracao {
   min-width: 16px;
   max-width: 16px;
   height: 13px;
@@ -240,37 +240,43 @@ $icons: url('../images/icons/sprite-icons.png');
 }
 
 .icon_youtube {
-  width: 44px;
+  min-width: 44px;
+  max-width: 44px;
   height: 44px;
   background: $icons -138px -193px;
 }
 
 .ummense {
-  width: 148px;
+  min-width: 148px;
+  max-width: 148px;
   height: 50px;
   background: $icons -197px -10px;
 }
 
 .cinco_estrelas {
-  width: 141px;
+  min-width: 141px;
+  max-width: 141px;
   height: 22px;
   background: $icons -197px -80px;
 }
 
 .comunhao_crista_abba_aj_abba_jovem {
-  width: 121px;
+  min-width: 121px;
+  max-width: 121px;
   height: 23px;
   background: $icons -10px -150px;
 }
 
 .download_get_it_on_google_play {
-  width: 166px;
+  min-width: 166px;
+  max-width: 166px;
   height: 50px;
   background: $icons -10px -80px;
 }
 
 .download_on_the_app_store {
-  width: 167px;
+  min-width: 167px;
+  max-width: 167px;
   height: 50px;
   background: $icons -10px -10px;
 }

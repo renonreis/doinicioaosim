@@ -1,0 +1,16 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="9px"
+    height="16px"
+  >
+    <image
+      x="0px"
+      y="0px"
+      width="9px"
+      height="16px"
+      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAMAAADzlqVxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAhFBMVEW/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr6/vr7///+jEv6kAAAAKnRSTlMAbpQG55IFVvOVA0/vjgJRhU3yiVUEUEXqoEjwmAk/6eYHRJlH4wqLsBEtMKnwAAAAAWJLR0QrJLnkCAAAAAd0SU1FB+ULBw07L//haAsAAABgSURBVAjXLcxFEoAwEETR4AQnwYK79P0PSJGhV2/R9ZlhWoxmw3FJng8eEMMIcUJMI2T/NReQ/6HwIUtiJcBJdQOl0Xbohw/jBFN3xhl8+bA22HRjn6D0hx1QJwWu+yG8vdAGvWAwFpEAAAAASUVORK5CYII="
+    />
+  </svg>
+</template>

@@ -21,12 +21,45 @@
             </b-collapse>
           </b-navbar>
 
-          <b-sidebar id="mobile-sidebar" title="Sidebar" backdrop right shadow>
-            <div class="px-3 py-2">
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
-            </div>
+          <b-sidebar
+            id="mobile-sidebar"
+            aria-labelledby="sidebar-no-header-title"
+            no-header
+            backdrop
+            right
+            shadow
+          >
+            <template #default="{ hide }">
+              <div class="p-3">
+                <p>
+                  <span class="btn small mb-4" @click="hide">X</span>
+                </p>
+                <h4 id="sidebar-no-header-title" class="text-center">
+                  <a href="/">
+                    <picture>
+                      <img
+                        class="banner-logo mb-4"
+                        src="~/assets/images/elements/curso-de-noivos-do-inicio-ao-sim.png"
+                      />
+                    </picture>
+                  </a>
+                </h4>
+
+                <Menu vertical />
+
+                <b-navbar-nav vertical>
+                  <b-nav-item>Blog</b-nav-item>
+                  <b-nav-item class="btn-login"
+                    ><span class="px-4 text-center">Entrar</span></b-nav-item
+                  >
+                  <b-nav-item
+                    v-b-toggle.mobile-sidebar
+                    class="menu-mobile d-lg-none"
+                    ><IconMenu
+                  /></b-nav-item>
+                </b-navbar-nav>
+              </div>
+            </template>
           </b-sidebar>
         </div>
       </div>
@@ -91,13 +124,29 @@ header {
           }
         }
       }
-    }
-    
+    }    
   }
 
   @media screen and (min-width: 992px){
     background-color: $white;
     position: fixed;
+  }
+}
+
+.b-sidebar-body {
+  background-color: $white;
+  .btn-login {
+    a {
+      background-color: $primary;
+      border-radius: 4px;
+      color: $white;
+      min-width: 125px;
+      text-align: center;
+      &:hover {
+        background-color: $secondary;
+        color: $white;
+      }
+    }
   }
 }
 
