@@ -62,15 +62,11 @@
           </div>
           <div class="col-12 text-center content">
             <div class="video">
-              <iframe
-                width="900"
-                height="510"
-                src="https://www.youtube-nocookie.com/embed/uilkmUoXoLU?controls=0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <youtube
+                video-id="uilkmUoXoLU"
+                player-width="900"
+                player-height="510"
+              ></youtube>
             </div>
           </div>
         </div>
@@ -315,15 +311,11 @@
           </div>
           <div class="col-md-12">
             <div class="mt-5 pt-5">
-              <iframe
-                width="900"
-                height="510"
-                src="https://www.youtube-nocookie.com/embed/uilkmUoXoLU?controls=0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <youtube
+                video-id="uilkmUoXoLU"
+                player-width="900"
+                player-height="510"
+              ></youtube>
             </div>
           </div>
         </div>
@@ -467,12 +459,17 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import VueYouTubeEmbed from 'vue-youtube-embed'
+
 import cursoNoivosOnline from '@/assets/json/cursos-de-noivos-online.json'
 
 import Main from '@/components/shared/main.vue'
 import ArrowLeft from '@/components/svg/arrow-left.vue'
 import ArrowRight from '@/components/svg/arrow-right.vue'
 import ArrowFaq from '@/components/svg/icon-arrow-faq.vue'
+
+Vue.use(VueYouTubeEmbed)
 
 export default {
   components: {
