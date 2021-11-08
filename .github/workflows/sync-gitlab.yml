@@ -1,4 +1,4 @@
-name: GitlabSync
+name: GitLab Sync
 
 on:
   push:

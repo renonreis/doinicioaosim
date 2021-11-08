@@ -1,4 +1,4 @@
-name: cd
+name: Deploy Site Homolog
 
 on:
   push:
