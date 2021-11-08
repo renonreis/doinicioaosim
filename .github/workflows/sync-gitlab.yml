@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - develop
+      - main
   delete:
     branches:
       - develop
+      - main
 
 jobs:
   sync:
