@@ -53,17 +53,6 @@ export default {
     '@nuxtjs/style-resources',
   ],
 
-  styleResources: {
-    scss: ['./assets/css/global/*.scss']
-  },
-
-  googleFonts: {
-    display: 'swap',
-    families: {      
-      Montserrat: [100, 400, 500, 600, 700]
-    }
-  },
-
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
@@ -86,5 +75,35 @@ export default {
         component: resolve(__dirname, 'pages/404')
       })
     }
+  },
+
+  googleFonts: {
+    display: 'swap',
+    families: {      
+      Montserrat: [100, 400, 500, 600, 700]
+    }
+  },
+
+  optimizedImages: {
+    inlineImageLimit: -1,
+    handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
+    optimizeImages: true,
+    optimizeImagesInDev: false,
+    defaultImageLoader: 'img-loader',
+    mozjpeg: {
+      quality: 85
+    },
+    optipng: false,
+    pngquant: {
+      speed: 7,
+      quality: [0.65, 0.8]
+    },
+    webp: {
+      quality: 85
+    }
+  },
+
+  styleResources: {
+    scss: ['./assets/css/global/*.scss']
   }
 }

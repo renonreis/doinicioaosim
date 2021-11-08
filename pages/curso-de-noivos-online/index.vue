@@ -3,10 +3,26 @@
     <section class="banner">
       <picture>
         <source
+          data-srcset="~assets/images/curso-online/curso-de-noivos-online.jpg?webp"
+          type="image/webp"
+        />
+        <source
+          data-srcset="~assets/images/curso-online/curso-de-noivos-online.jpg"
+          type="image/jpg"
+        />
+        <source
+          width="479"
+          height="1013"
+          media="(min-width:992px)"
+          srcset="~assets/images/curso-online/curso-de-noivos-online.jpg?webp"
+          type="image/webp"
+        />
+        <source
           width="479"
           height="1013"
           media="(min-width:992px)"
           srcset="~assets/images/curso-online/curso-de-noivos-online.jpg"
+          type="image/jpg"
         />
         <img
           width="2560"
@@ -20,6 +36,14 @@
         <div class="row justify-content-center">
           <div class="col-12 text-center content">
             <picture>
+              <source
+                data-srcset="~assets/images/elements/do-inicio-ao-sim.png?webp"
+                type="image/webp"
+              />
+              <source
+                data-srcset="~assets/images/elements/do-inicio-ao-sim.png?webp"
+                type="image/png"
+              />
               <img
                 width="357"
                 height="102"
@@ -76,6 +100,14 @@
               é para você.
             </p>
             <picture>
+              <source
+                data-srcset="~assets/images/curso-online/viva-um-casamento-cheio-de-paz-amor-e-alegria.jpg?webp"
+                type="image/webp"
+              />
+              <source
+                data-srcset="~assets/images/curso-online/viva-um-casamento-cheio-de-paz-amor-e-alegria.jpg"
+                type="image/jpg"
+              />
               <img
                 width="507"
                 height="514"
@@ -160,6 +192,14 @@
           <div class="col-md-9 text-center">
             <a href="" class="btn large">Gostei! Quero fazer o curso</a>
             <picture>
+              <source
+                data-srcset="~assets/images/curso-online/como-funciona-o-curso-de-noivos-online.jpg?webp"
+                type="image/webp"
+              />
+              <source
+                data-srcset="~assets/images/curso-online/como-funciona-o-curso-de-noivos-online.jpg"
+                type="image/jpg"
+              />
               <img
                 width="507"
                 height="514"
@@ -202,8 +242,15 @@
           <div class="col-md-6 image">
             <picture>
               <source
+                :srcset="
+                  require(`~/assets/images/curso/${curso.image}.jpg?webp`)
+                "
+                type="image/webp"
+              />
+              <source
                 media="(min-width:992px)"
                 :srcset="require(`~/assets/images/curso/${curso.image}.jpg`)"
+                type="image/jpg"
               />
               <img
                 width="675"
@@ -222,10 +269,28 @@
     <section class="comece-agora">
       <picture>
         <source
+          srcset="
+            ~assets/images/curso-online/curso-de-noivos-online-mobile.jpg?webp
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="~assets/images/curso-online/curso-de-noivos-online-mobile.jpg"
+          type="image/jpg"
+        />
+        <source
+          width="479"
+          height="1013"
+          media="(min-width:768px)"
+          srcset="~assets/images/curso-online/curso-de-noivos-online.jpg?webp"
+          type="image/webp"
+        />
+        <source
           width="479"
           height="1013"
           media="(min-width:768px)"
           srcset="~assets/images/curso-online/curso-de-noivos-online.jpg"
+          type="image/jpg"
         />
         <img
           width="2560"
@@ -346,6 +411,18 @@
           </div>
           <div class="col-lg-7 text-center">
             <picture>
+              <source
+                srcset="
+                  ../../assets/images/elements/curso-de-noivos-do-inicio-ao-sim.png?webp
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ../../assets/images/elements/curso-de-noivos-do-inicio-ao-sim.png
+                "
+                type="image/png"
+              />
               <img
                 width="236"
                 height="68"
