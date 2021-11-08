@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/curso-de-noivos-online", {data:[{}],fetch:{},mutations:void 0});
