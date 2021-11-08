@@ -78,6 +78,13 @@ export default {
   router: {
     linkActiveClass: 'active-link',
     target: 'static',
-    base: '/doinicioaosim/'
+    base: '/doinicioaosim/',
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '*',
+        component: resolve(__dirname, 'pages/404')
+      })
+    }
   }
 }

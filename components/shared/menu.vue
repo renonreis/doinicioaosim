@@ -3,7 +3,7 @@
     <b-nav-item
       v-for="menu in menus"
       :key="menu.nome"
-      :href="menu.url"
+      :to="menu.url"
       :class="menu.class"
     >
       {{ menu.nome }}
@@ -18,7 +18,7 @@ export default {
       menus: [
         {
           nome: 'Início',
-          url: '/doinicioaosim',
+          url: '/',
           class: ''
         },
         {

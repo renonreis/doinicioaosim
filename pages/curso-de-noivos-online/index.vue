@@ -3,10 +3,15 @@
     <section class="banner">
       <picture>
         <source
+          width="479"
+          height="1013"
           media="(min-width:992px)"
           srcset="~assets/images/curso-online/curso-de-noivos-online.jpg"
         />
         <img
+          width="2560"
+          height="975"
+          loading="lazy"
           class="img-banner"
           src="~assets/images/curso-online/curso-de-noivos-online-mobile.jpg"
         />
@@ -16,6 +21,9 @@
           <div class="col-12 text-center content">
             <picture>
               <img
+                width="357"
+                height="102"
+                loading="lazy"
                 class="banner-logo"
                 src="~assets/images/elements/do-inicio-ao-sim.png"
               />
@@ -69,6 +77,9 @@
             </p>
             <picture>
               <img
+                width="507"
+                height="514"
+                loading="lazy"
                 class="darken mt-5 mb-5"
                 src="~assets/images/curso-online/viva-um-casamento-cheio-de-paz-amor-e-alegria.jpg"
               />
@@ -150,6 +161,9 @@
             <a href="" class="btn large">Gostei! Quero fazer o curso</a>
             <picture>
               <img
+                width="507"
+                height="514"
+                loading="lazy"
                 class="darken mt-5 mb-5 pt-5"
                 src="~assets/images/curso-online/como-funciona-o-curso-de-noivos-online.jpg"
               />
@@ -192,6 +206,9 @@
                 :srcset="require(`~/assets/images/curso/${curso.image}.jpg`)"
               />
               <img
+                width="675"
+                height="540"
+                loading="lazy"
                 :src="
                   require(`~/assets/images/curso/${curso.image}-mobile.jpg`)
                 "
@@ -205,10 +222,15 @@
     <section class="comece-agora">
       <picture>
         <source
+          width="479"
+          height="1013"
           media="(min-width:768px)"
           srcset="~assets/images/curso-online/curso-de-noivos-online.jpg"
         />
         <img
+          width="2560"
+          height="975"
+          loading="lazy"
           class="img-comece"
           src="~assets/images/curso-online/curso-de-noivos-online-mobile.jpg"
         />
@@ -325,6 +347,9 @@
           <div class="col-lg-7 text-center">
             <picture>
               <img
+                width="236"
+                height="68"
+                loading="lazy"
                 class="banner-logo mb-4"
                 src="../../assets/images/elements/curso-de-noivos-do-inicio-ao-sim.png"
               />

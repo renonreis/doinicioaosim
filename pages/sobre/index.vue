@@ -1,6 +1,14 @@
 <template>
   <Main>
-    <h1>SOBRE</h1>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1>SOBRE</h1>
+          </div>
+        </div>
+      </div>
+    </section>
   </Main>
 </template>
 

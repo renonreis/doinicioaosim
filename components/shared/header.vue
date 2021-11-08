@@ -8,10 +8,12 @@
               <Menu class="d-none d-lg-flex" />
 
               <b-navbar-nav class="ml-auto">
-                <b-nav-item class="d-none d-lg-flex">Blog</b-nav-item>
-                <b-nav-item class="btn-login d-none d-lg-flex"
-                  >Entrar</b-nav-item
-                >
+                <b-nav-item to="/blog" class="d-none d-lg-flex">
+                  Blog
+                </b-nav-item>
+                <b-nav-item href="#" class="btn-login d-none d-lg-flex">
+                  Entrar
+                </b-nav-item>
                 <b-nav-item
                   v-b-toggle.mobile-sidebar
                   class="menu-mobile d-lg-none"
@@ -35,23 +37,24 @@
                   <span class="btn small mb-4" @click="hide">X</span>
                 </p>
                 <h4 id="sidebar-no-header-title" class="text-center">
-                  <a href="/">
+                  <n-link to="/">
                     <picture>
                       <img
+                        loading="lazy"
                         class="banner-logo mb-4"
                         src="~/assets/images/elements/curso-de-noivos-do-inicio-ao-sim.png"
                       />
                     </picture>
-                  </a>
+                  </n-link>
                 </h4>
 
                 <Menu vertical />
 
                 <b-navbar-nav vertical>
-                  <b-nav-item>Blog</b-nav-item>
-                  <b-nav-item class="btn-login"
-                    ><span class="px-4 text-center">Entrar</span></b-nav-item
-                  >
+                  <b-nav-item to="/blog"> Blog </b-nav-item>
+                  <b-nav-item href="#" target="_blank" class="btn-login">
+                    <span class="px-4 text-center">Entrar</span>
+                  </b-nav-item>
                   <b-nav-item
                     v-b-toggle.mobile-sidebar
                     class="menu-mobile d-lg-none"
