@@ -1,36 +1,17 @@
 <template>
   <Main>
     <section class="banner">
-      <picture>
-        <source
-          data-srcset="~assets/images/curso-online/curso-de-noivos-online.jpg?webp"
-          type="image/webp"
-        />
-        <source
-          data-srcset="~assets/images/curso-online/curso-de-noivos-online.jpg"
-          type="image/jpg"
-        />
-        <source
-          width="479"
-          height="1013"
-          media="(min-width:992px)"
-          srcset="
-            ~assets/images/curso-online/curso-de-noivos-online-mobile.jpg?webp
-          "
-          type="image/webp"
-        />
-        <source
-          width="479"
-          height="1013"
-          media="(min-width:992px)"
-          srcset="~assets/images/curso-online/curso-de-noivos-online-mobile.jpg"
-          type="image/jpg"
-        />
-        <img
-          class="img-banner"
-          src="~assets/images/curso-online/curso-de-noivos-online-mobile.jpg"
-        />
-      </picture>
+      <nuxt-picture
+        loading="lazy"
+        class="img-banner d-none d-lg-flex"
+        src="/curso-online/curso-de-noivos-online.jpg"
+      />
+      <nuxt-picture
+        loading="lazy"
+        class="img-banner d-flex d-lg-none"
+        src="/curso-online/curso-de-noivos-online-mobile.jpg"
+      />
+
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center content">
@@ -207,66 +188,33 @@
             <p>{{ curso.description }}</p>
           </div>
           <div class="col-md-6 image">
-            <picture>
-              <source
-                :srcset="
-                  require(`~/assets/images/curso/${curso.image}.jpg?webp`)
-                "
-                type="image/webp"
-              />
-              <source
-                media="(min-width:992px)"
-                :srcset="require(`~/assets/images/curso/${curso.image}.jpg`)"
-                type="image/jpg"
-              />
-              <img
-                width="675"
-                height="540"
-                loading="lazy"
-                :src="
-                  require(`~/assets/images/curso/${curso.image}-mobile.jpg`)
-                "
-              />
-            </picture>
+            <nuxt-picture
+              loading="lazy"
+              class="d-none d-lg-flex"
+              :src="`curso/${curso.image}.jpg`"
+            />
+            <nuxt-picture
+              loading="lazy"
+              class="d-flex d-lg-none"
+              :src="`curso/${curso.image}-mobile.jpg`"
+            />
           </div>
         </div>
       </div>
     </section>
 
     <section class="comece-agora">
-      <picture>
-        <source
-          srcset="
-            ~assets/images/curso-online/curso-de-noivos-online-mobile.jpg?webp
-          "
-          type="image/webp"
-        />
-        <source
-          srcset="~assets/images/curso-online/curso-de-noivos-online-mobile.jpg"
-          type="image/jpg"
-        />
-        <source
-          width="479"
-          height="1013"
-          media="(min-width:768px)"
-          srcset="~assets/images/curso-online/curso-de-noivos-online.jpg?webp"
-          type="image/webp"
-        />
-        <source
-          width="479"
-          height="1013"
-          media="(min-width:768px)"
-          srcset="~assets/images/curso-online/curso-de-noivos-online.jpg"
-          type="image/jpg"
-        />
-        <img
-          width="2560"
-          height="975"
-          loading="lazy"
-          class="img-comece"
-          src="~assets/images/curso-online/curso-de-noivos-online-mobile.jpg"
-        />
-      </picture>
+      <nuxt-picture
+        loading="lazy"
+        class="img-comece d-none d-lg-flex"
+        src="/curso-online/curso-de-noivos-online.jpg"
+      />
+      <nuxt-picture
+        loading="lazy"
+        class="img-comece d-flex d-lg-none"
+        src="/curso-online/curso-de-noivos-online-mobile.jpg"
+      />
+
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-md-10">
@@ -451,7 +399,7 @@ export default {
         autoplay: true
       }
     }
-  },
+  }  
 }
 </script>
 
