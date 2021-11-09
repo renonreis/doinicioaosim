@@ -38,13 +38,11 @@
                 </p>
                 <h4 id="sidebar-no-header-title" class="text-center">
                   <n-link to="/">
-                    <picture>
-                      <img
-                        loading="lazy"
-                        class="banner-logo mb-4"
-                        src="~/assets/images/elements/curso-de-noivos-do-inicio-ao-sim.png"
-                      />
-                    </picture>
+                    <nuxt-picture
+                      loading="lazy"
+                      class="img-comece d-none d-lg-flex"
+                      src="/elements/curso-de-noivos-do-inicio-ao-sim.png"
+                    />
                   </n-link>
                 </h4>
 

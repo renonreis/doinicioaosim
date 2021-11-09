@@ -18,13 +18,6 @@ import Main from '@/components/shared/main.vue'
 export default {
   components: {
     Main
-  },
-  data(){
-    return {
-      
-    }
   }
 }
 </script>
-
-<style lang="scss" scoped></style>

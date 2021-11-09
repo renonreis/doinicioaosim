@@ -141,7 +141,6 @@ footer {
     content: url(@/assets/images/elements/rodape-curso-de-noivos.png);
     margin-left: -50%;
     position: absolute;
-    margin-left: 50%;
     object-position: center;
     pointer-events: none;
     top: 0;

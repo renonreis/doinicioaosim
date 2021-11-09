@@ -149,9 +149,6 @@ export default {
     pages: [
       '/'      
     ],
-    
-    key(route, context) {
-    },
  
     store: {
       type: 'memory',

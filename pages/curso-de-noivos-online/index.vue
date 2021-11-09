@@ -319,6 +319,12 @@
                 src="~/assets/videos/coracao-animado.mp4"
                 type="video/mp4"
               />
+              <track
+                label="Coração Animado"
+                kind="Coração Animado"
+                srclang="pt_BR"
+                default
+              />
               Your browser does not support HTML video.
             </video>
           </div>
