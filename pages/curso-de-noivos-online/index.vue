@@ -314,7 +314,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center mb-5 pb-3">
-            <video width="660" autoplay muted loop>
+            <video width="660" autoplay muted loop preload="metadata">
               <source
                 src="~/assets/videos/coracao-animado.mp4"
                 type="video/mp4"
