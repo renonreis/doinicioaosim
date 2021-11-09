@@ -18,9 +18,11 @@ img {
 }
 
 .video-player {
-  border-radius: 10px;
-  a {
+  @media screen and (min-width: 992px) {
     border-radius: 10px;
+    a {
+      border-radius: 10px;
+    }
   }
 }
 

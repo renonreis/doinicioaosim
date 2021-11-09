@@ -25,9 +25,6 @@
           type="image/jpg"
         />
         <img
-          width="2560"
-          height="975"
-          loading="lazy"
           class="img-banner"
           src="~assets/images/curso-online/curso-de-noivos-online-mobile.jpg"
         />
