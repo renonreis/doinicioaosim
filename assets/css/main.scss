@@ -17,6 +17,13 @@ img {
   height: auto;
 }
 
+.video-player {
+  border-radius: 10px;
+  a {
+    border-radius: 10px;
+  }
+}
+
 iframe {
   border-radius: 10px;
 

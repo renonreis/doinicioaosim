@@ -62,11 +62,13 @@
           </div>
           <div class="col-12 text-center content">
             <div class="video">
-              <youtube
-                video-id="uilkmUoXoLU"
-                player-width="900"
-                player-height="510"
-              ></youtube>
+              <LazyYoutube
+                ref="vimeoLazyVideo"
+                class="video-player"
+                max-width="900px"
+                :show-title="false"
+                src="https://www.youtube.com/watch?v=uilkmUoXoLU"
+              />
             </div>
           </div>
         </div>
@@ -311,11 +313,13 @@
           </div>
           <div class="col-md-12">
             <div class="mt-5 pt-5">
-              <youtube
-                video-id="uilkmUoXoLU"
-                player-width="900"
-                player-height="510"
-              ></youtube>
+              <LazyYoutube
+                ref="vimeoLazyVideo"
+                class="video-player"
+                max-width="900px"
+                :show-title="false"
+                src="https://www.youtube.com/watch?v=uilkmUoXoLU"
+              />
             </div>
           </div>
         </div>
@@ -459,8 +463,7 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import VueYouTubeEmbed from 'vue-youtube-embed'
+import { LazyYoutube } from 'vue-lazytube'
 
 import cursoNoivosOnline from '@/assets/json/cursos-de-noivos-online.json'
 
@@ -469,10 +472,9 @@ import ArrowLeft from '@/components/svg/arrow-left.vue'
 import ArrowRight from '@/components/svg/arrow-right.vue'
 import ArrowFaq from '@/components/svg/icon-arrow-faq.vue'
 
-Vue.use(VueYouTubeEmbed)
-
 export default {
   components: {
+    LazyYoutube,
     Main,
     ArrowLeft,
     ArrowRight,
