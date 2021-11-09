@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "startServerCommand": "yarn build && yarn start",
-      "url": ["http://localhost:3000/"],
+      "url": ["https://renonreis.github.io/doinicioaosim/curso-de-noivos-online/"],
       "numberOfRuns": 3
     },
     "upload": {

@@ -15,7 +15,13 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/doinicioaosim/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/doinicioaosim/favicon.png' },
+      {
+        rel: 'preload',
+        as: 'image',
+        href: '/_nuxt/assets/images/curso-online/curso-de-noivos-online.jpg',
+        imagesrcset: 'curso-de-noivos-online-mobile.jpg 992w'
+      },
     ]
   },
 
@@ -36,11 +42,15 @@ export default {
   components: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
+  buildModules: [    
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://google-fonts.nuxtjs.org/
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',  
+    // https://pwa.nuxtjs.org/
+    '@nuxtjs/pwa',      
+    // https://image.nuxtjs.org/
+    '@nuxt/image'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -51,13 +61,18 @@ export default {
     '@nuxtjs/axios',
     // https://www.npmjs.com/package/@nuxtjs/style-resources
     '@nuxtjs/style-resources',
+    // https://www.npmjs.com/package/nuxt-compress
+    'nuxt-compress',    
+    // https://www.npmjs.com/package/nuxt-ssr-cache
+    'nuxt-ssr-cache'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {    
+  build: {   
+    extractCSS: true, 
     babel: {
       compact: true,
     },
@@ -105,5 +120,34 @@ export default {
 
   styleResources: {
     scss: ['./assets/css/global/*.scss']
-  }
+  },
+
+  pwa: {
+    icon: false, // disables the icon module
+    manifest: {
+      name: 'Do Início ao Sim',
+      lang: 'pt_BR',
+      useWebmanifestExtension: false
+    }
+  },
+
+  image: {
+    dir: 'assets/images'
+  },
+
+  cache: {    
+    useHostPrefix: false,
+    pages: [
+      '/'      
+    ],
+    
+    key(route, context) {
+    },
+ 
+    store: {
+      type: 'memory',
+      max: 100,
+      ttl: 60,
+    },
+  },
 }

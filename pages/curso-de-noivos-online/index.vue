@@ -14,14 +14,16 @@
           width="479"
           height="1013"
           media="(min-width:992px)"
-          srcset="~assets/images/curso-online/curso-de-noivos-online.jpg?webp"
+          srcset="
+            ~assets/images/curso-online/curso-de-noivos-online-mobile.jpg?webp
+          "
           type="image/webp"
         />
         <source
           width="479"
           height="1013"
           media="(min-width:992px)"
-          srcset="~assets/images/curso-online/curso-de-noivos-online.jpg"
+          srcset="~assets/images/curso-online/curso-de-noivos-online-mobile.jpg"
           type="image/jpg"
         />
         <img
@@ -32,23 +34,13 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center content">
-            <picture>
-              <source
-                data-srcset="~assets/images/elements/do-inicio-ao-sim.png?webp"
-                type="image/webp"
-              />
-              <source
-                data-srcset="~assets/images/elements/do-inicio-ao-sim.png?webp"
-                type="image/png"
-              />
-              <img
-                width="357"
-                height="102"
-                loading="lazy"
-                class="banner-logo"
-                src="~assets/images/elements/do-inicio-ao-sim.png"
-              />
-            </picture>
+            <nuxt-picture
+              width="357"
+              height="102"
+              loading="lazy"
+              class="banner-logo d-block"
+              src="/elements/do-inicio-ao-sim.png"
+            />
             <h1 class="mb-3">CURSO DE NOIVOS ON-LINE</h1>
             <p>
               Um tempo de preparação que marcará para sempre a vida de vocês
@@ -94,23 +86,13 @@
               casamento e o relacionamento perfeito como Deus criou, esse curso
               é para você.
             </p>
-            <picture>
-              <source
-                data-srcset="~assets/images/curso-online/viva-um-casamento-cheio-de-paz-amor-e-alegria.jpg?webp"
-                type="image/webp"
-              />
-              <source
-                data-srcset="~assets/images/curso-online/viva-um-casamento-cheio-de-paz-amor-e-alegria.jpg"
-                type="image/jpg"
-              />
-              <img
-                width="507"
-                height="514"
-                loading="lazy"
-                class="darken mt-5 mb-5"
-                src="~assets/images/curso-online/viva-um-casamento-cheio-de-paz-amor-e-alegria.jpg"
-              />
-            </picture>
+            <nuxt-picture
+              width="507"
+              height="514"
+              loading="lazy"
+              class="darken d-block mt-5 mb-5"
+              src="/curso-online/viva-um-casamento-cheio-de-paz-amor-e-alegria.jpg"
+            />
           </div>
           <div class="col-md-8">
             <h2>VIVA UM CASAMENTO CHEIO DE PAZ, AMOR E ALEGRIA...</h2>
@@ -186,23 +168,13 @@
 
           <div class="col-md-9 text-center">
             <a href="" class="btn large">Gostei! Quero fazer o curso</a>
-            <picture>
-              <source
-                data-srcset="~assets/images/curso-online/como-funciona-o-curso-de-noivos-online.jpg?webp"
-                type="image/webp"
-              />
-              <source
-                data-srcset="~assets/images/curso-online/como-funciona-o-curso-de-noivos-online.jpg"
-                type="image/jpg"
-              />
-              <img
-                width="507"
-                height="514"
-                loading="lazy"
-                class="darken mt-5 mb-5 pt-5"
-                src="~assets/images/curso-online/como-funciona-o-curso-de-noivos-online.jpg"
-              />
-            </picture>
+            <nuxt-picture
+              width="507"
+              height="514"
+              loading="lazy"
+              class="darken d-block mt-5 mb-5 pt-5"
+              src="/curso-online/como-funciona-o-curso-de-noivos-online.jpg"
+            />
           </div>
 
           <div class="col-md-12 text-center mb-4">
@@ -403,27 +375,13 @@
             </video>
           </div>
           <div class="col-lg-7 text-center">
-            <picture>
-              <source
-                srcset="
-                  ../../assets/images/elements/curso-de-noivos-do-inicio-ao-sim.png?webp
-                "
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ../../assets/images/elements/curso-de-noivos-do-inicio-ao-sim.png
-                "
-                type="image/png"
-              />
-              <img
-                width="236"
-                height="68"
-                loading="lazy"
-                class="banner-logo mb-4"
-                src="../../assets/images/elements/curso-de-noivos-do-inicio-ao-sim.png"
-              />
-            </picture>
+            <nuxt-picture
+              width="236"
+              height="68"
+              loading="lazy"
+              class="banner-logo d-block mb-4"
+              src="/elements/curso-de-noivos-do-inicio-ao-sim.png"
+            />
             <h2>FAÇA SUA INSCRIÇÃO E COMECE AGORA MESMO!</h2>
             <h4 class="primary">UMA IMERSÃO INESQUECÍVEL</h4>
           </div>
