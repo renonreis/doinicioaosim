@@ -1,0 +1,10 @@
+{
+  "name": "Do Início ao Sim",
+  "short_name": "doinicioaosim",
+  "description": "## Build Setup",
+  "icons": [],
+  "start_url": "/doinicioaosim/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "pt_BR"
+}
