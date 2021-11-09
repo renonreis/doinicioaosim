@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Lighthouse CI ZZNtzNOD0oeOAgjJ:20593927:WYQDgLHt
+.lighthouseci
