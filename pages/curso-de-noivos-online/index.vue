@@ -321,8 +321,8 @@
               />
               <track
                 label="Coração Animado"
-                kind="Coração Animado"
-                srclang="pt_BR"
+                kind="descriptions"
+                srclang="pt-br"
                 default
               />
               Your browser does not support HTML video.

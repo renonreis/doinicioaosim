@@ -27,7 +27,7 @@
             <a
               v-for="media in socialMedia"
               :key="media.id"
-              :href="media.link"
+              :href="`${media.link}`"
               target="_blank"
             >
               <span
