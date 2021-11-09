@@ -20,6 +20,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   lighthouse:
+    needs: sonarcloud
     name: Lighthouse CI
     runs-on: ubuntu-latest
     steps:
