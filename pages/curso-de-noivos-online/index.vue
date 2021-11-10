@@ -370,10 +370,10 @@ import { LazyYoutube } from 'vue-lazytube'
 
 import cursoNoivosOnline from '@/assets/json/cursos-de-noivos-online.json'
 
-import Main from '@/components/shared/main.vue'
-import ArrowLeft from '@/components/svg/arrow-left.vue'
-import ArrowRight from '@/components/svg/arrow-right.vue'
-import ArrowFaq from '@/components/svg/icon-arrow-faq.vue'
+const Main = () => import('@/components/shared/main')
+const ArrowLeft = () => import('@/components/svg/arrow-left')
+const ArrowRight = () => import('@/components/svg/arrow-right')
+const ArrowFaq = () => import('@/components/svg/icon-arrow-faq')
 
 export default {
   components: {

@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Main from '@/components/shared/main.vue'
+const Main = () => import('@/components/shared/main')
 
 export default {
   components: {

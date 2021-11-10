@@ -69,8 +69,8 @@
 </template>
 
 <script>
-import Menu from '@/components/shared/menu'
-import IconMenu from '@/components/svg/icon-menu'
+const Menu = () => import('@/components/shared/menu')
+const IconMenu = () => import('@/components/svg/icon-menu')
 
 export default {
   components: {
