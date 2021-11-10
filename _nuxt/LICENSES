@@ -1,3 +1,15 @@
+/*
+   *          __        ___
+   *    _____/ /___  __/ (_)____
+   *   / ___/ __/ / / / / / ___/
+   *  (__  ) /_/ /_/ / / (__  )
+   * /____/\__/\__, /_/_/____/
+   *          /____/
+   *
+   * light - weight css preprocessor @licence MIT
+   */
+
+
 /*!
  * BootstrapVue Icons, generated from Bootstrap Icons 1.2.2
  *
@@ -66,15 +78,3 @@
  * (c) 2014-2021 Evan You
  * Released under the MIT License.
  */
-
-
-/*
-   *          __        ___
-   *    _____/ /___  __/ (_)____
-   *   / ___/ __/ / / / / / ___/
-   *  (__  ) /_/ /_/ / / (__  )
-   * /____/\__/\__, /_/_/____/
-   *          /____/
-   *
-   * light - weight css preprocessor @licence MIT
-   */
