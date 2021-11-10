@@ -2,14 +2,16 @@
   <Main>
     <section class="banner">
       <nuxt-picture
-        loading="lazy"
-        class="img-banner d-none d-lg-flex"
-        src="/curso-online/curso-de-noivos-online.jpg"
-      />
-      <nuxt-picture
+        v-if="isMobile"
         loading="lazy"
         class="img-banner d-flex d-lg-none"
         src="/curso-online/curso-de-noivos-online-mobile.jpg"
+      />
+      <nuxt-picture
+        v-else
+        loading="lazy"
+        class="img-banner d-none d-lg-flex"
+        src="/curso-online/curso-de-noivos-online.jpg"
       />
 
       <div class="container">
@@ -189,14 +191,16 @@
           </div>
           <div class="col-md-6 image">
             <nuxt-picture
-              loading="lazy"
-              class="d-none d-lg-flex"
-              :src="`curso/${curso.image}.jpg`"
-            />
-            <nuxt-picture
+              v-if="isMobile"
               loading="lazy"
               class="d-flex d-lg-none"
               :src="`curso/${curso.image}-mobile.jpg`"
+            />
+            <nuxt-picture
+              v-else
+              loading="lazy"
+              class="d-none d-lg-flex"
+              :src="`curso/${curso.image}.jpg`"
             />
           </div>
         </div>
@@ -205,14 +209,16 @@
 
     <section class="comece-agora">
       <nuxt-picture
-        loading="lazy"
-        class="img-comece d-none d-lg-flex"
-        src="/curso-online/curso-de-noivos-online.jpg"
-      />
-      <nuxt-picture
+        v-if="isMobile"
         loading="lazy"
         class="img-comece d-flex d-lg-none"
         src="/curso-online/curso-de-noivos-online-mobile.jpg"
+      />
+      <nuxt-picture
+        v-else
+        loading="lazy"
+        class="img-comece d-none d-lg-flex"
+        src="/curso-online/curso-de-noivos-online.jpg"
       />
 
       <div class="container">
@@ -314,16 +320,10 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center mb-5 pb-3">
-            <video width="660" autoplay muted loop preload="metadata">
+            <video v-if="!isMobile" width="660" autoplay muted loop>
               <source
                 src="~/assets/videos/coracao-animado.mp4"
                 type="video/mp4"
-              />
-              <track
-                label="Coração Animado"
-                kind="descriptions"
-                srclang="pt-br"
-                default
               />
               Your browser does not support HTML video.
             </video>
@@ -403,9 +403,27 @@ export default {
         dots: false,
         infinite: false,
         autoplay: true
-      }
+      },
+
+      isMobile: false
     }
-  }  
+  },
+  beforeDestroy () {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('resize', this.onResize, { passive: true })
+    }
+  },
+
+  mounted () {
+    this.onResize()
+    window.addEventListener('resize', this.onResize, { passive: true })
+  },
+
+  methods: {
+    onResize () {
+      this.isMobile = window.innerWidth < 992
+    }
+  }
 }
 </script>
 
