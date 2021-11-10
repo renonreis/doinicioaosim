@@ -2,13 +2,11 @@
   <Main>
     <section class="banner">
       <nuxt-picture
-        v-if="isMobile"
         loading="lazy"
         class="img-banner d-flex d-lg-none"
         src="/curso-online/curso-de-noivos-online-mobile.jpg"
       />
       <nuxt-picture
-        v-else
         loading="lazy"
         class="img-banner d-none d-lg-flex"
         src="/curso-online/curso-de-noivos-online.jpg"
@@ -191,13 +189,11 @@
           </div>
           <div class="col-md-6 image">
             <nuxt-picture
-              v-if="isMobile"
               loading="lazy"
               class="d-flex d-lg-none"
               :src="`curso/${curso.image}-mobile.jpg`"
             />
             <nuxt-picture
-              v-else
               loading="lazy"
               class="d-none d-lg-flex"
               :src="`curso/${curso.image}.jpg`"
@@ -209,13 +205,11 @@
 
     <section class="comece-agora">
       <nuxt-picture
-        v-if="isMobile"
         loading="lazy"
         class="img-comece d-flex d-lg-none"
         src="/curso-online/curso-de-noivos-online-mobile.jpg"
       />
       <nuxt-picture
-        v-else
         loading="lazy"
         class="img-comece d-none d-lg-flex"
         src="/curso-online/curso-de-noivos-online.jpg"
