@@ -29,6 +29,7 @@
               :key="media.id"
               :href="`${media.link}`"
               target="_blank"
+              rel="noopener"
             >
               <span
                 class="d-inline-flex align-middle"
@@ -43,6 +44,7 @@
               :key="link.id"
               :href="link.link"
               target="_blank"
+              rel="noopener"
             >
               <span
                 class="d-inline-flex align-middle"
@@ -139,7 +141,7 @@ footer {
 
   &::before {
     content: url(@/assets/images/elements/rodape-curso-de-noivos.png);
-    margin-left: -50%;
+    margin-left: 50%;
     position: absolute;
     object-position: center;
     pointer-events: none;

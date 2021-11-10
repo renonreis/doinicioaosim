@@ -142,6 +142,7 @@ export default {
       xxl: 2560,
       '2xl': 1536
     },
+    staticFilename: '[publicPath]/images/[name]-[hash][ext]'
   },
 
   cache: {    
