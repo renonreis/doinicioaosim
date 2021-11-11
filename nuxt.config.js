@@ -16,13 +16,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/doinicioaosim/favicon.png' },
-      { rel: 'apple-touch-icon', href: '/doinicioaosim/icon.png' },
-      {
-        rel: 'preload',
-        as: 'image',
-        href: '/_nuxt/assets/images/curso-online/curso-de-noivos-online.jpg',
-        imagesrcset: 'curso-de-noivos-online-mobile.jpg 992w'
-      },
+      { rel: 'apple-touch-icon', href: '/doinicioaosim/icon.png' }
     ]
   },
 
