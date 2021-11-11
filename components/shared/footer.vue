@@ -30,6 +30,7 @@
               :href="`${media.link}`"
               target="_blank"
               rel="noopener"
+              :aria-label="media.arial"
             >
               <span
                 class="d-inline-flex align-middle"
@@ -45,6 +46,7 @@
               :href="link.link"
               target="_blank"
               rel="noopener"
+              :aria-label="link.arial"
             >
               <span
                 class="d-inline-flex align-middle"
@@ -78,6 +80,8 @@
               <a
                 href="https://www.ummense.com/promo/doinicioaosim"
                 target="_blank"
+                aria-label="Ummense"
+                rel="noreferrer"
               >
                 <span class="d-inline-flex align-middle ummense mr-4"></span>
               </a>
@@ -87,7 +91,7 @@
                 alt="amor"
               ></span>
               por
-              <a href="https://www.evonline.com.br/"
+              <a href="https://www.evonline.com.br/" aria-label="Evonline"
                 ><span
                   class="d-inline-flex align-middle icon_evonline"
                   alt="Evonline"
@@ -102,6 +106,7 @@
     <a
       href="https://api.whatsapp.com/send?phone=5541987913030"
       class="whatsapp-float d-block"
+      aria-label="Fale conosco por Whatsapp"
     >
       <nuxt-picture
         alt="Fale conosco por Whatsapp"
@@ -122,29 +127,34 @@ export default {
         {
           id: 1,
           link: 'https://www.instagram.com/doinicioaosim_oficial/',
-          icon: 'icon_instagram'
+          icon: 'icon_instagram',
+          arial: 'Instagram'
         },
         {
           id: 2,
           link: 'https://www.facebook.com/doinicioaosim/',
-          icon: 'icon_facebook'
+          icon: 'icon_facebook',
+          arial: 'Facebook'
         },
         {
           id: 3,
           link: 'https://www.youtube.com/c/DoInícioaoSim',
-          icon: 'icon_youtube'
+          icon: 'icon_youtube',
+          arial: 'Youtube'
         },
       ],
       appLinks: [
         {
           id: 1,
           link: 'https://apps.apple.com/mn/app/do-in%C3%ADcio-ao-sim/id1502254589',
-          icon: 'download_on_the_app_store'
+          icon: 'download_on_the_app_store',
+          arial: 'App Store'
         },
         {
           id: 2,
           link: 'https://play.google.com/store/apps/details?id=com.uapp.doinicioaosim&hl=pt',
-          icon: 'download_get_it_on_google_play'
+          icon: 'download_get_it_on_google_play',
+          arial: 'Google Play'
         },
       ]  
     }    

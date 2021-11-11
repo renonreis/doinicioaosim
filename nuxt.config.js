@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'Curso de noivos online Do Início ao Sim',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pt_BR'
     },
     meta: [
       { charset: 'utf-8' },
@@ -16,6 +16,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/doinicioaosim/favicon.png' },
+      { rel: 'apple-touch-icon', href: '/doinicioaosim/icon.png' },
       {
         rel: 'preload',
         as: 'image',
@@ -136,7 +137,11 @@ export default {
     manifest: {
       name: 'Do Início ao Sim',
       lang: 'pt_BR',
-      useWebmanifestExtension: false
+      useWebmanifestExtension: false,
+      theme_color: "#f79301",
+      icon: {
+        purpose: 'maskable'
+      }
     }
   },
 
