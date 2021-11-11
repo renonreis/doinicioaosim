@@ -1,0 +1,94 @@
+.bg-evonline {
+    width: 77px; height: 17px;
+    background: url('css_sprites.png') -151px -150px;
+}
+
+x
+.bg-icon_ {
+    width: 15px; height: 17px;
+    background: url('css_sprites.png') -319px -193px;
+}
+
+x
+.bg-icon_amo {
+    width: 16px; height: 13px;
+    background: url('css_sprites.png') -325px -150px;
+}
+
+x
+.bg-icon_apostilas {
+    width: 18px; height: 18px;
+    background: url('css_sprites.png') -281px -193px;
+}
+
+x
+.bg-icon_aulas_bonus {
+    width: 19px; height: 19px;
+    background: url('css_sprites.png') -202px -193px;
+}
+
+x
+.bg-icon_computador_celular {
+    width: 18px; height: 16px;
+    background: url('css_sprites.png') -287px -150px;
+}
+
+x
+.bg-icon_dois_acessos {
+    width: 20px; height: 18px;
+    background: url('css_sprites.png') -241px -193px;
+}
+
+x
+.bg-icon_facebook {
+    width: 44px; height: 44px;
+    background: url('css_sprites.png') -10px -193px;
+}
+
+x
+.bg-icon_instagram {
+    width: 44px; height: 44px;
+    background: url('css_sprites.png') -74px -193px;
+}
+
+x
+.bg-icon_videos_aulas {
+    width: 19px; height: 17px;
+    background: url('css_sprites.png') -248px -150px;
+}
+
+x
+.bg-icon_youtube {
+    width: 44px; height: 44px;
+    background: url('css_sprites.png') -138px -193px;
+}
+
+x
+.bg-ummense {
+    width: 148px; height: 50px;
+    background: url('css_sprites.png') -197px -10px;
+}
+
+x
+.bg-5_estrelas {
+    width: 141px; height: 22px;
+    background: url('css_sprites.png') -197px -80px;
+}
+
+x
+.bg-comunhao_crista_abba_aj_abba_jovem {
+    width: 121px; height: 23px;
+    background: url('css_sprites.png') -10px -150px;
+}
+
+x
+.bg-download_get_it_on_google_play {
+    width: 166px; height: 50px;
+    background: url('css_sprites.png') -10px -80px;
+}
+
+x
+.bg-download_on_the_app_store {
+    width: 167px; height: 50px;
+    background: url('css_sprites.png') -10px -10px;
+}
