@@ -282,8 +282,14 @@
     },
     {
       "id": 15,
-      "question": "Posso fazer o curso na minha igreja e fazer o curso Do início ao sim?",
+      "question": "Posso fazer o curso aqui e na minha igreja?",
       "answer": "Com certeza sim! Aprender nunca é demais. O curso de Noivos Do Início ao Sim será complementar e irá contribuir para a construção de uma família ainda mais forte, cheia de paz, amor e alegria."
+    },
+    {
+      "id": 16,
+      "question": "Posso fazer o curso gratuitamente?",
+      "answer": "Sim. Para você que não tem condições financeiras para adquirir o curso, queremos abençoar você. Nosso objetivo é trazer a luz da palavra de Deus para seu relacionamento para que vocês vivam o mais perfeito amor, paz e alegria. Para efetuar a solicitação, ",
+      "link": "/solicitar-subsidio"
     }
   ],
   "inclusos": [

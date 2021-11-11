@@ -4,14 +4,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'doinicioaosim',
+    title: 'Curso de noivos online Do Início ao Sim',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Faça o Curso de Noivos Online e tenha um tempo de preparação que marcará para sempre a vida de vocês e desfrute de um casamento cheio de paz, amor e alegria.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -76,7 +76,16 @@ export default {
     babel: {
       compact: true,
     },
-    transpile: ['vue-agile']
+    transpile: ['vue-agile'],
+    collapseBooleanAttributes: true,
+    decodeEntities: true,
+    minifyCSS: true,
+    minifyJS: true,
+    processConditionalComments: true,
+    removeEmptyAttributes: true,
+    removeRedundantAttributes: true,
+    trimCustomFragments: true,
+    useShortDoctype: true
   },
 
   router: {
@@ -132,7 +141,7 @@ export default {
   },
 
   image: {
-    dir: 'assets/images',
+    dir: 'static/images',
     screens: {
       xs: 320,
       sm: 640,

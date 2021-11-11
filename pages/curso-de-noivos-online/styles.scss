@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  min-height: 1240px;
+  min-height: 975px;
 
   &::before {
     background-color: $black;
@@ -63,7 +63,7 @@
   position: relative;
 
   &::before {
-    content: url(@/assets/images/elements/curso-de-noivos.png);
+    content: url(@/static/images/elements/curso-de-noivos.png);
     position: absolute;
     margin-left: 50%;
     object-position: center;
@@ -76,7 +76,7 @@
     bottom: 0;
     content: '';
     display: block;
-    height: 800px;
+    height: 725px;
     pointer-events: none;
     position: absolute;
     width: 100%;
@@ -86,10 +86,14 @@
     z-index: 99;
   }
 
+  .curso {
+    font-size: 22px;
+  }
+
   @media screen and (max-width: 991px) {
     padding: 160px 0 45px;
     &::before {
-      content: url(@/assets/images/elements/curso-de-noivos-mobile.png);
+      content: url(@/static/images/elements/curso-de-noivos-mobile.png);
     }
   }
 }
@@ -107,7 +111,7 @@
     bottom: 0;
     content: '';
     display: block;
-    height: 1130px;
+    height: 1300px;
     pointer-events: none;
     position: absolute;
     width: 100%;
@@ -244,13 +248,25 @@
 }
 
 .comece-agora {
-  padding: 180px 0 90px;
   background-color: $bg-neutral;
+  overflow: hidden;
+  padding: 180px 0;
   position: relative;
+
+  .titulo {
+    color: $white;
+    font-size: 72px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: $white;
+  }
 
   .img-comece img {
     position: absolute;
-    height: 660px;
+    min-height: 660px;
     margin-left: 50%;
     object-fit: cover;
     object-position: top;
@@ -297,7 +313,7 @@
       z-index: 99;
 
       .cinco_estrelas {
-        margin: 0 auto;
+        margin: 0 auto 15px;
       }
 
       .autor {
@@ -319,7 +335,7 @@
       background-color: $bg-neutral;
       border: 1px solid $bg-neutral;
       border-radius: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       .card-header {
         border-bottom: none;
         padding: 21.5px 20px 21.5px 40px !important;
@@ -343,9 +359,13 @@
       .card-body {
         background: #fff;
         border-radius: 0 0 10px 10px;
+        padding: 1rem;
         .card-text {
           font-size: 16px;
           line-height: 25px;
+          a {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -412,7 +432,16 @@
     }
   }
 
-  .text-button {
+  .price {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .imersao {
+    font-size: 22px;
+  }
+
+  .text-button a {
     font-size: 14px;
   }
 

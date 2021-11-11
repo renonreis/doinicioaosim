@@ -3,11 +3,9 @@ name: Deploy Site Homolog and Sync Git Lab
 on:
   push:
     branches:
-      - main
       - develop
   delete:
     branches:
-      - main
       - develop
 
 jobs:

@@ -81,8 +81,8 @@ iframe {
   }
 }
 
-$modulos: url('../images/icons/sprite-modulos-do-curso.png');
-$icons: url('../images/icons/sprite-icons.png');
+$modulos: url('@/static/images/icons/sprite-modulos-do-curso.png');
+$icons: url('@/static/images/icons/sprite-icons.png');
 
 .essencia_de_todo_relacionamento {
   min-width: 118px;

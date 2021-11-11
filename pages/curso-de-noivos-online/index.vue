@@ -2,11 +2,17 @@
   <Main>
     <section class="banner">
       <nuxt-picture
+        alt="Curso de noivos online"
+        width="479"
+        height="1013"
         loading="lazy"
         class="img-banner d-flex d-lg-none"
         src="/curso-online/curso-de-noivos-online-mobile.jpg"
       />
       <nuxt-picture
+        alt="Curso de noivos online"
+        width="2560"
+        height="975"
         loading="lazy"
         class="img-banner d-none d-lg-flex"
         src="/curso-online/curso-de-noivos-online.jpg"
@@ -16,19 +22,18 @@
         <div class="row justify-content-center">
           <div class="col-12 text-center content">
             <nuxt-picture
+              alt="Do Início ao Sim Logo"
               width="357"
               height="102"
               loading="lazy"
               class="banner-logo d-block"
               src="/elements/do-inicio-ao-sim.png"
             />
-            <h1 class="mb-3">CURSO DE NOIVOS ON-LINE</h1>
+            <h1 class="mb-3">CURSO DE NOIVOS ONLINE</h1>
             <p>
               Um tempo de preparação que marcará para sempre a vida de vocês
             </p>
-            <a href="" class="btn large mt-2 mb-5"
-              >Faça sua Inscrição Curso de Noivos
-            </a>
+            <a href="" class="btn large mt-2 mb-5">{{ textInscricao }} </a>
           </div>
           <div class="col-12 text-center content">
             <div class="video">
@@ -50,7 +55,7 @@
         <div class="row justify-content-center text-center">
           <div class="col-md-8">
             <h2>PREPAREM-SE PARA UM NOVO TEMPO NA SUA VIDA</h2>
-            <h4 class="primary mb-3">CURSO DE NOIVOS E NAMORO CRISTÃO</h4>
+            <p class="primary mb-3 curso">CURSO DE NOIVOS E NAMORO CRISTÃO</p>
           </div>
           <div class="col-md-10">
             <p>
@@ -68,6 +73,7 @@
               é para você.
             </p>
             <nuxt-picture
+              alt="viva-um-casamento-cheio-de-paz-amor-e-alegria"
               width="507"
               height="514"
               loading="lazy"
@@ -150,6 +156,7 @@
           <div class="col-md-9 text-center">
             <a href="" class="btn large">Gostei! Quero fazer o curso</a>
             <nuxt-picture
+              alt="como-funciona-o-curso-de-noivos"
               width="507"
               height="514"
               loading="lazy"
@@ -189,11 +196,17 @@
           </div>
           <div class="col-md-6 image">
             <nuxt-picture
+              :alt="`${curso.image}`"
+              width="479"
+              height="540"
               loading="lazy"
               class="d-flex d-lg-none"
               :src="`curso/${curso.image}-mobile.jpg`"
             />
             <nuxt-picture
+              :alt="`${curso.image}`"
+              width="675"
+              height="540"
               loading="lazy"
               class="d-none d-lg-flex"
               :src="`curso/${curso.image}.jpg`"
@@ -205,39 +218,34 @@
 
     <section class="comece-agora">
       <nuxt-picture
+        alt="comecar-bem-faz-bem"
+        width="479"
+        height="865"
         loading="lazy"
         class="img-comece d-flex d-lg-none"
-        src="/curso-online/curso-de-noivos-online-mobile.jpg"
+        src="/curso-online/comecar-bem-faz-bem-mobile.jpg"
       />
       <nuxt-picture
+        alt="comecar-bem-faz-bem"
+        width="2560"
+        height="657"
         loading="lazy"
         class="img-comece d-none d-lg-flex"
-        src="/curso-online/curso-de-noivos-online.jpg"
+        src="/curso-online/comecar-bem-faz-bem.jpg"
       />
 
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-md-10">
-            <h1>COMEÇAR BEM, FAZ BEM.</h1>
+            <h2 class="titulo">COMEÇAR BEM, FAZ BEM.</h2>
           </div>
           <div class="col-md-8">
-            <p>
+            <p class="text-white">
               Ao dizer sim no dia do seu casamento, é possível sim viver em paz
               e alegria todos os dias, esta é a vontade do nosso pai celestial
               que é boa, perfeita e agradável.
             </p>
             <a href="" class="btn large mt-4">Comece agora o curso de Noivos</a>
-          </div>
-          <div class="col-md-12">
-            <div class="mt-5 pt-5">
-              <LazyYoutube
-                ref="vimeoLazyVideo"
-                class="video-player"
-                max-width="900px"
-                :show-title="false"
-                src="https://www.youtube.com/watch?v=uilkmUoXoLU"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -300,7 +308,12 @@
                     role="tabpanel"
                   >
                     <b-card-body>
-                      <b-card-text>{{ faq.answer }}</b-card-text>
+                      <b-card-text
+                        >{{ faq.answer }}
+                        <a v-if="faq.link" :href="faq.link"
+                          >clique aqui.</a
+                        ></b-card-text
+                      >
                     </b-card-body>
                   </b-collapse>
                 </b-card>
@@ -316,7 +329,7 @@
           <div class="col-12 text-center mb-5 pb-3">
             <video v-if="!isMobile" width="660" autoplay muted loop>
               <source
-                src="~/assets/videos/coracao-animado.mp4"
+                src="~/static/videos/coracao-animado.mp4"
                 type="video/mp4"
               />
               Your browser does not support HTML video.
@@ -324,6 +337,7 @@
           </div>
           <div class="col-lg-7 text-center">
             <nuxt-picture
+              alt="curso-de-noivos-do-inicio-ao-sim"
               width="236"
               height="68"
               loading="lazy"
@@ -331,7 +345,7 @@
               src="/elements/curso-de-noivos-do-inicio-ao-sim.png"
             />
             <h2>FAÇA SUA INSCRIÇÃO E COMECE AGORA MESMO!</h2>
-            <h4 class="primary">UMA IMERSÃO INESQUECÍVEL</h4>
+            <p class="primary imersao">UMA IMERSÃO INESQUECÍVEL</p>
           </div>
           <div class="col-lg-8 text-center">
             <div class="resumo-modulos">
@@ -351,12 +365,12 @@
                 </li>
               </ul>
             </div>
-            <h3 class="primary mt-5">R$ 97,00</h3>
-            <a href="" class="btn xlarge"
-              >Faça sua Inscrição Curso de Noivos On-line</a
-            >
+            <p class="primary mt-5 price">R$ 97,00</p>
+            <a href="" class="btn xlarge">{{ comecaoAgora }}</a>
             <p class="text-button">
-              Deseja fazer o curso e não tem como pagar?
+              <a href="/solicitar-subsidio">
+                Deseja fazer o curso e não tem como pagar?
+              </a>
             </p>
           </div>
         </div>
@@ -368,7 +382,7 @@
 <script>
 import { LazyYoutube } from 'vue-lazytube'
 
-import cursoNoivosOnline from '@/assets/json/cursos-de-noivos-online.json'
+import cursoNoivosOnline from '@/static/json/cursos-de-noivos-online.json'
 
 const Main = () => import('@/components/shared/main')
 const ArrowLeft = () => import('@/components/svg/arrow-left')
@@ -402,6 +416,16 @@ export default {
       isMobile: false
     }
   },
+
+  computed: {
+    textInscricao(){
+      return this.isMobile ? 'Faça agora sua inscrição' : 'Faça sua Inscrição Curso de Noivos'
+    },
+    comecaoAgora(){
+      return this.isMobile ? 'Comece agora o curso de noivos' : 'Faça sua Inscrição Curso de Noivos Online'
+    }
+  },
+
   beforeDestroy () {
     if (typeof window !== 'undefined') {
       window.removeEventListener('resize', this.onResize, { passive: true })
