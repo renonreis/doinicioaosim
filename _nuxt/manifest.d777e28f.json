@@ -1,0 +1,14 @@
+{
+  "name": "Do Início ao Sim",
+  "short_name": "doinicioaosim",
+  "description": "## Build Setup",
+  "icons": [],
+  "start_url": "/doinicioaosim/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f79301",
+  "lang": "pt_BR",
+  "icon": {
+    "purpose": "maskable"
+  }
+}
