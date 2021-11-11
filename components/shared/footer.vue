@@ -13,6 +13,7 @@
                 d-inline-flex
                 align-middle
                 comunhao_crista_abba_aj_abba_jovem
+                lazy
               "
             ></span
             ><br />
@@ -33,7 +34,7 @@
               :aria-label="media.arial"
             >
               <span
-                class="d-inline-flex align-middle"
+                class="d-inline-flex align-middle lazy"
                 :class="media.icon"
               ></span>
             </a>
@@ -49,7 +50,7 @@
               :aria-label="link.arial"
             >
               <span
-                class="d-inline-flex align-middle"
+                class="d-inline-flex align-middle lazy"
                 :class="link.icon"
               ></span>
             </a>
@@ -87,13 +88,13 @@
               </a>
               desenvolvido com
               <span
-                class="d-inline-flex align-middle icon_coracao"
+                class="d-inline-flex align-middle icon_coracao lazy"
                 alt="amor"
               ></span>
               por
               <a href="https://www.evonline.com.br/" aria-label="Evonline"
                 ><span
-                  class="d-inline-flex align-middle icon_evonline"
+                  class="d-inline-flex align-middle icon_evonline lazy"
                   alt="Evonline"
                 ></span
               ></a>
@@ -156,8 +157,8 @@ export default {
           icon: 'download_get_it_on_google_play',
           arial: 'Google Play'
         },
-      ]  
-    }    
+      ]
+    }
   }
 }
 </script>
@@ -196,7 +197,7 @@ footer {
       display: flex;
       font-size: 18px;
       font-weight: 400;
-      margin: 0 25px;      
+      margin: 0 25px;
       a {
         margin: 0 5px;
       }
@@ -250,7 +251,7 @@ footer {
           display: inline-block;
         }
       }
-      
+
     }
   }
 

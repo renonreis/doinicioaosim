@@ -84,11 +84,17 @@ iframe {
 $modulos: url('@/static/images/icons/sprite-modulos-do-curso.png');
 $icons: url('@/static/images/icons/sprite-icons.png');
 
+$modulos-webp: -webkit-image-set(
+  url(@/static/images/icons/sprite-modulos-do-curso.webp) 1x
+);
+$icons-webp: -webkit-image-set(url(@/static/images/icons/sprite-icons.webp) 1x);
+
 .essencia_de_todo_relacionamento {
   min-width: 118px;
   max-width: 118px;
   height: 118px;
   background: $modulos -10px -288px;
+  background-image: $modulos-webp -10px -288px;
 }
 
 .identidade_e_proposito_no_casamento {
@@ -96,6 +102,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 117px;
   height: 118px;
   background: $modulos -427px -286px;
+  background-image: $modulos-webp -427px -286px;
 }
 
 .produndo_amor {
@@ -103,6 +110,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 118px;
   height: 118px;
   background: $modulos -148px -288px;
+  background-image: $modulos-webp -148px -288px;
 }
 
 .relacionando_se_com_liberdade {
@@ -110,6 +118,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 117px;
   height: 118px;
   background: $modulos -10px -426px;
+  background-image: $modulos-webp -10px -426px;
 }
 
 .alianca_no_casamento {
@@ -117,6 +126,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 118px;
   height: 118px;
   background: $modulos -286px -288px;
+  background-image: $modulos-webp -286px -288px;
 }
 
 .poder_da_palavra_no_casamento {
@@ -124,6 +134,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 117px;
   height: 118px;
   background: $modulos -147px -426px;
+  background-image: $modulos-webp -147px -426px;
 }
 
 .combinando_papeis {
@@ -131,6 +142,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 118px;
   height: 118px;
   background: $modulos -427px -10px;
+  background-image: $modulos-webp -427px -10px;
 }
 
 .unidade_completa {
@@ -138,6 +150,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 117px;
   height: 118px;
   background: $modulos -284px -426px;
+  background-image: $modulos-webp -284px -426px;
 }
 
 .aulas_bonus {
@@ -145,6 +158,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 118px;
   height: 118px;
   background: $modulos -427px -148px;
+  background-image: $modulos-webp -427px -148px;
 }
 
 .acesse_material_no_conforto_do_seu_lar {
@@ -152,6 +166,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 119px;
   height: 119px;
   background: $modulos -149px -10px;
+  background-image: $modulos-webp -149px -10px;
 }
 
 .acesso_exclusivo_para_noivo_e_para_noiva {
@@ -159,6 +174,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 119px;
   height: 119px;
   background: $modulos -10px -149px;
+  background-image: $modulos-webp -10px -149px;
 }
 
 .aulas_em_video {
@@ -166,6 +182,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 119px;
   height: 119px;
   background: $modulos -149px -149px;
+  background-image: $modulos-webp -149px -149px;
 }
 
 .conteudo_pratico_e_objetivo {
@@ -173,6 +190,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 119px;
   height: 119px;
   background: $modulos -288px -10px;
+  background-image: $modulos-webp -288px -10px;
 }
 
 .perguntas_para_alinhar_as_expectativas {
@@ -180,6 +198,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 119px;
   height: 119px;
   background: $modulos -288px -149px;
+  background-image: $modulos-webp -288px -149px;
 }
 
 .possibilidade_de_solicitar_acompanhamento {
@@ -187,6 +206,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 119px;
   height: 119px;
   background: $modulos -10px -10px;
+  background-image: $modulos-webp -10px -10px;
 }
 
 .icon_evonline {
@@ -194,6 +214,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 77px;
   height: 17px;
   background: $icons -151px -150px;
+  background-image: $icons-webp -151px -150px;
 }
 
 .icon_calendario {
@@ -201,6 +222,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 15px;
   height: 17px;
   background: $icons -319px -193px;
+  background-image: $icons-webp -319px -193px;
 }
 
 .icon_coracao {
@@ -208,6 +230,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 16px;
   height: 13px;
   background: $icons -325px -150px;
+  background-image: $icons-webp -325px -150px;
 }
 
 .icon_apostilas {
@@ -215,6 +238,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 18px;
   height: 18px;
   background: $icons -281px -193px;
+  background-image: $icons-webp -281px -193px;
 }
 
 .icon_aulas_bonus {
@@ -222,6 +246,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 19px;
   height: 19px;
   background: $icons -202px -193px;
+  background-image: $icons-webp -202px -193px;
 }
 
 .icon_computador_celular {
@@ -229,6 +254,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 18px;
   height: 16px;
   background: $icons -287px -150px;
+  background-image: $icons-webp -287px -150px;
 }
 
 .icon_dois_acessos {
@@ -236,6 +262,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 20px;
   height: 18px;
   background: $icons -241px -193px;
+  background-image: $icons-webp -241px -193px;
 }
 
 .icon_facebook {
@@ -243,6 +270,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 44px;
   height: 44px;
   background: $icons -10px -193px;
+  background-image: $icons-webp -10px -193px;
 }
 
 .icon_instagram {
@@ -250,6 +278,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 44px;
   height: 44px;
   background: $icons -74px -193px;
+  background-image: $icons-webp -74px -193px;
 }
 
 .icon_videos_aulas {
@@ -257,6 +286,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 19px;
   height: 17px;
   background: $icons -248px -150px;
+  background-image: $icons-webp -248px -150px;
 }
 
 .icon_youtube {
@@ -264,6 +294,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 44px;
   height: 44px;
   background: $icons -138px -193px;
+  background-image: $icons-webp -138px -193px;
 }
 
 .ummense {
@@ -271,6 +302,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 148px;
   height: 50px;
   background: $icons -197px -10px;
+  background-image: $icons-webp -197px -10px;
 }
 
 .cinco_estrelas {
@@ -278,6 +310,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 141px;
   height: 22px;
   background: $icons -197px -80px;
+  background-image: $icons-webp -197px -80px;
 }
 
 .comunhao_crista_abba_aj_abba_jovem {
@@ -285,6 +318,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 121px;
   height: 23px;
   background: $icons -10px -150px;
+  background-image: $icons-webp -10px -150px;
 }
 
 .download_get_it_on_google_play {
@@ -292,6 +326,7 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 166px;
   height: 50px;
   background: $icons -10px -80px;
+  background-image: $icons-webp -10px -80px;
 }
 
 .download_on_the_app_store {
@@ -299,4 +334,5 @@ $icons: url('@/static/images/icons/sprite-icons.png');
   max-width: 167px;
   height: 50px;
   background: $icons -10px -10px;
+  background-image: $icons-webp -10px -10px;
 }
