@@ -136,6 +136,10 @@ export default {
       icon: {
         purpose: 'maskable'
       }
+    },
+    workboxPluginMode: 'InjectManifest',
+    workboxOptions: {
+      swSrc: 'dev/sw.js',
     }
   },
 
