@@ -260,24 +260,22 @@
             </h2>
           </div>
           <div class="col-md-11">
-            <client-only placeholder="Carregando...">
-              <agile :options="myOptions">
-                <div
-                  v-for="depoimento in depoimentos"
-                  :key="depoimento.id"
-                  class="slide"
-                >
-                  <div class="box text-center">
-                    <div class="cinco_estrelas"></div>
-                    <p>{{ depoimento.description }}</p>
-                    <p class="autor">{{ depoimento.autor }}</p>
-                  </div>
+            <agile :options="myOptions">
+              <div
+                v-for="depoimento in depoimentos"
+                :key="depoimento.id"
+                class="slide"
+              >
+                <div class="box text-center">
+                  <div class="cinco_estrelas"></div>
+                  <p>{{ depoimento.description }}</p>
+                  <p class="autor">{{ depoimento.autor }}</p>
                 </div>
+              </div>
 
-                <template slot="prevButton"><ArrowLeft /></template>
-                <template slot="nextButton"><ArrowRight /></template>
-              </agile>
-            </client-only>
+              <template slot="prevButton"><ArrowLeft /></template>
+              <template slot="nextButton"><ArrowRight /></template>
+            </agile>
           </div>
         </div>
       </div>
@@ -327,9 +325,16 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center mb-5 pb-3">
+            <video v-if="isMobile" width="660" autoplay muted loop>
+              <source
+                src="~/static/videos/curso-de-noivos-mobile.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
             <video v-if="!isMobile" width="660" autoplay muted loop>
               <source
-                src="~/static/videos/coracao-animado.mp4"
+                src="~/static/videos/curso-de-noivos-desktop.mp4"
                 type="video/mp4"
               />
               Your browser does not support HTML video.

@@ -257,6 +257,7 @@
     color: $white;
     font-size: 72px;
     font-weight: 300;
+    line-height: 80px;
     margin-bottom: 30px;
   }
 
@@ -295,7 +296,7 @@
   }
 
   @media screen and (max-width: 991px) {
-    padding: 180px 0 0;
+    padding: 90px 0;
     h1 {
       font-size: 38px;
       line-height: 50px;
@@ -390,7 +391,7 @@
     align-items: center;
     display: flex;
     margin: 0 auto;
-    max-width: 750px;
+    max-width: 760px;
 
     > p {
       margin: 0;
@@ -410,6 +411,9 @@
           font-size: 16px;
           margin: 0;
           text-align: left;
+          span {
+            margin-right: 10px;
+          }
         }
       }
     }

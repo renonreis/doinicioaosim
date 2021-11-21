@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <b-navbar>
+          <b-navbar type="none">
             <b-collapse id="nav-collapse" is-nav>
               <Menu class="d-none d-lg-flex" />
 
@@ -17,8 +17,13 @@
                 <b-nav-item
                   v-b-toggle.mobile-sidebar
                   class="menu-mobile d-lg-none"
-                  ><IconMenu
-                /></b-nav-item>
+                >
+                  <nuxt-picture
+                    loading="lazy"
+                    src="/icons/menu.png"
+                    alt="Menu - Do início ao Sim"
+                  />
+                </b-nav-item>
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>
@@ -82,12 +87,12 @@ export default {
 
 <style lang="scss">
 
-header {  
-  position: absolute;  
+header {
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 999;
-  
+
   .container {
     max-width: 1360px;
   }
@@ -98,7 +103,7 @@ header {
       .nav-link {
         font-size: 18px;
         line-height: 36px;
-        padding: 5px 15px;  
+        padding: 5px 15px;
         &:hover {
           color: $primary;
         }
@@ -109,6 +114,12 @@ header {
 
         @media screen and (min-width: 1200px) and (max-width: 1440px) {
           font-size: 16px;
+        }
+      }
+
+      .menu-mobile {
+        img {
+          width: 48px;
         }
       }
 
@@ -125,7 +136,7 @@ header {
           }
         }
       }
-    }    
+    }
   }
 
   @media screen and (min-width: 992px){

@@ -18,8 +18,8 @@
             ></span
             ><br />
             © 2021 - Curso de Noivos Do Início ao Sim - CNPJ 20.012.672/0001-24
-            - Rua Augusto de Mari, 3400 - Portão - Curitiba - Paraná - WhatsApp
-            41 98791-3030
+            - Rua Augusto de Mari, 3400 - Portão - Curitiba - PR -
+            <a :href="linkWhatsapp" target="_blank">WhatsApp 41 98791-3030</a>
           </p>
         </div>
         <div class="col external-links d-flex justify-content-center">
@@ -92,7 +92,10 @@
                 alt="amor"
               ></span>
               por
-              <a href="https://www.evonline.com.br/" aria-label="Evonline"
+              <a
+                href="https://www.evonline.com.br/"
+                aria-label="Evonline"
+                target="_blank"
                 ><span
                   class="d-inline-flex align-middle icon_evonline lazy"
                   alt="Evonline"
@@ -105,9 +108,10 @@
     </div>
 
     <a
-      href="https://api.whatsapp.com/send?phone=5541987913030"
+      :href="linkWhatsapp"
       class="whatsapp-float d-block"
       aria-label="Fale conosco por Whatsapp"
+      target="_blank"
     >
       <nuxt-picture
         alt="Fale conosco por Whatsapp"
@@ -124,6 +128,7 @@
 export default {
   data(){
     return {
+      linkWhatsapp: 'https://api.whatsapp.com/send?phone=5541987913030',
       socialMedia: [
         {
           id: 1,
@@ -184,7 +189,10 @@ footer {
     font-size: 14px;
 
     &.abba {
-      font-size: 16px;
+      font-size: 15px;
+      a {
+        font-size: 15px;
+      }
       span {
         font-weight: 500;
       }
@@ -240,14 +248,16 @@ footer {
     .external-links {
       flex-direction: column;
       align-content: center;
-      h4 {
-        text-align: center;
+      p {
+        display: block;
         margin-bottom: 25px;
+        text-align: center;
         span {
           display: block;
+          margin: 0 0 15px;
         }
         a {
-          margin: 0 5px 10px;
+          margin: 0 5px;
           display: inline-block;
         }
       }
