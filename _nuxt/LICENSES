@@ -1,4 +1,29 @@
 /*!
+  * vue-router v3.5.3
+  * (c) 2021 Evan You
+  * @license MIT
+  */
+
+/*!
+ * Vue.js v2.6.14
+ * (c) 2014-2021 Evan You
+ * Released under the MIT License.
+ */
+
+
+/*
+   *          __        ___
+   *    _____/ /___  __/ (_)____
+   *   / ___/ __/ / / / / / ___/
+   *  (__  ) /_/ /_/ / / (__  )
+   * /____/\__/\__, /_/_/____/
+   *          /____/
+   *
+   * light - weight css preprocessor @licence MIT
+   */
+
+
+/*!
  * BootstrapVue Icons, generated from Bootstrap Icons 1.2.2
  *
  * @link https://icons.getbootstrap.com/
@@ -62,28 +87,3 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
-
-/*!
-  * vue-router v3.5.3
-  * (c) 2021 Evan You
-  * @license MIT
-  */
-
-/*!
- * Vue.js v2.6.14
- * (c) 2014-2021 Evan You
- * Released under the MIT License.
- */
-
-
-/*
-   *          __        ___
-   *    _____/ /___  __/ (_)____
-   *   / ___/ __/ / / / / / ___/
-   *  (__  ) /_/ /_/ / / (__  )
-   * /____/\__/\__, /_/_/____/
-   *          /____/
-   *
-   * light - weight css preprocessor @licence MIT
-   */
