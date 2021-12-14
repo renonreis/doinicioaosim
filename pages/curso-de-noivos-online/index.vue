@@ -1,108 +1,8 @@
 <template>
   <Main>
-    <section class="banner">
-      <nuxt-picture
-        alt="Curso de noivos online"
-        width="479"
-        height="1013"
-        loading="lazy"
-        class="img-banner d-flex d-lg-none"
-        src="/curso-online/curso-de-noivos-online-mobile.jpg"
-      />
-      <nuxt-picture
-        alt="Curso de noivos online"
-        width="2560"
-        height="975"
-        loading="lazy"
-        class="img-banner d-none d-lg-flex"
-        src="/curso-online/curso-de-noivos-online.jpg"
-      />
+    <Banner/>
 
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 text-center content">
-            <nuxt-picture
-              alt="Do Início ao Sim Logo"
-              width="357"
-              height="102"
-              loading="lazy"
-              class="banner-logo d-block"
-              src="/elements/do-inicio-ao-sim.png"
-            />
-            <h1 class="mb-3">CURSO DE NOIVOS ONLINE</h1>
-            <p>
-              Um tempo de preparação que marcará para sempre a vida de vocês
-            </p>
-            <a href="" class="btn large mt-2 mb-5">{{ textInscricao }} </a>
-          </div>
-          <div class="col-12 text-center content">
-            <div class="video">
-              <LazyYoutube
-                ref="vimeoLazyVideo"
-                class="video-player"
-                max-width="900px"
-                :show-title="false"
-                src="https://www.youtube.com/watch?v=uilkmUoXoLU"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-md-8">
-            <h2>PREPAREM-SE PARA UM NOVO TEMPO NA SUA VIDA</h2>
-            <p class="primary mb-3 curso">CURSO DE NOIVOS E NAMORO CRISTÃO</p>
-          </div>
-          <div class="col-md-10">
-            <p>
-              O Curso de Noivos Do Início ao Sim é uma excelente maneira de você
-              se preparar para o casamento. Quer saber por quê? O casamento foi
-              criado por Deus. Ele faz parte do plano original de Deus para a
-              humanidade. Um plano de amor, santidade e comunhão. Mas com o
-              pecado de Adão, o egoísmo entrou no homem causando a destruição
-              nos relacionamentos. <br />
-              Jesus veio ao mundo resgatar a comunhão com Deus e com o próximo.
-              Ele trouxe uma nova forma de amar. Por esse motivo hoje podemos
-              desfrutar de um casamento pleno, em perfeito amor e protegido pela
-              Palavra de Deus. Se você vai casar e deseja saber como viver o
-              casamento e o relacionamento perfeito como Deus criou, esse curso
-              é para você.
-            </p>
-            <nuxt-picture
-              alt="viva-um-casamento-cheio-de-paz-amor-e-alegria"
-              width="507"
-              height="514"
-              loading="lazy"
-              class="darken d-block mt-5 mb-5"
-              src="/curso-online/viva-um-casamento-cheio-de-paz-amor-e-alegria.jpg"
-            />
-          </div>
-          <div class="col-md-8">
-            <h2>VIVA UM CASAMENTO CHEIO DE PAZ, AMOR E ALEGRIA...</h2>
-          </div>
-          <div class="col-md-10">
-            <p>
-              O Curso de Noivos Do Início ao Sim é uma excelente maneira de você
-              se preparar para o casamento. Quer saber por quê? O casamento foi
-              criado por Deus. Ele faz parte do plano original de Deus para a
-              humanidade. Um plano de amor, santidade e comunhão. Mas com o
-              pecado de Adão, o egoísmo entrou no homem causando a destruição
-              dos relacionamentos. <br />
-              Jesus veio ao mundo resgatar a comunhão com Deus e com o próximo.
-              Ele trouxe uma nova forma de amar. Por esse motivo hoje podemos
-              desfrutar de um casamento pleno, em perfeito amor e protegido pela
-              Palavra de Deus. Se você vai casar e deseja saber como viver o
-              casamento e o relacionamento perfeito como Deus criou, esse curso
-              é para você.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <About/>
 
     <section class="sem-brigas">
       <div class="container">
@@ -327,14 +227,14 @@
           <div class="col-12 text-center mb-5 pb-3">
             <video v-if="isMobile" width="660" autoplay muted loop>
               <source
-                src="~/static/videos/curso-de-noivos-mobile.mp4"
+                src="~/static/videos/coracao-animado.mp4"
                 type="video/mp4"
               />
               Your browser does not support HTML video.
             </video>
-            <video v-if="!isMobile" width="660" autoplay muted loop>
+            <video v-if="!isMobile" width="480" autoplay muted loop>
               <source
-                src="~/static/videos/curso-de-noivos-desktop.mp4"
+                src="~/static/videos/coracao-animado.mp4"
                 type="video/mp4"
               />
               Your browser does not support HTML video.
@@ -385,22 +285,24 @@
 </template>
 
 <script>
-import { LazyYoutube } from 'vue-lazytube'
-
 import cursoNoivosOnline from '@/static/json/cursos-de-noivos-online.json'
 
-const Main = () => import('@/components/shared/main')
+const About = () => import('@/components/shared/about')
+const ArrowFaq = () => import('@/components/svg/icon-arrow-faq')
 const ArrowLeft = () => import('@/components/svg/arrow-left')
 const ArrowRight = () => import('@/components/svg/arrow-right')
-const ArrowFaq = () => import('@/components/svg/icon-arrow-faq')
+const Banner = () => import('@/components/shared/banner')
+const Main = () => import('@/components/shared/main')
+
 
 export default {
   components: {
-    LazyYoutube,
-    Main,
+    About,
+    ArrowFaq,
     ArrowLeft,
     ArrowRight,
-    ArrowFaq
+    Banner,
+    Main,
   },
   data(){
     return {
