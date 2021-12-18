@@ -1,6 +1,6 @@
 <template>
   <Main>
-    <Banner/>
+    <Banner :dados="dadosBanner"/>
 
     <About/>
 
@@ -291,11 +291,11 @@ const About = () => import('@/components/shared/about')
 const ArrowFaq = () => import('@/components/svg/icon-arrow-faq')
 const ArrowLeft = () => import('@/components/svg/arrow-left')
 const ArrowRight = () => import('@/components/svg/arrow-right')
-const Banner = () => import('@/components/shared/banner')
+const Banner = () => import('@/components/shared/Banner')
 const Main = () => import('@/components/shared/main')
 
-
 export default {
+  name:'CursoNoivosOnline',
   components: {
     About,
     ArrowFaq,
@@ -306,6 +306,7 @@ export default {
   },
   data(){
     return {
+      dadosBanner: {},
       modulos: cursoNoivosOnline.modulos,
       comoFunciona: cursoNoivosOnline.como_funciona,
       cursos: cursoNoivosOnline.cursos,
@@ -325,9 +326,6 @@ export default {
   },
 
   computed: {
-    textInscricao(){
-      return this.isMobile ? 'Faça agora sua inscrição' : 'Faça sua Inscrição Curso de Noivos'
-    },
     comecaoAgora(){
       return this.isMobile ? 'Comece agora o curso de noivos' : 'Faça sua Inscrição Curso de Noivos Online'
     }
@@ -339,7 +337,9 @@ export default {
     }
   },
 
-  mounted () {
+  mounted() {
+    this.setDadosBanner()
+
     this.onResize()
     window.addEventListener('resize', this.onResize, { passive: true })
 
@@ -394,6 +394,28 @@ export default {
   },
 
   methods: {
+    setDadosBanner() {
+      this.dadosBanner = {
+        title: 'CURSO DE NOIVOS ONLINE',
+        subtitle: 'Um tempo de preparação que marcará para sempre a vida de vocês',
+        button: {
+          text: {
+            mobile: 'Faça sua Inscrição Curso de Noivos',
+            desktop: 'Faça agora sua inscrição',
+          },
+        },
+        url: {
+          button: '',
+          youtube: 'https://www.youtube.com/watch?v=uilkmUoXoLU'
+        },
+        background: {
+          image: {
+            mobile: '/curso-online/curso-de-noivos-online-mobile.jpg',
+            desktop: '/curso-online/curso-de-noivos-online.jpg'
+          }
+        }
+      }
+    },
     onResize () {
       this.isMobile = window.innerWidth < 992
     }
