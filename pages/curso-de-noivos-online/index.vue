@@ -1,6 +1,23 @@
 <template>
   <Main>
-    <Banner :dados="dadosBanner"/>
+    <Banner :dados="dadosBanner">
+      <nuxt-picture
+        alt="Curso de noivos online"
+        width="479"
+        height="1013"
+        loading="lazy"
+        class="img-banner d-flex d-lg-none"
+        src="/curso-online/curso-de-noivos-online-mobile.jpg"
+      />
+      <nuxt-picture
+        alt="Curso de noivos online"
+        width="2560"
+        height="975"
+        loading="lazy"
+        class="img-banner d-none d-lg-flex"
+        src="/curso-online/curso-de-noivos-online.jpg"
+      />
+    </Banner>
 
     <About/>
 
@@ -407,12 +424,6 @@ export default {
         url: {
           button: '',
           youtube: 'https://www.youtube.com/watch?v=uilkmUoXoLU'
-        },
-        background: {
-          image: {
-            mobile: '/curso-online/curso-de-noivos-online-mobile.jpg',
-            desktop: '/curso-online/curso-de-noivos-online.jpg'
-          }
         }
       }
     },

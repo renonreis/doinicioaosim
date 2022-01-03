@@ -1,21 +1,6 @@
 <template>
   <section v-if="banner" class="banner" >
-    <nuxt-picture
-      alt="Curso de noivos online"
-      width="479"
-      height="1013"
-      loading="lazy"
-      class="img-banner d-flex d-lg-none"
-      :src="`./_nuxt/images/${banner.background.image.mobile}`"
-    />
-    <nuxt-picture
-      alt="Curso de noivos online"
-      width="2560"
-      height="975"
-      loading="lazy"
-      class="img-banner d-none d-lg-flex"
-      :src="`./_nuxt/images/${banner.background.image.desktop}`"
-    />
+    <slot/>
 
     <div class="container">
       <div class="row justify-content-center">
@@ -79,12 +64,6 @@ export default {
         url: {
           button: '',
           youtube: ''
-        },
-        background: {
-          image: {
-            mobile: '#',
-            desktop: '#'
-          }
         }
       }
     }
