@@ -6,7 +6,7 @@
       height="1013"
       loading="lazy"
       class="img-banner d-flex d-lg-none"
-      :src="banner.background.image.mobile"
+      :src="`./_nuxt/images/${banner.background.image.mobile}`"
     />
     <nuxt-picture
       alt="Curso de noivos online"
@@ -14,7 +14,7 @@
       height="975"
       loading="lazy"
       class="img-banner d-none d-lg-flex"
-      :src="banner.background.image.desktop"
+      :src="`./_nuxt/images/${banner.background.image.desktop}`"
     />
 
     <div class="container">
