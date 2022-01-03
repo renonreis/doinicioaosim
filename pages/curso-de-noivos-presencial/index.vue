@@ -47,8 +47,8 @@ export default {
         },
         background: {
           image: {
-            mobile: '/curso-online/comecar-bem-faz-bem-mobile.jpg',
-            desktop: '/curso-online/comecar-bem-faz-bem.jpg'
+            mobile: './curso-online/comecar-bem-faz-bem-mobile.jpg',
+            desktop: './curso-online/comecar-bem-faz-bem.jpg'
           }
         }
       }

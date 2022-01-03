@@ -410,8 +410,8 @@ export default {
         },
         background: {
           image: {
-            mobile: '/curso-online/curso-de-noivos-online-mobile.jpg',
-            desktop: '/curso-online/curso-de-noivos-online.jpg'
+            mobile: './curso-online/curso-de-noivos-online-mobile.jpg',
+            desktop: './curso-online/curso-de-noivos-online.jpg'
           }
         }
       }
