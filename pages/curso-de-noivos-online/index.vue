@@ -19,7 +19,59 @@
       />
     </Banner>
 
-    <About/>
+    <section class="about">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8">
+            <h2>PREPAREM-SE PARA UM NOVO TEMPO NA SUA VIDA</h2>
+            <p class="primary mb-3 curso">CURSO DE NOIVOS E NAMORO CRISTÃO</p>
+          </div>
+          <div class="col-md-10">
+            <p>
+              O Curso de Noivos Do Início ao Sim é uma excelente maneira de você
+              se preparar para o casamento. Quer saber por quê? O casamento foi
+              criado por Deus. Ele faz parte do plano original de Deus para a
+              humanidade. Um plano de amor, santidade e comunhão. Mas com o
+              pecado de Adão, o egoísmo entrou no homem causando a destruição
+              nos relacionamentos. <br />
+              Jesus veio ao mundo resgatar a comunhão com Deus e com o próximo.
+              Ele trouxe uma nova forma de amar. Por esse motivo hoje podemos
+              desfrutar de um casamento pleno, em perfeito amor e protegido pela
+              Palavra de Deus. Se você vai casar e deseja saber como viver o
+              casamento e o relacionamento perfeito como Deus criou, esse curso
+              é para você.
+            </p>
+            <nuxt-picture
+              alt="viva-um-casamento-cheio-de-paz-amor-e-alegria"
+              width="507"
+              height="514"
+              loading="lazy"
+              class="darken d-block mt-5 mb-5"
+              src="/curso-online/viva-um-casamento-cheio-de-paz-amor-e-alegria.jpg"
+            />
+          </div>
+          <div class="col-md-8">
+            <h2>VIVA UM CASAMENTO CHEIO DE PAZ, AMOR E ALEGRIA...</h2>
+          </div>
+          <div class="col-md-10">
+            <p>
+              O Curso de Noivos Do Início ao Sim é uma excelente maneira de você
+              se preparar para o casamento. Quer saber por quê? O casamento foi
+              criado por Deus. Ele faz parte do plano original de Deus para a
+              humanidade. Um plano de amor, santidade e comunhão. Mas com o
+              pecado de Adão, o egoísmo entrou no homem causando a destruição
+              dos relacionamentos. <br />
+              Jesus veio ao mundo resgatar a comunhão com Deus e com o próximo.
+              Ele trouxe uma nova forma de amar. Por esse motivo hoje podemos
+              desfrutar de um casamento pleno, em perfeito amor e protegido pela
+              Palavra de Deus. Se você vai casar e deseja saber como viver o
+              casamento e o relacionamento perfeito como Deus criou, esse curso
+              é para você.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="sem-brigas">
       <div class="container">
@@ -238,6 +290,7 @@
         </div>
       </div>
     </section>
+
     <section class="inscricao">
       <div class="container">
         <div class="row justify-content-center">
@@ -304,7 +357,6 @@
 <script>
 import cursoNoivosOnline from '@/static/json/cursos-de-noivos-online.json'
 
-const About = () => import('@/components/shared/about')
 const ArrowFaq = () => import('@/components/svg/icon-arrow-faq')
 const ArrowLeft = () => import('@/components/svg/arrow-left')
 const ArrowRight = () => import('@/components/svg/arrow-right')
@@ -314,7 +366,6 @@ const Main = () => import('@/components/shared/main')
 export default {
   name:'CursoNoivosOnline',
   components: {
-    About,
     ArrowFaq,
     ArrowLeft,
     ArrowRight,

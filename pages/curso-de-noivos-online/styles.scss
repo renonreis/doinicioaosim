@@ -42,6 +42,15 @@
 
 .sem-brigas {
   background: $bg-neutral;
+
+  .box-destaque {
+    background-color: $bg-light;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 25px;
+    padding: 10px;
+  }
 }
 
 .modulos {
@@ -205,6 +214,7 @@
 
   .img-comece img {
     position: absolute;
+    height: 100%;
     min-height: 660px;
     margin-left: 50%;
     object-fit: cover;
