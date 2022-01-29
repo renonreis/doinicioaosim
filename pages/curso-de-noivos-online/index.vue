@@ -17,6 +17,12 @@
         class="img-banner d-none d-lg-flex"
         src="/curso-online/curso-de-noivos-online.jpg"
       />
+      <video v-if="isMobile" id="myVideo" autoplay muted loop>
+        <source src="~/static/videos/curso-de-noivos-online-m.mp4" type="video/mp4" />Your browser does not support HTML video.
+      </video>
+      <video v-if="!isMobile" id="myVideo" autoplay muted loop>
+        <source src="~/static/videos/curso-de-noivos-online.mp4" type="video/mp4" />Your browser does not support HTML video.
+      </video>
     </Banner>
 
     <section class="about">
@@ -33,8 +39,8 @@
               criado por Deus. Ele faz parte do plano original de Deus para a
               humanidade. Um plano de amor, santidade e comunhão. Mas com o
               pecado de Adão, o egoísmo entrou no homem causando a destruição
-              nos relacionamentos. <br />
-              Jesus veio ao mundo resgatar a comunhão com Deus e com o próximo.
+              nos relacionamentos.
+              <br />Jesus veio ao mundo resgatar a comunhão com Deus e com o próximo.
               Ele trouxe uma nova forma de amar. Por esse motivo hoje podemos
               desfrutar de um casamento pleno, em perfeito amor e protegido pela
               Palavra de Deus. Se você vai casar e deseja saber como viver o
@@ -60,8 +66,8 @@
               criado por Deus. Ele faz parte do plano original de Deus para a
               humanidade. Um plano de amor, santidade e comunhão. Mas com o
               pecado de Adão, o egoísmo entrou no homem causando a destruição
-              dos relacionamentos. <br />
-              Jesus veio ao mundo resgatar a comunhão com Deus e com o próximo.
+              dos relacionamentos.
+              <br />Jesus veio ao mundo resgatar a comunhão com Deus e com o próximo.
               Ele trouxe uma nova forma de amar. Por esse motivo hoje podemos
               desfrutar de um casamento pleno, em perfeito amor e protegido pela
               Palavra de Deus. Se você vai casar e deseja saber como viver o
@@ -123,7 +129,7 @@
           </div>
 
           <div class="col-md-9 text-center">
-            <a href="" class="btn large">Gostei! Quero fazer o curso</a>
+            <a href class="btn large">Gostei! Quero fazer o curso</a>
             <nuxt-picture
               alt="como-funciona-o-curso-de-noivos"
               width="507"
@@ -214,7 +220,7 @@
               e alegria todos os dias, esta é a vontade do nosso pai celestial
               que é boa, perfeita e agradável.
             </p>
-            <a href="" class="btn large mt-4">Comece agora o curso de Noivos</a>
+            <a href class="btn large mt-4">Comece agora o curso de Noivos</a>
           </div>
         </div>
       </div>
@@ -224,17 +230,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-11 text-center">
-            <h2>
-              MAIS DE 500 CASAIS JÁ REALIZARAM O CURSO VEJA ALGUNS DEPOIMENTOS
-            </h2>
+            <h2>MAIS DE 500 CASAIS JÁ REALIZARAM O CURSO VEJA ALGUNS DEPOIMENTOS</h2>
           </div>
           <div class="col-md-11">
             <agile :options="myOptions">
-              <div
-                v-for="depoimento in depoimentos"
-                :key="depoimento.id"
-                class="slide"
-              >
+              <div v-for="depoimento in depoimentos" :key="depoimento.id" class="slide">
                 <div class="box text-center">
                   <div class="cinco_estrelas"></div>
                   <p>{{ depoimento.description }}</p>
@@ -242,8 +242,12 @@
                 </div>
               </div>
 
-              <template slot="prevButton"><ArrowLeft /></template>
-              <template slot="nextButton"><ArrowRight /></template>
+              <template slot="prevButton">
+                <ArrowLeft />
+              </template>
+              <template slot="nextButton">
+                <ArrowRight />
+              </template>
             </agile>
           </div>
         </div>
@@ -269,18 +273,12 @@
                       <ArrowFaq />
                     </p>
                   </b-card-header>
-                  <b-collapse
-                    :id="`accordion-${faq.id}`"
-                    accordion="my-accordion"
-                    role="tabpanel"
-                  >
+                  <b-collapse :id="`accordion-${faq.id}`" accordion="my-accordion" role="tabpanel">
                     <b-card-body>
-                      <b-card-text
-                        >{{ faq.answer }}
-                        <a v-if="faq.link" :href="faq.link"
-                          >clique aqui.</a
-                        ></b-card-text
-                      >
+                      <b-card-text>
+                        {{ faq.answer }}
+                        <a v-if="faq.link" :href="faq.link">clique aqui.</a>
+                      </b-card-text>
                     </b-card-body>
                   </b-collapse>
                 </b-card>
@@ -296,18 +294,10 @@
         <div class="row justify-content-center">
           <div class="col-12 text-center mb-5 pb-3">
             <video v-if="isMobile" width="660" autoplay muted loop>
-              <source
-                src="~/static/videos/coracao-animado.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support HTML video.
+              <source src="~/static/videos/coracao-animado.mp4" type="video/mp4" />Your browser does not support HTML video.
             </video>
             <video v-if="!isMobile" width="480" autoplay muted loop>
-              <source
-                src="~/static/videos/coracao-animado.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support HTML video.
+              <source src="~/static/videos/coracao-animado.mp4" type="video/mp4" />Your browser does not support HTML video.
             </video>
           </div>
           <div class="col-lg-7 text-center">
@@ -331,21 +321,16 @@
               <ul>
                 <li v-for="item in listaModulos" :key="item.id">
                   <p>
-                    <span
-                      :class="item.icon"
-                      class="d-inline-flex align-middle"
-                    ></span>
+                    <span :class="item.icon" class="d-inline-flex align-middle"></span>
                     {{ item.text }}
                   </p>
                 </li>
               </ul>
             </div>
             <p class="primary mt-5 price">R$ 97,00</p>
-            <a href="" class="btn xlarge">{{ comecaoAgora }}</a>
+            <a href class="btn xlarge">{{ comecaoAgora }}</a>
             <p class="text-button">
-              <a href="/solicitar-subsidio">
-                Deseja fazer o curso e não tem como pagar?
-              </a>
+              <a href="/solicitar-subsidio">Deseja fazer o curso e não tem como pagar?</a>
             </p>
           </div>
         </div>
@@ -364,7 +349,7 @@ const Banner = () => import('@/components/shared/Banner')
 const Main = () => import('@/components/shared/main')
 
 export default {
-  name:'CursoNoivosOnline',
+  name: 'CursoNoivosOnline',
   components: {
     ArrowFaq,
     ArrowLeft,
@@ -372,7 +357,7 @@ export default {
     Banner,
     Main,
   },
-  data(){
+  data() {
     return {
       dadosBanner: {},
       modulos: cursoNoivosOnline.modulos,
@@ -386,20 +371,22 @@ export default {
         navButtons: true,
         dots: false,
         infinite: false,
-        autoplay: true
+        autoplay: true,
       },
 
-      isMobile: false
+      isMobile: false,
     }
   },
 
   computed: {
-    comecaoAgora(){
-      return this.isMobile ? 'Comece agora o curso de noivos' : 'Faça sua Inscrição Curso de Noivos Online'
-    }
+    comecaoAgora() {
+      return this.isMobile
+        ? 'Comece agora o curso de noivos'
+        : 'Faça sua Inscrição Curso de Noivos Online'
+    },
   },
 
-  beforeDestroy () {
+  beforeDestroy() {
     if (typeof window !== 'undefined') {
       window.removeEventListener('resize', this.onResize, { passive: true })
     }
@@ -411,52 +398,55 @@ export default {
     this.onResize()
     window.addEventListener('resize', this.onResize, { passive: true })
 
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener('DOMContentLoaded', function () {
       let lazyloadImages
 
-      if ("IntersectionObserver" in window) {
-        lazyloadImages = document.querySelectorAll(".lazy");
-        const imageObserver = new IntersectionObserver(function(entries, observer) {
-          entries.forEach(function(entry) {
+      if ('IntersectionObserver' in window) {
+        lazyloadImages = document.querySelectorAll('.lazy')
+        const imageObserver = new IntersectionObserver(function (
+          entries,
+          observer
+        ) {
+          entries.forEach(function (entry) {
             if (entry.isIntersecting) {
-              const image = entry.target;
-              image.classList.remove("lazy");
-              imageObserver.unobserve(image);
+              const image = entry.target
+              image.classList.remove('lazy')
+              imageObserver.unobserve(image)
             }
-          });
-        });
+          })
+        })
 
-        lazyloadImages.forEach(function(image) {
-          imageObserver.observe(image);
-        });
+        lazyloadImages.forEach(function (image) {
+          imageObserver.observe(image)
+        })
       } else {
-        let lazyloadThrottleTimeout;
-        lazyloadImages = document.querySelectorAll(".lazy");
+        let lazyloadThrottleTimeout
+        lazyloadImages = document.querySelectorAll('.lazy')
 
-        function lazyload () {
-          if(lazyloadThrottleTimeout) {
-            clearTimeout(lazyloadThrottleTimeout);
+        function lazyload() {
+          if (lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout)
           }
 
-          lazyloadThrottleTimeout = setTimeout(function() {
-            const scrollTop = window.scrollY;
-            lazyloadImages.forEach(function(img) {
-                if(img.offsetTop < (window.innerHeight + scrollTop)) {
-                  img.src = img.dataset.src;
-                  img.classList.remove('lazy');
-                }
-            });
-            if(lazyloadImages.length === 0) {
-              document.removeEventListener("scroll", lazyload);
-              window.removeEventListener("resize", lazyload);
-              window.removeEventListener("orientationChange", lazyload);
+          lazyloadThrottleTimeout = setTimeout(function () {
+            const scrollTop = window.scrollY
+            lazyloadImages.forEach(function (img) {
+              if (img.offsetTop < window.innerHeight + scrollTop) {
+                img.src = img.dataset.src
+                img.classList.remove('lazy')
+              }
+            })
+            if (lazyloadImages.length === 0) {
+              document.removeEventListener('scroll', lazyload)
+              window.removeEventListener('resize', lazyload)
+              window.removeEventListener('orientationChange', lazyload)
             }
-          }, 20);
+          }, 20)
         }
 
-        document.addEventListener("scroll", lazyload);
-        window.addEventListener("resize", lazyload);
-        window.addEventListener("orientationChange", lazyload);
+        document.addEventListener('scroll', lazyload)
+        window.addEventListener('resize', lazyload)
+        window.addEventListener('orientationChange', lazyload)
       }
     })
   },
@@ -465,7 +455,8 @@ export default {
     setDadosBanner() {
       this.dadosBanner = {
         title: 'CURSO DE NOIVOS ONLINE',
-        subtitle: 'Um tempo de preparação que marcará para sempre a vida de vocês',
+        subtitle:
+          'Um tempo de preparação que marcará para sempre a vida de vocês',
         button: {
           text: {
             mobile: 'Faça sua Inscrição Curso de Noivos',
@@ -474,14 +465,14 @@ export default {
         },
         url: {
           button: '',
-          youtube: 'https://www.youtube.com/watch?v=uilkmUoXoLU'
-        }
+          youtube: 'https://www.youtube.com/watch?v=uilkmUoXoLU',
+        },
       }
     },
-    onResize () {
+    onResize() {
       this.isMobile = window.innerWidth < 992
-    }
-  }
+    },
+  },
 }
 </script>
 

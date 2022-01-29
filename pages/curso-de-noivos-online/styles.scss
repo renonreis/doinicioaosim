@@ -1,7 +1,7 @@
 .about {
   background-color: $white;
   overflow: hidden;
-  padding: 210px 0 90px;
+  padding: 250px 0 90px;
   position: relative;
 
   &::before {
@@ -9,7 +9,7 @@
     position: absolute;
     margin-left: 50%;
     object-position: center;
-    top: 0;
+    top: 50px;
     transform: translateX(-50%);
   }
 
@@ -33,7 +33,7 @@
   }
 
   @media screen and (max-width: 991px) {
-    padding: 160px 0 45px;
+    padding: 250px 0 45px;
     &::before {
       content: url(@/static/images/elements/curso-de-noivos-mobile.png);
     }
@@ -404,4 +404,12 @@
       max-width: 660px;
     }
   }
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }

@@ -1,34 +1,30 @@
 <template>
-  <section v-if="banner" class="banner" >
-    <slot/>
+  <section v-if="banner" class="banner d-flex">
+    <slot />
 
-    <div class="container">
-      <div class="row justify-content-center">
+    <div class="container d-flex justify-content-center">
+      <div class="row align-items-md-center">
         <div class="col-12 text-center content">
-          <nuxt-picture
-            alt="Do Início ao Sim Logo"
-            width="357"
-            height="102"
-            loading="lazy"
-            class="banner-logo d-block"
-            src="/elements/do-inicio-ao-sim.png"
-          />
+          <div class="d-none d-lg-inline-flex" role="button" @click="showModal">
+            <nuxt-picture loading="lazy" class="mb-4" src="/icons/play.png" />
+          </div>
           <h1 class="mb-3">{{ banner.title }}</h1>
           <p>{{ banner.subtitle }}</p>
           <n-link :to="banner.url.button" class="btn large mt-2 mb-5">{{ textInscricao }}</n-link>
         </div>
-        <div class="col-12 text-center content">
-          <div class="video">
-            <LazyYoutube
-              ref="vimeoLazyVideo"
-              class="video-player"
-              max-width="900px"
-              :show-title="false"
-              :src="banner.url.youtube"
-            />
-          </div>
-        </div>
       </div>
+
+      <Modal v-show="isModalVisible" @close="closeModal">
+        <div class="video text-center">
+          <LazyYoutube
+            ref="vimeoLazyVideo"
+            class="video-player"
+            max-width="900px"
+            :show-title="false"
+            :src="banner.url.youtube"
+          />
+        </div>
+      </Modal>
     </div>
   </section>
 </template>
@@ -36,22 +32,26 @@
 <script>
 import { LazyYoutube } from 'vue-lazytube'
 
+const Modal = () => import('@/components/shared/Modal')
+
 export default {
   name: 'Banner',
 
   components: {
-    LazyYoutube
+    Modal,
+    LazyYoutube,
   },
 
   props: {
     dados: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
 
-  data(){
+  data() {
     return {
+      isModalVisible: false,
       banner: {
         title: '',
         subtitle: '',
@@ -63,25 +63,27 @@ export default {
         },
         url: {
           button: '',
-          youtube: ''
-        }
-      }
+          youtube: '',
+        },
+      },
     }
   },
 
   computed: {
-    textInscricao(){
-      return this.isMobile ? this.banner.button.text.mobile : this.banner.button.text.desktop
-    }
+    textInscricao() {
+      return this.isMobile
+        ? this.banner.button.text.mobile
+        : this.banner.button.text.desktop
+    },
   },
 
   watch: {
     dados() {
       this.banner = this.dados
-    }
+    },
   },
 
-  mounted () {
+  mounted() {
     this.banner = this.dados
 
     this.onResize()
@@ -89,12 +91,20 @@ export default {
   },
 
   methods: {
-    onResize () {
+    onResize() {
       this.isMobile = window.innerWidth < 992
-    }
-  }
-}
+    },
+    showModal() {
+      this.isModalVisible = true
 
+      document.body.classList.add('overflow-hidden')
+    },
+    closeModal() {
+      document.body.classList.remove('overflow-hidden')
+      this.isModalVisible = false
+    },
+  },
+}
 </script>
 
 <style lang="scss">
@@ -145,7 +155,7 @@ export default {
   }
 
   @media screen and (max-width: 991px) {
-    min-height: 1120px;
+    min-height: 760px;
     .video {
       width: calc(100% + 30px);
       margin-left: -15px;
