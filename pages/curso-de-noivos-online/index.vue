@@ -1,6 +1,13 @@
 <template>
   <Main>
-    <Banner :dados="dadosBanner">
+    <Banner
+      title="CURSO DE NOIVOS ONLINE"
+      subtitle="Um tempo de preparação que marcará para sempre a vida de vocês"
+      button-text-mobile="Faça sua Inscrição Curso de Noivos"
+      button-text-desktop="Faça agora sua inscrição"
+      url-button
+      url-youtube="https://www.youtube.com/watch?v=uilkmUoXoLU"
+    >
       <nuxt-picture
         alt="Curso de noivos online"
         width="479"
@@ -359,7 +366,6 @@ export default {
   },
   data() {
     return {
-      dadosBanner: {},
       modulos: cursoNoivosOnline.modulos,
       comoFunciona: cursoNoivosOnline.como_funciona,
       cursos: cursoNoivosOnline.cursos,
@@ -393,8 +399,6 @@ export default {
   },
 
   mounted() {
-    this.setDadosBanner()
-
     this.onResize()
     window.addEventListener('resize', this.onResize, { passive: true })
 
@@ -452,23 +456,6 @@ export default {
   },
 
   methods: {
-    setDadosBanner() {
-      this.dadosBanner = {
-        title: 'CURSO DE NOIVOS ONLINE',
-        subtitle:
-          'Um tempo de preparação que marcará para sempre a vida de vocês',
-        button: {
-          text: {
-            mobile: 'Faça sua Inscrição Curso de Noivos',
-            desktop: 'Faça agora sua inscrição',
-          },
-        },
-        url: {
-          button: '',
-          youtube: 'https://www.youtube.com/watch?v=uilkmUoXoLU',
-        },
-      }
-    },
     onResize() {
       this.isMobile = window.innerWidth < 992
     },

@@ -1,16 +1,15 @@
 <template>
-  <section v-if="banner" class="banner d-flex">
+  <section class="banner d-flex">
     <slot />
-
     <div class="container d-flex justify-content-center">
       <div class="row align-items-md-center">
         <div class="col-12 text-center content">
           <div class="d-none d-lg-inline-flex" role="button" @click="showModal">
             <nuxt-picture loading="lazy" class="mb-4" src="/icons/play.png" />
           </div>
-          <h1 class="mb-3">{{ banner.title }}</h1>
-          <p>{{ banner.subtitle }}</p>
-          <n-link :to="banner.url.button" class="btn large mt-2 mb-5">{{ textInscricao }}</n-link>
+          <h1 class="mb-3">{{ title }}</h1>
+          <p>{{ subtitle }}</p>
+          <n-link :to="urlButton" class="btn large mt-2 mb-5">{{ textInscricao }}</n-link>
         </div>
       </div>
 
@@ -21,7 +20,7 @@
             class="video-player"
             max-width="900px"
             :show-title="false"
-            :src="banner.url.youtube"
+            :src="urlYoutube"
           />
         </div>
       </Modal>
@@ -43,8 +42,28 @@ export default {
   },
 
   props: {
-    dados: {
-      type: Object,
+    title: {
+      type: String,
+      required: true,
+    },
+    subtitle: {
+      type: String,
+      required: true,
+    },
+    buttonTextMobile: {
+      type: String,
+      required: true,
+    },
+    buttonTextDesktop: {
+      type: String,
+      required: true,
+    },
+    urlButton: {
+      type: String,
+      default: '',
+    },
+    urlYoutube: {
+      type: String,
       required: true,
     },
   },
@@ -52,40 +71,16 @@ export default {
   data() {
     return {
       isModalVisible: false,
-      banner: {
-        title: '',
-        subtitle: '',
-        button: {
-          text: {
-            mobile: '',
-            desktop: '',
-          },
-        },
-        url: {
-          button: '',
-          youtube: '',
-        },
-      },
     }
   },
 
   computed: {
     textInscricao() {
-      return this.isMobile
-        ? this.banner.button.text.mobile
-        : this.banner.button.text.desktop
-    },
-  },
-
-  watch: {
-    dados() {
-      this.banner = this.dados
+      return this.isMobile ? this.buttonTextMobile : this.buttonTextDesktop
     },
   },
 
   mounted() {
-    this.banner = this.dados
-
     this.onResize()
     window.addEventListener('resize', this.onResize, { passive: true })
   },
@@ -164,5 +159,13 @@ export default {
       }
     }
   }
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 </style>

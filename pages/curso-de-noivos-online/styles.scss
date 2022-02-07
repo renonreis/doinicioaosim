@@ -210,6 +210,10 @@
     font-weight: 300;
     line-height: 80px;
     margin-bottom: 30px;
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+      line-height: 50px;
+    }
   }
 
   .img-comece img {
@@ -404,12 +408,4 @@
       max-width: 660px;
     }
   }
-}
-
-#myVideo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
 }

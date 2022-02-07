@@ -1,6 +1,13 @@
 <template>
   <Main>
-    <Banner :dados="dadosBanner">
+    <Banner
+      title="CURSO DE NOIVOS PRESENCIAL"
+      subtitle="Duas vezes ao ano na cidade de Curitiba. Um tempo de preparação que marcará para sempre a vida de vocês."
+      button-text-mobile="Faça sua Inscrição Curso de Noivos"
+      button-text-desktop="Faça agora sua inscrição"
+      url-button
+      url-youtube="https://www.youtube.com/watch?v=uilkmUoXoLU"
+    >
       <nuxt-picture
         alt="Curso de noivos online"
         width="479"
@@ -334,7 +341,6 @@ export default {
 
   data() {
     return {
-      dadosBanner: {},
       modulos: cursoNoivoProsencial.modulos,
       comoFunciona: cursoNoivoProsencial.como_funciona,
       cursos: cursoNoivoProsencial.cursos,
@@ -368,30 +374,63 @@ export default {
   },
 
   mounted() {
-    this.setDadosBanner()
-
     this.onResize()
     window.addEventListener('resize', this.onResize, { passive: true })
+
+    document.addEventListener('DOMContentLoaded', function () {
+      let lazyloadImages
+
+      if ('IntersectionObserver' in window) {
+        lazyloadImages = document.querySelectorAll('.lazy')
+        const imageObserver = new IntersectionObserver(function (
+          entries,
+          observer
+        ) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              const image = entry.target
+              image.classList.remove('lazy')
+              imageObserver.unobserve(image)
+            }
+          })
+        })
+
+        lazyloadImages.forEach(function (image) {
+          imageObserver.observe(image)
+        })
+      } else {
+        let lazyloadThrottleTimeout
+        lazyloadImages = document.querySelectorAll('.lazy')
+
+        function lazyload() {
+          if (lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout)
+          }
+
+          lazyloadThrottleTimeout = setTimeout(function () {
+            const scrollTop = window.scrollY
+            lazyloadImages.forEach(function (img) {
+              if (img.offsetTop < window.innerHeight + scrollTop) {
+                img.src = img.dataset.src
+                img.classList.remove('lazy')
+              }
+            })
+            if (lazyloadImages.length === 0) {
+              document.removeEventListener('scroll', lazyload)
+              window.removeEventListener('resize', lazyload)
+              window.removeEventListener('orientationChange', lazyload)
+            }
+          }, 20)
+        }
+
+        document.addEventListener('scroll', lazyload)
+        window.addEventListener('resize', lazyload)
+        window.addEventListener('orientationChange', lazyload)
+      }
+    })
   },
 
   methods: {
-    setDadosBanner() {
-      this.dadosBanner = {
-        title: 'CURSO DE NOIVOS PRESENCIAL',
-        subtitle:
-          'Duas vezes ao ano na cidade de Curitiba. Um tempo de preparação que marcará para sempre a vida de vocês.',
-        button: {
-          text: {
-            mobile: 'Faça sua Inscrição Curso de Noivos',
-            desktop: 'Faça agora sua inscrição',
-          },
-        },
-        url: {
-          button: '#',
-          youtube: 'https://www.youtube.com/watch?v=uilkmUoXoLU',
-        },
-      }
-    },
     onResize() {
       this.isMobile = window.innerWidth < 992
     },

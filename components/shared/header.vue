@@ -74,8 +74,8 @@
                   <b-nav-item to="/sobre">Sobre</b-nav-item>
                   <b-nav-item to="/blog">Blog</b-nav-item>
                   <b-nav-item to="/curso-na-sua-igreja">Curso na sua Igreja</b-nav-item>
-                  <b-nav-item to="/curso-de-noivos-online">Curso de Noivos Presencial</b-nav-item>
-                  <b-nav-item to="/curso-de-noivos-presencial">Curso de Noivos Online</b-nav-item>
+                  <b-nav-item to="/curso-de-noivos-presencial">Curso de Noivos Presencial</b-nav-item>
+                  <b-nav-item to="/curso-de-noivos-online">Curso de Noivos Online</b-nav-item>
                   <b-nav-item href="#" target="_blank" class="btn-login">
                     <span class="px-4 text-center">Entrar</span>
                   </b-nav-item>
