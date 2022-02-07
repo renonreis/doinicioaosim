@@ -60,9 +60,7 @@ export default {
     // https://www.npmjs.com/package/nuxt-compress
     'nuxt-compress',
     // https://www.npmjs.com/package/nuxt-ssr-cache
-    'nuxt-ssr-cache',
-    // https://nuxt-speedkit.grabarzundpartner.dev/
-    'nuxt-speedkit'
+    'nuxt-ssr-cache'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -171,62 +169,5 @@ export default {
       max: 100,
       ttl: 60,
     },
-  },
-
-  speedkit: {
-    detection: {
-      performance: true,
-      browserSupport: true
-    },
-    performanceMetrics: {
-      device: {
-        hardwareConcurrency: { min: 2, max: 48 },
-        deviceMemory: { min: 2 }
-      },
-      timing: {
-        fcp: 800,
-        dcl: 1200
-      },
-      lighthouseDetectionByUserAgent: false
-    },
-    fonts: [{
-      family: 'Montserrat',
-      locals: ['Montserrat'],
-      fallback: ['Montserrat', 'sans-serif'],
-      variances: [
-        {
-          style: 'normal',
-          weight: 300,
-          sources: [
-            { src: '@/static/fonts/Montserrat-Medium.ttf', type:'ttf' }
-          ]
-        },
-        {
-          style: 'normal',
-          weight: 400,
-          sources: [
-            { src: '@/static/fonts/Montserrat-Regular.ttf', type:'ttf' }
-          ]
-        },
-        {
-          style: 'normal',
-          weight: 700,
-          sources: [
-            { src: '@/static/fonts/Montserrat-SemiBold.ttf', type:'ttf' }
-          ]
-        }
-      ]
-    }],
-
-    componentAutoImport: false,
-    componentPrefix: undefined,
-
-    /**
-     * IntersectionObserver rootMargin for Compoennts and Assets
-     */
-    lazyOffset: {
-      component: '0%',
-      asset: '0%'
-    }
   }
 }

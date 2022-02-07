@@ -322,6 +322,7 @@
 </template>
 
 <script>
+import { VueAgile } from 'vue-agile'
 import cursoNoivoProsencial from '@/static/json/cursos-de-noivos-presencial.json'
 
 const ArrowFaq = () => import('@/components/svg/icon-arrow-faq')
@@ -337,6 +338,7 @@ export default {
     ArrowRight,
     Banner,
     Main,
+    agile: VueAgile,
   },
 
   data() {
