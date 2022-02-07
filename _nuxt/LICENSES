@@ -11,6 +11,16 @@
  */
 
 
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+
 /*
    *          __        ___
    *    _____/ /___  __/ (_)____
@@ -29,13 +39,6 @@
  * @link https://icons.getbootstrap.com/
  * @license MIT
  * https://github.com/twbs/icons/blob/master/LICENSE.md
- */
-
-/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <http://feross.org>
- * @license  MIT
  */
 
 /*!
@@ -60,8 +63,6 @@
   * https://github.com/linusborg/portal-vue
   * 
  */
-
-/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
