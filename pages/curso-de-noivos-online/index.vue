@@ -240,22 +240,24 @@
             <h2>MAIS DE 500 CASAIS JÁ REALIZARAM O CURSO VEJA ALGUNS DEPOIMENTOS</h2>
           </div>
           <div class="col-md-11">
-            <agile :options="myOptions">
-              <div v-for="depoimento in depoimentos" :key="depoimento.id" class="slide">
-                <div class="box text-center">
-                  <div class="cinco_estrelas"></div>
-                  <p>{{ depoimento.description }}</p>
-                  <p class="autor">{{ depoimento.autor }}</p>
+            <client-only placeholder="Carregando...">
+              <agile :options="myOptions">
+                <div v-for="depoimento in depoimentos" :key="depoimento.id" class="slide">
+                  <div class="box text-center">
+                    <div class="cinco_estrelas"></div>
+                    <p>{{ depoimento.description }}</p>
+                    <p class="autor">{{ depoimento.autor }}</p>
+                  </div>
                 </div>
-              </div>
 
-              <template slot="prevButton">
-                <ArrowLeft />
-              </template>
-              <template slot="nextButton">
-                <ArrowRight />
-              </template>
-            </agile>
+                <template slot="prevButton">
+                  <ArrowLeft />
+                </template>
+                <template slot="nextButton">
+                  <ArrowRight />
+                </template>
+              </agile>
+            </client-only>
           </div>
         </div>
       </div>
