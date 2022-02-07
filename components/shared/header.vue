@@ -39,9 +39,9 @@
                   class="d-none d-lg-flex"
                 >CURSO DE NOIVOS ONLINE</b-nav-item>
                 <b-nav-item href="#" class="btn-login d-none d-lg-flex">Entrar</b-nav-item>
-                <b-nav-item v-b-toggle.mobile-sidebar class="menu-mobile d-lg-none">
+                <div v-b-toggle.mobile-sidebar role="button" class="menu-mobile d-lg-none">
                   <nuxt-picture loading="lazy" src="/icons/menu.png" alt="Menu - Do início ao Sim" />
-                </b-nav-item>
+                </div>
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>
@@ -79,9 +79,9 @@
                   <b-nav-item href="#" target="_blank" class="btn-login">
                     <span class="px-4 text-center">Entrar</span>
                   </b-nav-item>
-                  <b-nav-item v-b-toggle.mobile-sidebar class="menu-mobile d-lg-none">
+                  <div v-b-toggle.mobile-sidebar role="button" class="menu-mobile d-lg-none">
                     <IconMenu />
-                  </b-nav-item>
+                  </div>
                 </b-navbar-nav>
               </div>
             </template>

@@ -241,7 +241,7 @@
           </div>
           <div class="col-md-11">
             <client-only placeholder="Carregando...">
-              <agile :options="myOptions">
+              <agile :key="depoimentos.length" :options="myOptions">
                 <div v-for="depoimento in depoimentos" :key="depoimento.id" class="slide">
                   <div class="box text-center">
                     <div class="cinco_estrelas"></div>
