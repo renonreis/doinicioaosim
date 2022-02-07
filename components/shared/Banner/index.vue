@@ -104,8 +104,9 @@ export default {
 
 <style lang="scss">
 .banner {
-  position: relative;
+  overflow: hidden;
   min-height: 975px;
+  position: relative;
 
   &::before {
     background-color: $black;
