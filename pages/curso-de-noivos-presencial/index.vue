@@ -215,20 +215,7 @@
             <h2>MAIS DE 500 CASAIS JÁ REALIZARAM O CURSO VEJA ALGUNS DEPOIMENTOS</h2>
           </div>
           <div class="col-md-11">
-            <carousel
-              :navigationEnabled="true"
-              :autoplay="true"
-              :paginationEnabled="true"
-              :perPage="1"
-            >
-              <slide v-for="depoimento in depoimentos" :key="depoimento.id">
-                <div class="box text-center">
-                  <div class="cinco_estrelas"></div>
-                  <p>{{ depoimento.description }}</p>
-                  <p class="autor">{{ depoimento.autor }}</p>
-                </div>
-              </slide>
-            </carousel>
+            <Carousel />
           </div>
         </div>
       </div>
@@ -320,21 +307,19 @@
 </template>
 
 <script>
-import Carousel from 'vue-carousel/src/Carousel.vue'
-import Slide from 'vue-carousel/src/Slide.vue'
 import cursoNoivoProsencial from '@/static/json/cursos-de-noivos-presencial.json'
 
 const ArrowFaq = () => import('@/components/svg/icon-arrow-faq')
 const Banner = () => import('@/components/shared/Banner')
 const Main = () => import('@/components/shared/main')
+const Carousel = () => import('@/components/shared/Carousel')
 
 export default {
   components: {
     ArrowFaq,
     Banner,
     Main,
-    carousel: Carousel,
-    slide: Slide,
+    Carousel,
   },
 
   data() {
