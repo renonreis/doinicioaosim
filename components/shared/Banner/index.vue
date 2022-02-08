@@ -12,34 +12,15 @@
           <n-link :to="urlButton" class="btn large mt-2 mb-5">{{ textInscricao }}</n-link>
         </div>
       </div>
-
-      <Modal v-show="isModalVisible" @close="closeModal">
-        <div class="video text-center">
-          <LazyYoutube
-            ref="vimeoLazyVideo"
-            class="video-player"
-            max-width="900px"
-            :show-title="false"
-            :src="urlYoutube"
-          />
-        </div>
-      </Modal>
     </div>
   </section>
 </template>
 
 <script>
-import { LazyYoutube } from 'vue-lazytube'
-
-const Modal = () => import('@/components/shared/Modal')
-
 export default {
   name: 'Banner',
 
-  components: {
-    Modal,
-    LazyYoutube,
-  },
+  components: {},
 
   props: {
     title: {

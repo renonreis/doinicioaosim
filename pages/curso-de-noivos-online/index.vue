@@ -123,7 +123,7 @@
                   class="modulo"
                 >
                   <div class="box">
-                    <div :class="modulo.sprite" class="icon lazy"></div>
+                    <div :class="modulo.sprite" class="icon"></div>
                     <div class="description">
                       <h3>{{ modulo.title }}</h3>
                       <p class="subtitle">{{ modulo.subtitle }}</p>
@@ -157,7 +157,7 @@
                 :key="item.id"
                 class="lista col-md-6 col-lg-4 mb-5 text-lg-center"
               >
-                <div :class="item.sprite" class="icon lazy"></div>
+                <div :class="item.sprite" class="icon"></div>
                 <div class="description">
                   <h3>{{ item.title }}</h3>
                   <p>{{ item.description }}</p>
@@ -375,60 +375,11 @@ export default {
   },
 
   mounted() {
+    this.show = true
+
     this.onResize()
+
     window.addEventListener('resize', this.onResize, { passive: true })
-
-    document.addEventListener('DOMContentLoaded', function () {
-      let lazyloadImages
-
-      if ('IntersectionObserver' in window) {
-        lazyloadImages = document.querySelectorAll('.lazy')
-        const imageObserver = new IntersectionObserver(function (
-          entries,
-          observer
-        ) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              const image = entry.target
-              image.classList.remove('lazy')
-              imageObserver.unobserve(image)
-            }
-          })
-        })
-
-        lazyloadImages.forEach(function (image) {
-          imageObserver.observe(image)
-        })
-      } else {
-        let lazyloadThrottleTimeout
-        lazyloadImages = document.querySelectorAll('.lazy')
-
-        function lazyload() {
-          if (lazyloadThrottleTimeout) {
-            clearTimeout(lazyloadThrottleTimeout)
-          }
-
-          lazyloadThrottleTimeout = setTimeout(function () {
-            const scrollTop = window.scrollY
-            lazyloadImages.forEach(function (img) {
-              if (img.offsetTop < window.innerHeight + scrollTop) {
-                img.src = img.dataset.src
-                img.classList.remove('lazy')
-              }
-            })
-            if (lazyloadImages.length === 0) {
-              document.removeEventListener('scroll', lazyload)
-              window.removeEventListener('resize', lazyload)
-              window.removeEventListener('orientationChange', lazyload)
-            }
-          }, 20)
-        }
-
-        document.addEventListener('scroll', lazyload)
-        window.addEventListener('resize', lazyload)
-        window.addEventListener('orientationChange', lazyload)
-      }
-    })
   },
 
   methods: {
