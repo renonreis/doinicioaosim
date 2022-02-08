@@ -373,7 +373,92 @@ export default {
       modulos: cursoNoivosOnline.modulos,
       comoFunciona: cursoNoivosOnline.como_funciona,
       cursos: cursoNoivosOnline.cursos,
-      depoimentos: cursoNoivosOnline.depoimentos,
+      depoimentos: [
+        {
+          id: 1,
+          description:
+            'Durante o curso, eu pude enxergar com mais clareza, o que de fato é o casamento como instituição estabelecida por Deus. Posso dizer, que agora, me sinto muito mais seguro e preparado para viver um casamento feliz e abençoado, que alegre a Deus em todos os aspectos.',
+          autor: 'THIAGO M. NASCIMENTO - VILHENA/RO',
+        },
+        {
+          id: 2,
+          description:
+            'Eu acredito que o nosso casamento vai ser incrível e abençoado. Acredito que Deus irá fazer grandes coisas por nós e que nós faremos grandes coisas por meio dEle.',
+          autor: 'LEONARDO COSTA - CURITIBA/PR',
+        },
+        {
+          id: 3,
+          description:
+            'No decorrer do curso, foi muito perceptível o agir de Deus em minha vida, me fez perceber alguns pontos que vinha tendo algumas dificuldades, então com a ajuda Dele pode melhorar nesses aspectos.',
+          autor: 'LEO C. DALLMAN - POMERODE/SC',
+        },
+        {
+          id: 4,
+          description:
+            'Através do Curso de Noivos, Deus tem transformado meu pessimismo em relação ao casamento. Ao observar casais, vejo bastante infelicidade e frustração e isso faz com que o casamento pareça algo ruim. Conhecer o que a Bíblia diz me fez entender que é um plano de Deus, quem criou essa união. Por isso, é belo e bom.',
+          autor: 'REBECA M. GARCIA - CAMPOS BELOS/GO',
+        },
+        {
+          id: 5,
+          description:
+            'Deus me  mostrou um lado do casamento que eu não conhecia. Era acostumado com os casamentos do mundo e Deus me mostrou um lado bem melhor, através desse curso, dos exemplos, das ministrações.',
+          autor: 'PAMELA FERREIRA - LUIZ ANTÔNIO/SP',
+        },
+        {
+          id: 6,
+          description:
+            'Estamos muito felizes em ter concluído o curso de noivos com vocês. Foi muito importante e edificante para nós. Ficamos admirados com o carinho e cuidado de vocês na realização desse curso. Inspirador.',
+          autor: 'LARISSA FREIRE - BELO HORIZONTE/MG',
+        },
+        {
+          id: 7,
+          description:
+            'Trata de pontos importantes para a vida de um casal dentro da palavra de Deus, acredito que será benção a todos que fizerem.',
+          autor: 'HAMUD S. DA SILVA - COLOMBO/PR',
+        },
+        {
+          id: 8,
+          description:
+            'Recomendo pois o curso tem uma visão muito ampla do que tem que ser uma vida familiar e debaixo da graça de Deus!',
+          autor: 'LUCAS JARDIM - LUIZ ANTÔNIO/SP',
+        },
+        {
+          id: 9,
+          description:
+            'O curso foi altamente benéfico para meu relacionamento. Tivemos muito avanço como casal e me ajudou a ter mais confiança que tudo vai dar certo.',
+          autor: 'THIALLE D. S. LIMA - MATARACA/PB',
+        },
+        {
+          id: 10,
+          description:
+            'Através do Curso de Noivos pude ter mais certeza ainda do propósito de Deus para a minha vida como pessoa, como noiva e futura esposa. O curso trabalhou diversos assuntos que já havia escutado falar na igreja mas de forma mais amplificada e esclarecedora. Gostei muito!',
+          autor: 'TAMMY A. MASSOLIN - CHAPECÓ/SC',
+        },
+        {
+          id: 11,
+          description:
+            'Todas as afirmações tem base bíblica, coisa que para mim é muito importante. A dinâmica com as perguntas praticamente obriga o casal conversar e sabemos que quanto mais conversamos mais conhecemos a pessoa e isso falta em muitos relacionamentos.',
+          autor: 'NICOLAS NUNES - SOLEDADE-RS',
+        },
+        {
+          id: 12,
+          description:
+            'O curso atendeu nossas expectativas, achei todas as aulas muito bíblicas e que os assuntos abordados são extremamente importantes para conversar antes de casar, talvez a maioria dos casais nem sabe metade do que foi falado aqui.',
+          autor: 'VALDI GUINTILIANO - SOLEDADE/RS',
+        },
+        {
+          id: 13,
+          description:
+            'Acredito que o curso tenha nos auxiliado a enxergar melhor o casamento, ter uma visão diferente dele que não tínhamos antes, e da relação de Deus com esta união.',
+          autor: 'BRUNA L. KLABUNDE - POMOERODE/SC',
+        },
+        {
+          id: 14,
+          description:
+            'Eu e meu noivo pudemos estar mais alinhados aos assuntos abordados. Conversávamos sobre as aulas e foi importante para identificarmos o ponto de vista um do outro. Tenho certeza que meu casamento será extraordinário.',
+          autor: 'FERNANDA A. HENN - SÃO PAULO/SP',
+        },
+      ],
       faqs: cursoNoivosOnline.faqs,
       listaModulos: cursoNoivosOnline.inclusos,
 
