@@ -345,7 +345,8 @@
 </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel'
+import Carousel from 'vue-carousel/src/Carousel.vue'
+import Slide from 'vue-carousel/src/Slide.vue'
 import cursoNoivosOnline from '@/static/json/cursos-de-noivos-online.json'
 
 const ArrowFaq = () => import('@/components/svg/icon-arrow-faq')

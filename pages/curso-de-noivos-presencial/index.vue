@@ -320,7 +320,8 @@
 </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel'
+import Carousel from 'vue-carousel/src/Carousel.vue'
+import Slide from 'vue-carousel/src/Slide.vue'
 import cursoNoivoProsencial from '@/static/json/cursos-de-noivos-presencial.json'
 
 const ArrowFaq = () => import('@/components/svg/icon-arrow-faq')

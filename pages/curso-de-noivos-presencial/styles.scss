@@ -291,6 +291,9 @@
 
   @media screen and (max-width: 991px) {
     padding: 90px 0;
+    .VueCarousel-navigation {
+      display: none;
+    }
   }
 }
 
