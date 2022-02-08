@@ -45,32 +45,6 @@ iframe {
   mix-blend-mode: darken;
 }
 
-.agile__actions {
-  button {
-    background: #0000;
-    border: none;
-    padding: 8.5px;
-    margin-top: -30px;
-    position: absolute;
-    top: 50%;
-    z-index: 0;
-
-    @media screen and (max-width: 991px) {
-      top: initial;
-      margin-top: -60px;
-    }
-  }
-  .agile__nav-button--prev {
-    left: 0;
-  }
-  .agile__nav-button--next {
-    right: 0;
-  }
-  .agile__nav-button[disabled] {
-    opacity: 0.5;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .container,
   .container-sm,

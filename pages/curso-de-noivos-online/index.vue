@@ -240,22 +240,20 @@
             <h2>MAIS DE 500 CASAIS JÁ REALIZARAM O CURSO VEJA ALGUNS DEPOIMENTOS</h2>
           </div>
           <div class="col-md-11">
-            <agile v-if="depoimentos.length" :options="myOptions">
-              <div v-for="depoimento in depoimentos" :key="depoimento.id" class="slide">
+            <carousel
+              :navigationEnabled="true"
+              :autoplay="true"
+              :paginationEnabled="true"
+              :perPage="1"
+            >
+              <slide v-for="depoimento in depoimentos" :key="depoimento.id">
                 <div class="box text-center">
                   <div class="cinco_estrelas"></div>
                   <p>{{ depoimento.description }}</p>
                   <p class="autor">{{ depoimento.autor }}</p>
                 </div>
-              </div>
-
-              <template slot="prevButton">
-                <ArrowLeft />
-              </template>
-              <template slot="nextButton">
-                <ArrowRight />
-              </template>
-            </agile>
+              </slide>
+            </carousel>
           </div>
         </div>
       </div>
@@ -347,12 +345,10 @@
 </template>
 
 <script>
-import { VueAgile } from 'vue-agile'
+import { Carousel, Slide } from 'vue-carousel'
 import cursoNoivosOnline from '@/static/json/cursos-de-noivos-online.json'
 
 const ArrowFaq = () => import('@/components/svg/icon-arrow-faq')
-const ArrowLeft = () => import('@/components/svg/arrow-left')
-const ArrowRight = () => import('@/components/svg/arrow-right')
 const Banner = () => import('@/components/shared/Banner')
 const Main = () => import('@/components/shared/main')
 
@@ -360,11 +356,10 @@ export default {
   name: 'CursoNoivosOnline',
   components: {
     ArrowFaq,
-    ArrowLeft,
-    ArrowRight,
     Banner,
     Main,
-    agile: VueAgile,
+    carousel: Carousel,
+    slide: Slide,
   },
   data() {
     return {
@@ -374,13 +369,6 @@ export default {
       depoimentos: cursoNoivosOnline.depoimentos,
       faqs: cursoNoivosOnline.faqs,
       listaModulos: cursoNoivosOnline.inclusos,
-
-      myOptions: {
-        navButtons: true,
-        dots: false,
-        infinite: false,
-        autoplay: true,
-      },
 
       isMobile: false,
     }
@@ -401,7 +389,6 @@ export default {
   },
 
   mounted() {
-    this.reload()
     this.onResize()
     window.addEventListener('resize', this.onResize, { passive: true })
 
@@ -459,9 +446,6 @@ export default {
   },
 
   methods: {
-    reload() {
-      console.log('foi')
-    },
     onResize() {
       this.isMobile = window.innerWidth < 992
     },

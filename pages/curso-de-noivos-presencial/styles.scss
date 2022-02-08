@@ -258,7 +258,7 @@
 
 .testimonial {
   background-color: $bg-light;
-  .slide {
+  .VueCarousel-slide {
     .box {
       max-width: 725px;
       margin: 0 auto;
@@ -272,6 +272,20 @@
       .autor {
         font-style: normal;
       }
+    }
+  }
+
+  .VueCarousel-navigation-next {
+    font-size: 0;
+    &:before {
+      content: url(@/static/images/icons/arrow-right.png);
+    }
+  }
+
+  .VueCarousel-navigation-prev {
+    font-size: 0;
+    &:before {
+      content: url(@/static/images/icons/arrow-left.png);
     }
   }
 
