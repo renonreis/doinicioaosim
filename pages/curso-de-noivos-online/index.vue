@@ -240,20 +240,22 @@
             <h2>MAIS DE 500 CASAIS JÁ REALIZARAM O CURSO VEJA ALGUNS DEPOIMENTOS</h2>
           </div>
           <div class="col-md-11">
-            <carousel
-              :navigationEnabled="true"
-              :autoplay="true"
-              :paginationEnabled="true"
-              :perPage="1"
-            >
-              <slide v-for="depoimento in depoimentos" :key="depoimento.id">
-                <div class="box text-center">
-                  <div class="cinco_estrelas"></div>
-                  <p>{{ depoimento.description }}</p>
-                  <p class="autor">{{ depoimento.autor }}</p>
-                </div>
-              </slide>
-            </carousel>
+            <client-only>
+              <carousel
+                :navigationEnabled="true"
+                :autoplay="true"
+                :paginationEnabled="true"
+                :perPage="1"
+              >
+                <slide v-for="depoimento in depoimentos" :key="depoimento.id">
+                  <div class="box text-center">
+                    <div class="cinco_estrelas"></div>
+                    <p>{{ depoimento.description }}</p>
+                    <p class="autor">{{ depoimento.autor }}</p>
+                  </div>
+                </slide>
+              </carousel>
+            </client-only>
           </div>
         </div>
       </div>

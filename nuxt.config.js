@@ -143,18 +143,5 @@ export default {
       '2xl': 1536
     },
     staticFilename: '[publicPath]/images/[name][ext]'
-  },
-
-  cache: {
-    useHostPrefix: false,
-    pages: [
-      '/'
-    ],
-
-    store: {
-      type: 'memory',
-      max: 100,
-      ttl: 60,
-    },
   }
 }
