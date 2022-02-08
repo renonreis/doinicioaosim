@@ -309,10 +309,10 @@
 <script>
 import cursoNoivoProsencial from '@/static/json/cursos-de-noivos-presencial.json'
 
-const ArrowFaq = () => import('@/components/svg/icon-arrow-faq')
-const Banner = () => import('@/components/shared/Banner')
-const Main = () => import('@/components/shared/main')
-const Carousel = () => import('@/components/shared/Carousel')
+import ArrowFaq from '@/components/svg/icon-arrow-faq'
+import Banner from '@/components/shared/Banner'
+import Main from '@/components/shared/main'
+import Carousel from '@/components/shared/Carousel'
 
 export default {
   components: {

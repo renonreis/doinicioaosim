@@ -9,14 +9,14 @@
 </template>
 
 <script>
-const Header = () => import('./header')
-const Footer = () => import('./footer')
+import Header from './header'
+import Footer from './footer'
 
 export default {
   components: {
     Header,
-    Footer
-  }
+    Footer,
+  },
 }
 </script>
 

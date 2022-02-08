@@ -93,7 +93,7 @@
 </template>
 
 <script>
-const IconMenu = () => import('@/components/svg/icon-menu')
+import IconMenu from '@/components/svg/icon-menu'
 
 export default {
   components: {

@@ -13,11 +13,11 @@
 </template>
 
 <script>
-const Main = () => import('@/components/shared/main')
+import Main from '@/components/shared/main'
 
 export default {
   components: {
-    Main
-  }
+    Main,
+  },
 }
 </script>

@@ -5,8 +5,8 @@
         <div class="row">
           <div class="col text-center">
             <h1>
-              404! <br />
-              Página não encontrada
+              404!
+              <br />Página não encontrada
             </h1>
           </div>
         </div>
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-const Main = () => import('@/components/shared/main')
+import Main from '@/components/shared/main'
 
 export default {
   components: {
-    Main
-  }
+    Main,
+  },
 }
 </script>

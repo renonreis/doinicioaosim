@@ -21,8 +21,8 @@
 <script>
 import cursoNoivosOnline from '@/static/json/cursos-de-noivos-online.json'
 
-const ArrowLeft = () => import('@/components/svg/arrow-left')
-const ArrowRight = () => import('@/components/svg/arrow-right')
+import ArrowLeft from '@/components/svg/arrow-left'
+import ArrowRight from '@/components/svg/arrow-right'
 
 export default {
   name: 'TestimonialCarousel',
