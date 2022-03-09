@@ -44,16 +44,27 @@ h6 {
 
 .btn {
   background-color: $primary;
+  border: 2px solid $primary;
   color: $white;
-  padding: 15px;
+  padding: 13px;
   max-width: 300px;
   width: 100%;
+
+  &:hover {
+    background-color: $secondary;
+    color: $white;
+  }
 
   &.small {
     max-width: initial;
     width: auto;
     padding: 10px 15px;
     line-height: 20px;
+  }
+
+  &.medium {
+    max-width: 375px;
+    width: 100%;
   }
 
   &.large {
@@ -66,10 +77,18 @@ h6 {
     width: 100%;
   }
 
-  &:hover {
-    background-color: $secondary;
-    color: $white;
+  &--outline {
+    background-color: transparent;
+    border: 2px solid $primary;
+    color: $primary;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
   }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -93,5 +112,10 @@ h6 {
   h6 {
     font-size: 20px;
     line-height: 35px;
+  }
+
+  .btn {
+    font-size: 16px;
+    line-height:24px
   }
 }

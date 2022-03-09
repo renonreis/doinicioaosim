@@ -16,14 +16,16 @@
         </div>
 
         <div class="col-md-2 d-none d-lg-flex text-center align-self-center">
-          <nuxt-picture
-            alt="Do Início ao Sim Logo"
-            width="213"
-            height="27"
-            loading="lazy"
-            class="m-auto"
-            src="/elements/logo-do-inicio-ao-sim.png"
-          />
+          <n-link to="/">
+            <nuxt-picture
+              alt="Do Início ao Sim Logo"
+              width="213"
+              height="27"
+              loading="lazy"
+              class="m-auto"
+              src="/elements/logo-do-inicio-ao-sim.png"
+            />
+          </n-link>
         </div>
 
         <div class="col">
@@ -143,11 +145,13 @@ header {
 
       .btn-login {
         a {
+          align-self: center;
           background-color: $primary;
           border-radius: 4px;
           color: $white;
           min-width: 125px;
           text-align: center;
+
           &:hover {
             background-color: $secondary;
             color: $white;

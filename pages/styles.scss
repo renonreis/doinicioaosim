@@ -1,0 +1,137 @@
+::v-deep header {
+  .menu-mobile {
+    img {
+      filter: brightness(0);
+    }
+  }
+}
+
+#Banner {
+  background-image: url(@/static/images/home/noivado-casamento-relacionamento-repleto-de-paz-amor-alegria.png);
+  background-position: center;
+  min-height: 965px;
+  padding: 180px 0;
+
+  .container {
+    align-self: center;
+  }
+
+  h1 {
+    font-weight: 300;
+  }
+
+  p {
+    margin-bottom: 40px
+  }
+
+  .btn--outline {
+    margin: 0 5px;
+  }
+
+  @media screen and (max-width: 991px) {
+    min-height: 765px;
+    padding: 90px 0;
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+
+.about-home {
+  background-color: $white;
+  overflow: hidden;
+  padding: 90px 0 200px;
+  position: relative;
+
+  &::after {
+    content: url(@/static/images/elements/curso-de-noivos.png);
+    position: absolute;
+    margin-left: 50%;
+    object-position: center;
+    bottom: 50px;
+    transform: translateX(-50%);
+  }
+
+  [class^='col-'] {
+    z-index: 99;
+  }
+
+  h2 {
+    text-transform: initial;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 991px) {
+    &::after {
+      content: url(@/static/images/elements/curso-de-noivos-mobile.png);
+    }
+  }
+}
+
+.relacionamento {
+  padding: 45px 0;
+
+  h2 {
+    text-transform: initial;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  .box {
+    margin-bottom: 45px;
+    padding: 90px 70px 90px;
+
+    h2, p {
+      color: $white;
+    }
+
+    &--amor {
+      background: url(@/static/images/home/noivado-baseado-no-amor.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    &--verdade {
+      background: url(@/static/images/home/noivado-baseado-na-verdade.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .box {
+      padding: 45px 20px 45px;
+    }
+  }
+}
+
+.casamento {
+  padding: 0 0 45px;
+
+  h2 {
+    text-transform: initial;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  .text-motivos {
+    p {
+      font-size: 17px;
+      line-height: 35px;
+    }
+  }
+}
