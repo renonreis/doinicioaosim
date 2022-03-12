@@ -19,6 +19,14 @@ a {
   }
 }
 
+.btn-link {
+  color: $primary;
+}
+
+.primary {
+  color: $primary;
+}
+
 h1 {
   font-size: 72px;
   font-weight: 300;
@@ -52,6 +60,7 @@ h6 {
 
   &:hover {
     background-color: $secondary;
+    border: 2px solid $secondary;
     color: $white;
   }
 

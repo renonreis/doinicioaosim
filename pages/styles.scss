@@ -80,33 +80,6 @@
   p {
     margin-bottom: 40px;
   }
-
-  .box {
-    margin-bottom: 45px;
-    padding: 90px 70px 90px;
-
-    h2, p {
-      color: $white;
-    }
-
-    &--amor {
-      background: url(@/static/images/home/noivado-baseado-no-amor.jpg);
-      background-position: center;
-      background-size: cover;
-    }
-
-    &--verdade {
-      background: url(@/static/images/home/noivado-baseado-na-verdade.jpg);
-      background-position: center;
-      background-size: cover;
-    }
-  }
-
-  @media screen and (max-width: 991px) {
-    .box {
-      padding: 45px 20px 45px;
-    }
-  }
 }
 
 .casamento {
@@ -133,5 +106,83 @@
       font-size: 17px;
       line-height: 35px;
     }
+  }
+}
+
+.who-we-are {
+  background: #fbfafa;
+  padding: 150px 0 120px;
+
+  .w-80 {
+    max-width: 460px;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+
+  .container-full {
+    p {
+      max-width: 270px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 90px 0;
+  }
+}
+
+.parallax {
+  background: url(@/static/images/home/uma-imersao-inesquecivel.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 400px 0;
+
+  .btn {
+    margin: 0 5px;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 90px 0;
+  }
+}
+
+.blog {
+
+}
+
+.midias {
+  position: relative;
+
+  &::after {
+    background: url(@/static/images/home/siga-nos.png);
+    background-position: top center;
+    content: '';
+    min-height: 550px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 991px) {
+    overflow: hidden;
+  }
+}
+
+.sobre-curso {
+  padding: 90px 0 0;
+  .btn {
+    margin: 0 5px;
+  }
+
+  .w-990 {
+    max-width: 930px;
+    margin: 0 auto;
   }
 }

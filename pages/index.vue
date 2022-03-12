@@ -52,20 +52,26 @@
             <p>Noivado é um tempo de preparação para um relacionamento baseado no amor e na verdade</p>
           </div>
           <div class="col-md-6">
-            <div class="box box--amor text-left">
-              <h2>Amor</h2>
-              <p>Amar é um ato de entrega. É acordar todos os dias e viver por alguém que você quer bem, independente do que ela fez ou deixou de fazer. Seu amor se baseia única e exclusivamente em quem ela é.</p>
-              <p>Este amor incondicional que não espera nada em troca é o amor do nosso pai celestial por cada um de nós.</p>
-              <p>Somos extensão do amor de Deus neste mundo. Ao viver este perfeito amor no laço matrimonial,  isso transborda gerando transformação nas pessoas que estão próximo de você e ecoa por toda eternidade.</p>
-            </div>
+            <card
+              class="card--amor text-left">
+              <h2 slot="header">Amor</h2>
+              <div slot="content">
+                <p>Amar é um ato de entrega. É acordar todos os dias e viver por alguém que você quer bem, independente do que ela fez ou deixou de fazer. Seu amor se baseia única e exclusivamente em quem ela é.</p>
+                <p>Este amor incondicional que não espera nada em troca é o amor do nosso pai celestial por cada um de nós.</p>
+                <p>Somos extensão do amor de Deus neste mundo. Ao viver este perfeito amor no laço matrimonial,  isso transborda gerando transformação nas pessoas que estão próximo de você e ecoa por toda eternidade.</p>
+              </div>
+            </card>
           </div>
           <div class="col-md-6">
-            <div class="box box--verdade text-left">
-              <h2>Verdade</h2>
-              <p>A palavra de Deus é a verdade absoluta sobre tudo e sobre todos. Foi através da palavra do nosso pai celestial que tudo se fez e tudo se perdura até os dias de hoje.</p>
-              <p>Deus nos deu a sua palavra, seus princípios, suas promessas para que pudéssemos viver tudo aquilo que Ele preparou para nós.</p>
-              <p>Ao agasalhar a palavra de Deus no coração, uma nova perspectiva de vida surge. Não mais uma vida de engano, agora uma vida baseada na verdade que é lâmpada para nossos pés e luz para nosso caminhar.</p>
-            </div>
+            <card
+              class="card--verdade text-left">
+              <h2 slot="header">Verdade</h2>
+              <div slot="content">
+                <p>A palavra de Deus é a verdade absoluta sobre tudo e sobre todos. Foi através da palavra do nosso pai celestial que tudo se fez e tudo se perdura até os dias de hoje.</p>
+                <p>Deus nos deu a sua palavra, seus princípios, suas promessas para que pudéssemos viver tudo aquilo que Ele preparou para nós.</p>
+                <p>Ao agasalhar a palavra de Deus no coração, uma nova perspectiva de vida surge. Não mais uma vida de engano, agora uma vida baseada na verdade que é lâmpada para nossos pés e luz para nosso caminhar.</p>
+              </div>
+            </card>
           </div>
         </div>
       </div>
@@ -74,7 +80,7 @@
     <section class="casamento">
       <div class="container">
         <div class="row justify-content-center text-center">
-          <div class="col-11">
+          <div class="col-11 mb-3">
             <h2>Casamento é a forma de Deus revelar ao mundo a vida que Ele sonhou para nós</h2>
             <p>A palavra de Deus nos mostra que é possível sim se entregar por algém incondicionalmente sem esperar nada em troca. <br/>
             A palavra nos revela o amor perfeito, o amor que não suspeita mal, que não obriga o outro a nada. <br/>
@@ -95,14 +101,126 @@
         </div>
       </div>
     </section>
+
+    <section class="who-we-are">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <h2>Somos <br/> Do Início ao Sim</h2>
+            <p class="w-80">
+              Amamos a Deus, amamos a Palavra de Deus e amamos o casamento. Queremos que você experimente a boa, perfeita e agradável vontade de Deus em seu relacionamento, esteja você solteiro ou nas vésperas do casamento.<br/>
+              <a href="#" class="btn-link">Saiba mais...</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="container-full">
+              <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                  <h3>Desde 2015</h3>
+                  <p>Do Início ao Sim surgiu em 2015 como projeto completo, mas já vem da experiência de vários anos como CNA.</p>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <h3>Caisais voluntários</h3>
+                  <p>Somos uma equipe de casais voluntários que faz parte do ministério de Jovens da Comunhão Cristã Abba.</p>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <h3>Palavra de Deus</h3>
+                  <p>Fomos chamados para pregar a Palavra de Deus, e não o romantismo ou o humanismo nos relacionamentos.</p>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <h3>Vontade de Deus</h3>
+                  <p>Acreditamos que é possível sim viver um Casamento sem medo, com muita paz e alegria em todos os momentos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <nuxt-picture
+              alt="curso-de-noivos-do-inicio-ao-sim"
+              width="160"
+              height="46"
+              loading="lazy"
+              class="banner-logo d-block mb-4"
+              src="/home/do-inicio-ao-sim-branco.png"
+            />
+            <h2 class="text-center text-white mb-5">
+              Uma imersão inesquecível <br/> que marcará para sempre sua vida
+            </h2>
+            <n-link to="/curso-de-noivos-presencial" class="btn medium mb-3">Curso de noivos presencial</n-link>
+            <n-link to="/curso-de-noivos-online" class="btn medium mb-3">Curso de noivos online</n-link>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center">Devocionais que inspiram</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="midias">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <a href="#" target="_blank">
+              <nuxt-picture
+                alt="curso-de-noivos-do-inicio-ao-sim"
+                width="335"
+                height="84"
+                loading="lazy"
+                class="banner-logo d-block"
+                src="/home/siga-nos-no-instagram-e-facebook.png"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre-curso">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 text-center">
+            <nuxt-picture
+              alt="curso-de-noivos-do-inicio-ao-sim"
+              width="236"
+              height="68"
+              loading="lazy"
+              class="banner-logo d-block mb-3"
+              src="/elements/curso-de-noivos-do-inicio-ao-sim.png"
+            />
+            <h2>Saiba mais sobre o curso</h2>
+            <p class="w-990 mb-5">O Curso de Noivos é a melhor forma de você se preparar para o seu casamento. Através do Curso de Noivos Online você irá aprender como construir um casamento cheio de paz e entender como viver a vontade de Deus para a sua vida! É possível sim viver um Casamento sem medo, com muita paz e alegria em todos os momentos (até nas dificuldades)!</p>
+            <n-link to="/curso-de-noivos-presencial" class="btn medium mb-3">Curso de noivos presencial</n-link>
+            <n-link to="/curso-de-noivos-online" class="btn medium mb-3">Curso de noivos online</n-link>
+            <p class="primary">Presenteie quem você ama</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </Main>
 </template>
 
 <script>
+import Card from '@/components/shared/cards'
 import Main from '@/components/shared/main'
 
 export default {
   components: {
+    Card,
     Main,
   },
 }
