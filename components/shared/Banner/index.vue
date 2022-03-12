@@ -9,7 +9,7 @@
           </div>
           <h1 class="mb-3">{{ title }}</h1>
           <p>{{ subtitle }}</p>
-          <n-link :to="urlButton" class="btn large mt-2 mb-5">{{ textInscricao }}</n-link>
+          <a :href="urlButton" class="btn large mt-2 mb-5">{{ textInscricao }}</a>
         </div>
       </div>
     </div>

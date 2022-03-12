@@ -270,6 +270,10 @@ footer {
     bottom: 15px;
     right: 15px;
     z-index: 99;
+
+    @media screen and (max-width: 991px) {
+      max-width: 25%;
+    }
   }
 }
 </style>

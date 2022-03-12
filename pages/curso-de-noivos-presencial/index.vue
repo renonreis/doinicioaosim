@@ -5,7 +5,7 @@
       subtitle="Duas vezes ao ano na cidade de Curitiba. Um tempo de preparação que marcará para sempre a vida de vocês."
       button-text-mobile="Faça sua Inscrição Curso de Noivos"
       button-text-desktop="Faça agora sua inscrição"
-      url-button
+      :url-button="urlCursoPresencial"
       url-youtube="https://www.youtube.com/watch?v=uilkmUoXoLU"
     >
       <nuxt-picture
@@ -111,7 +111,7 @@
           </div>
 
           <div class="col-md-9 text-center">
-            <a href class="btn large">Gostei! Quero fazer o curso</a>
+            <a :href="urlCursoPresencial" class="btn large">Gostei! Quero fazer o curso</a>
             <nuxt-picture
               alt="como-funciona-o-curso-de-noivos"
               width="507"
@@ -202,7 +202,7 @@
               Assim como Deus Pai, Deus Filho e Deus Espírito Santo vivem em unidade,
               assim nós também podemos viver em perfeita unidade.
             </p>
-            <a href class="btn large mt-4">Comece agora o curso de Noivos</a>
+            <a :href="urlCursoPresencial" class="btn large mt-4">Comece agora o curso de Noivos</a>
           </div>
         </div>
       </div>
@@ -295,7 +295,7 @@
               </ul>
             </div>
             <p class="primary mt-5 price">R$ 97,00</p>
-            <a href class="btn xlarge">{{ comecaoAgora }}</a>
+            <a :href="urlCursoPresencial" class="btn xlarge">{{ comecaoAgora }}</a>
             <p class="text-button">
               <a href="/solicitar-subsidio">Deseja fazer o curso e não tem como pagar?</a>
             </p>
@@ -332,6 +332,8 @@ export default {
       listaModulos: cursoNoivoProsencial.inclusos,
 
       isMobile: false,
+
+      urlCursoPresencial: 'https://portal.sistemaprover.com.br/frontend/inscricao-externa?i=jyKIVtQtakAeiqICbAkv-YOnRMpcud1aRDSdLkYv1fE,'
     }
   },
 

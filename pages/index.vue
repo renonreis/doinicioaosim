@@ -53,7 +53,7 @@
           </div>
           <div class="col-md-6">
             <card
-              class="card--amor text-left">
+              class="card-depth--amor text-left">
               <h2 slot="header">Amor</h2>
               <div slot="content">
                 <p>Amar é um ato de entrega. É acordar todos os dias e viver por alguém que você quer bem, independente do que ela fez ou deixou de fazer. Seu amor se baseia única e exclusivamente em quem ela é.</p>
@@ -64,7 +64,7 @@
           </div>
           <div class="col-md-6">
             <card
-              class="card--verdade text-left">
+              class="card-depth--verdade text-left">
               <h2 slot="header">Verdade</h2>
               <div slot="content">
                 <p>A palavra de Deus é a verdade absoluta sobre tudo e sobre todos. Foi através da palavra do nosso pai celestial que tudo se fez e tudo se perdura até os dias de hoje.</p>
@@ -163,8 +163,23 @@
     <section class="blog">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <h2 class="text-center">Devocionais que inspiram</h2>
+          <div class="col-12">
+            <h2 class="text-center mb-4">Devocionais que inspiram</h2>
+          </div>
+          <div v-for="post in blogposts" :key="post.id" class="col-12 col-md-6 col-lg-3">
+            <a :href="post.to" class="no-link">
+              <card
+                :class="`card-depth--blog_${post.id}`"
+                class="card-depth--blog text-left">
+                <h2 slot="header"><span>{{ post.title }}</span></h2>
+                <div slot="content" class="content">
+                  <p>{{ post.author }}</p>
+                </div>
+              </card>
+            </a>
+          </div>
+          <div class="col-12 text-center">
+            <a href="https://www.doinicioaosim.com.br/blog/" class="btn-link">Ver mais artigos do blog</a>
           </div>
         </div>
       </div>
@@ -174,7 +189,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/doinicioaosim_oficial/" target="_blank">
               <nuxt-picture
                 alt="curso-de-noivos-do-inicio-ao-sim"
                 width="335"
@@ -223,6 +238,61 @@ export default {
     Card,
     Main,
   },
+
+  data(){
+    return {
+      blogposts: [
+        {
+          id: 'one',
+          title: 'Uno novo ponto de vista',
+          author: 'Gladys Sindlinger',
+          to: 'https://www.doinicioaosim.com.br/novo-ponto-de-vista/'
+        },
+        {
+          id: 'two',
+          title: 'Como ser livre no seu relacionamento',
+          author: 'Raul Sindlinger',
+          to: 'https://www.doinicioaosim.com.br/seja-livre-no-seu-relacionamento/'
+        },
+        {
+          id: 'tree',
+          title: 'Lugar de honra',
+          author: 'Gladys Sindlinger',
+          to: 'https://www.doinicioaosim.com.br/lugar-de-honra/'
+        },
+        {
+          id: 'four',
+          title: 'Como saber a hora certa de casar?',
+          author: 'Raul Sindlinger',
+          to: 'https://www.doinicioaosim.com.br/hora-certa-de-casar/'
+        },
+        {
+          id: 'five',
+          title: 'O amor, permaneça nele',
+          author: 'Gladys Sindlinger',
+          to: 'https://www.doinicioaosim.com.br/permaneca-no-amor/'
+        },
+        {
+          id: 'six',
+          title: 'Existe idade certa para namorar? Como saber se estou preparado?',
+          author: 'Gladys Sindlinger',
+          to: 'https://www.doinicioaosim.com.br/idade-certa-para-namorar/'
+        },
+        {
+          id: 'seven',
+          title: 'Adão e Eva no Jardim',
+          author: 'Gladys Sindlinger',
+          to: 'https://www.doinicioaosim.com.br/adao-e-eva-no-jardim/'
+        },
+        {
+          id: 'eight',
+          title: 'A promessa que traz vida',
+          author: 'Gladys Sindlinger',
+          to: 'https://www.doinicioaosim.com.br/a-promessa-que-traz-vida/'
+        },
+      ]
+    }
+  }
 }
 </script>
 

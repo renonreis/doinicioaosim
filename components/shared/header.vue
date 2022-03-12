@@ -40,7 +40,7 @@
                   to="/curso-de-noivos-online"
                   class="d-none d-lg-flex"
                 >CURSO DE NOIVOS ONLINE</b-nav-item>
-                <b-nav-item href="#" class="btn-login d-none d-lg-flex">Entrar</b-nav-item>
+                <b-nav-item href="http://cad.doinicioaosim.com.br/" target="_blank" class="btn-login d-none d-lg-flex">Entrar</b-nav-item>
                 <div v-b-toggle.mobile-sidebar role="button" class="menu-mobile d-lg-none">
                   <nuxt-picture loading="lazy" src="/icons/menu.png" alt="Menu - Do início ao Sim" />
                 </div>
@@ -78,7 +78,7 @@
                   <b-nav-item to="/curso-na-sua-igreja">Curso na sua Igreja</b-nav-item>
                   <b-nav-item to="/curso-de-noivos-presencial">Curso de Noivos Presencial</b-nav-item>
                   <b-nav-item to="/curso-de-noivos-online">Curso de Noivos Online</b-nav-item>
-                  <b-nav-item href="#" target="_blank" class="btn-login">
+                  <b-nav-item href="http://cad.doinicioaosim.com.br/" target="_blank" class="btn-login">
                     <span class="px-4 text-center">Entrar</span>
                   </b-nav-item>
                   <div v-b-toggle.mobile-sidebar role="button" class="menu-mobile d-lg-none">
@@ -120,18 +120,18 @@ header {
     padding: 12px 0 ;
     .navbar-nav {
       .nav-link {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 36px;
         padding: 5px 15px;
         &:hover {
           color: $primary;
         }
 
-        @media screen and (min-width: 992px) and (max-width: 1199px) {
-          font-size: 14px;
+        @media screen and (min-width: 992px) and (max-width: 1469px) {
+          font-size: 12px;
         }
 
-        @media screen and (min-width: 1200px) and (max-width: 1440px) {
+        @media screen and (min-width: 1470px) and (max-width: 1699px) {
           font-size: 14px;
           padding: 5px 7px;
         }

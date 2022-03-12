@@ -1,7 +1,7 @@
 <template>
   <div
     ref="card"
-    class="card"
+    class="card-depth"
     :style="cardStyle"
     @mousemove="handleMouseMove"
     @mouseenter="handleMouseEnter"
@@ -9,7 +9,7 @@
     <div class="card-bg" :style="[cardBgTransform]"></div>
     <div class="card-info">
       <slot name="header" class="title"></slot>
-      <slot name="content" class="content"></slot>
+      <slot name="content"></slot>
     </div>
   </div>
 </template>
@@ -74,10 +74,15 @@ export default {
 </script>
 
 <style lang="scss">
+.no-link {
+  text-decoration: none !important;
+}
 
-.card {
+.card-depth {
   border: 0;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 45px;
   padding: 90px 60px 90px;
   transition: all 0.3s;
@@ -127,8 +132,104 @@ export default {
     }
   }
 
-  @media screen and (max-width: 991px) {
-    padding: 45px 20px 45px;
+  &--blog {
+    border-radius: 0;
+    justify-content: end;
+    margin-bottom: 40px;
+    min-height: 445px;
+    padding: 30px 25px 15px;
+
+    .card-info {
+      transition: ease-in-out 0.6s;
+      transform: translateY(45px);
+
+      h2 {
+        font-size: 21px;
+        line-height: 25px;
+        max-width: 210px;
+        margin-bottom: 15px;
+
+        span {
+          background-color: #102333;
+        }
+      }
+    }
+
+    .card-bg {
+      background-position: center !important;
+      background-size: cover !important;
+      border-radius: 0;
+      &:after {
+        background-color: $black;
+        content: '';
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        transition: ease-in-out 0.6s;
+        width: 100%;
+      }
+    }
+
+    &:hover {
+      .card-info {
+        transform: translateY(0px);
+      }
+
+      .card-bg {
+        &:after {
+          opacity: 0.35;
+        }
+      }
+    }
+
+    &_one {
+      .card-bg {
+        background: url(@/static/images/home/um-novo-ponto-de-vista.jpg);
+      }
+    }
+
+    &_two {
+      .card-bg {
+        background: url(@/static/images/home/como-ser-livre-no-seu-relacionamento.jpg);
+      }
+    }
+
+    &_tree {
+      .card-bg {
+        background: url(@/static/images/home/lugar-de-honra.jpg);
+      }
+    }
+
+    &_four {
+      .card-bg {
+        background: url(@/static/images/home/como-saber-a-hora-certa-de-casar.jpg);
+      }
+    }
+
+    &_five {
+      .card-bg {
+        background: url(@/static/images/home/o-amor-permaneca-nele-min.jpg);
+      }
+    }
+
+    &_six {
+      .card-bg {
+        background: url(@/static/images/home/existe-idade-certa-para-namorar.jpg);
+      }
+    }
+
+    &_seven {
+      .card-bg {
+        background: url(@/static/images/home/adao-e-eva-no-jardim.jpg);
+      }
+    }
+
+    &_eight {
+      .card-bg {
+        background: url(@/static/images/home/a-promessa-que-traz-vida.jpg);
+      }
+    }
+
   }
 }
 </style>
