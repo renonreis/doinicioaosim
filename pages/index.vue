@@ -230,7 +230,7 @@
 </template>
 
 <script>
-import Card from '@/components/shared/cards'
+import Card from '@/components/shared/CardDepth'
 import Main from '@/components/shared/main'
 
 export default {

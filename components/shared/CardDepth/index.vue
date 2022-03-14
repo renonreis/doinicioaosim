@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "Card",
+  name: "CardDepth",
   data: () => ({
     width: 0,
     height: 0,
