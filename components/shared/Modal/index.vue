@@ -2,12 +2,19 @@
   <transition name="modal-fade">
     <div class="modal-backdrop">
       <div
-        class="modal"
+        class="modal d-flex align-items-center"
         role="dialog"
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
       >
-        <button type="button" class="btn-close" aria-label="Close modal" @click="close">x</button>
+        <button
+          type="button"
+          class="btn-close"
+          aria-label="Close modal"
+          @click="close"
+        >
+          x
+        </button>
         <slot />
       </div>
     </div>

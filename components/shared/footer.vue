@@ -84,23 +84,25 @@
                 aria-label="Ummense"
                 rel="noreferrer"
               >
-                <span class="d-inline-flex align-middle ummense mr-4"></span>
+                <span class="d-inline-flex align-middle ummense mr-lg-4"></span>
               </a>
-              desenvolvido com
-              <span
-                class="d-inline-flex align-middle icon_coracao lazy"
-                alt="amor"
-              ></span>
-              por
-              <a
-                href="https://www.evonline.com.br/"
-                aria-label="Evonline"
-                target="_blank"
-                ><span
-                  class="d-inline-flex align-middle icon_evonline lazy"
-                  alt="Evonline"
-                ></span
-              ></a>
+              <span>
+                desenvolvido com
+                <span
+                  class="d-inline-flex align-middle icon_coracao lazy"
+                  alt="amor"
+                ></span>
+                por
+                <a
+                  href="https://www.evonline.com.br/"
+                  aria-label="Evonline"
+                  target="_blank"
+                  ><span
+                    class="d-inline-flex align-middle icon_evonline lazy"
+                    alt="Evonline"
+                  ></span
+                ></a>
+              </span>
             </p>
           </div>
         </div>
@@ -126,7 +128,7 @@
 
 <script>
 export default {
-  data(){
+  data() {
     return {
       linkWhatsapp: 'https://api.whatsapp.com/send?phone=5541987913030',
       socialMedia: [
@@ -134,19 +136,19 @@ export default {
           id: 1,
           link: 'https://www.instagram.com/doinicioaosim_oficial/',
           icon: 'icon_instagram',
-          arial: 'Instagram'
+          arial: 'Instagram',
         },
         {
           id: 2,
           link: 'https://www.facebook.com/doinicioaosim/',
           icon: 'icon_facebook',
-          arial: 'Facebook'
+          arial: 'Facebook',
         },
         {
           id: 3,
           link: 'https://www.youtube.com/c/DoInícioaoSim',
           icon: 'icon_youtube',
-          arial: 'Youtube'
+          arial: 'Youtube',
         },
       ],
       appLinks: [
@@ -154,17 +156,17 @@ export default {
           id: 1,
           link: 'https://apps.apple.com/mn/app/do-in%C3%ADcio-ao-sim/id1502254589',
           icon: 'download_on_the_app_store',
-          arial: 'App Store'
+          arial: 'App Store',
         },
         {
           id: 2,
           link: 'https://play.google.com/store/apps/details?id=com.uapp.doinicioaosim&hl=pt',
           icon: 'download_get_it_on_google_play',
-          arial: 'Google Play'
+          arial: 'Google Play',
         },
-      ]
+      ],
     }
-  }
+  },
 }
 </script>
 
@@ -226,11 +228,19 @@ footer {
     background-color: $white;
     padding: 20px 0;
     p {
+      font-size: 12px;
       margin: 0;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        align-self: center;
+      }
     }
   }
 
-  @media screen and (max-width: 991px){
+  @media screen and (max-width: 991px) {
     p {
       line-height: 25px;
     }
@@ -261,7 +271,6 @@ footer {
           display: inline-block;
         }
       }
-
     }
   }
 

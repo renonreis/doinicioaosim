@@ -6,7 +6,7 @@
       button-text-mobile="Faça sua Inscrição Curso de Noivos"
       button-text-desktop="Faça agora sua inscrição"
       :url-button="urlCursoOnline"
-      url-youtube="https://www.youtube.com/watch?v=uilkmUoXoLU"
+      url-youtube="https://youtu.be/mOEFwgUR3Tc"
     >
       <nuxt-picture
         alt="Curso de noivos online"
@@ -25,14 +25,22 @@
         src="/curso-online/curso-de-noivos-online.jpg"
       />
       <video v-if="isMobile" id="myVideo" autoplay muted loop>
-        <source src="~/static/videos/curso-de-noivos-online-m.mp4" type="video/mp4" />Your browser does not support HTML video.
+        <source
+          src="~/static/videos/curso-de-noivos-online-m.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support HTML video.
       </video>
       <video v-if="!isMobile" id="myVideo" autoplay muted loop>
-        <source src="~/static/videos/curso-de-noivos-online.mp4" type="video/mp4" />Your browser does not support HTML video.
+        <source
+          src="~/static/videos/curso-de-noivos-online.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support HTML video.
       </video>
     </Banner>
 
-    <section class="about">
+    <section class="about fixed-menu">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-md-8">
@@ -47,12 +55,12 @@
               humanidade. Um plano de amor, santidade e comunhão. Mas com o
               pecado de Adão, o egoísmo entrou no homem causando a destruição
               nos relacionamentos.
-              <br />Jesus veio ao mundo resgatar a comunhão com Deus e com o próximo.
-              Ele trouxe uma nova forma de amar. Por esse motivo hoje podemos
-              desfrutar de um casamento pleno, em perfeito amor e protegido pela
-              Palavra de Deus. Se você vai casar e deseja saber como viver o
-              casamento e o relacionamento perfeito como Deus criou, esse curso
-              é para você.
+              <br />Jesus veio ao mundo resgatar a comunhão com Deus e com o
+              próximo. Ele trouxe uma nova forma de amar. Por esse motivo hoje
+              podemos desfrutar de um casamento pleno, em perfeito amor e
+              protegido pela Palavra de Deus. Se você vai casar e deseja saber
+              como viver o casamento e o relacionamento perfeito como Deus
+              criou, esse curso é para você.
             </p>
             <nuxt-picture
               alt="viva-um-casamento-cheio-de-paz-amor-e-alegria"
@@ -74,12 +82,12 @@
               humanidade. Um plano de amor, santidade e comunhão. Mas com o
               pecado de Adão, o egoísmo entrou no homem causando a destruição
               dos relacionamentos.
-              <br />Jesus veio ao mundo resgatar a comunhão com Deus e com o próximo.
-              Ele trouxe uma nova forma de amar. Por esse motivo hoje podemos
-              desfrutar de um casamento pleno, em perfeito amor e protegido pela
-              Palavra de Deus. Se você vai casar e deseja saber como viver o
-              casamento e o relacionamento perfeito como Deus criou, esse curso
-              é para você.
+              <br />Jesus veio ao mundo resgatar a comunhão com Deus e com o
+              próximo. Ele trouxe uma nova forma de amar. Por esse motivo hoje
+              podemos desfrutar de um casamento pleno, em perfeito amor e
+              protegido pela Palavra de Deus. Se você vai casar e deseja saber
+              como viver o casamento e o relacionamento perfeito como Deus
+              criou, esse curso é para você.
             </p>
           </div>
         </div>
@@ -136,7 +144,9 @@
           </div>
 
           <div class="col-md-9 text-center">
-            <a :href="urlCursoOnline" class="btn large">Gostei! Quero fazer o curso</a>
+            <a :href="urlCursoOnline" class="btn large"
+              >Gostei! Quero fazer o curso</a
+            >
             <nuxt-picture
               alt="como-funciona-o-curso-de-noivos"
               width="507"
@@ -227,7 +237,9 @@
               e alegria todos os dias, esta é a vontade do nosso pai celestial
               que é boa, perfeita e agradável.
             </p>
-            <a :href="urlCursoOnline" class="btn large mt-4">Comece agora o curso de Noivos</a>
+            <a :href="urlCursoOnline" class="btn large mt-4"
+              >Comece agora o curso de Noivos</a
+            >
           </div>
         </div>
       </div>
@@ -237,7 +249,9 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-11 text-center">
-            <h2>MAIS DE 500 CASAIS JÁ REALIZARAM O CURSO VEJA ALGUNS DEPOIMENTOS</h2>
+            <h2>
+              MAIS DE 500 CASAIS JÁ REALIZARAM O CURSO VEJA ALGUNS DEPOIMENTOS
+            </h2>
           </div>
           <div class="col-md-11">
             <Carousel />
@@ -265,7 +279,11 @@
                       <ArrowFaq />
                     </p>
                   </b-card-header>
-                  <b-collapse :id="`accordion-${faq.id}`" accordion="my-accordion" role="tabpanel">
+                  <b-collapse
+                    :id="`accordion-${faq.id}`"
+                    accordion="my-accordion"
+                    role="tabpanel"
+                  >
                     <b-card-body>
                       <b-card-text>
                         {{ faq.answer }}
@@ -286,10 +304,18 @@
         <div class="row justify-content-center">
           <div class="col-12 text-center mb-5 pb-3">
             <video v-if="isMobile" width="660" autoplay muted loop>
-              <source src="~/static/videos/coracao-animado.mp4" type="video/mp4" />Your browser does not support HTML video.
+              <source
+                src="~/static/videos/coracao-animado.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
             </video>
             <video v-if="!isMobile" width="480" autoplay muted loop>
-              <source src="~/static/videos/coracao-animado.mp4" type="video/mp4" />Your browser does not support HTML video.
+              <source
+                src="~/static/videos/coracao-animado.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
             </video>
           </div>
           <div class="col-lg-7 text-center">
@@ -313,7 +339,10 @@
               <ul>
                 <li v-for="item in listaModulos" :key="item.id">
                   <p>
-                    <span :class="item.icon" class="d-inline-flex align-middle"></span>
+                    <span
+                      :class="item.icon"
+                      class="d-inline-flex align-middle"
+                    ></span>
                     {{ item.text }}
                   </p>
                 </li>
@@ -322,7 +351,9 @@
             <p class="primary mt-5 price">R$ 97,00</p>
             <a :href="urlCursoOnline" class="btn xlarge">{{ comecaoAgora }}</a>
             <p class="text-button">
-              <a href="/solicitar-subsidio">Deseja fazer o curso e não tem como pagar?</a>
+              <a href="/solicitar-subsidio"
+                >Deseja fazer o curso e não tem como pagar?</a
+              >
             </p>
           </div>
         </div>
@@ -358,7 +389,8 @@ export default {
 
       isMobile: false,
 
-      urlCursoOnline: 'https://www.doinicioaosim.com.br/carrinho/?add-to-cart=10327'
+      urlCursoOnline:
+        'https://www.doinicioaosim.com.br/carrinho/?add-to-cart=10327',
     }
   },
 

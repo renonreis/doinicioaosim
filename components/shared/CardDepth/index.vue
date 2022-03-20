@@ -5,7 +5,8 @@
     :style="cardStyle"
     @mousemove="handleMouseMove"
     @mouseenter="handleMouseEnter"
-    @mouseleave="handleMouseLeave">
+    @mouseleave="handleMouseLeave"
+  >
     <div class="card-bg" :style="[cardBgTransform]"></div>
     <div class="card-info">
       <slot name="header" class="title"></slot>
@@ -16,7 +17,7 @@
 
 <script>
 export default {
-  name: "CardDepth",
+  name: 'CardDepth',
   data: () => ({
     width: 0,
     height: 0,
@@ -27,49 +28,51 @@ export default {
 
   computed: {
     mousePX() {
-      return this.mouseX;
+      return this.mouseX
     },
     mousePY() {
-      return this.mouseY;
+      return this.mouseY
     },
     cardStyle() {
-      const rX = this.mousePX * 3;
-      const rY = this.mousePY * 3;
+      const rX = this.mousePX * 3
+      const rY = this.mousePY * 3
       return {
-        transform: `perspective(800px) rotateY(${rY}deg) rotateX(${rX}deg)`
-      };
+        transform: `perspective(800px) rotateY(${rY}deg) rotateX(${rX}deg)`,
+      }
     },
     cardBgTransform() {
-      const tX = this.mousePX;
-      const tY = this.mousePY;
+      const tX = this.mousePX
+      const tY = this.mousePY
       return {
-        transform: `translateX(${tX}px) translateY(${tY}px)`
+        transform: `translateX(${tX}px) translateY(${tY}px)`,
       }
     },
   },
 
   mounted() {
-    this.width = this.$refs.card.offsetWidth;
-    this.height = this.$refs.card.offsetHeight;
+    this.width = this.$refs.card.offsetWidth
+    this.height = this.$refs.card.offsetHeight
   },
 
   methods: {
     handleMouseMove(e) {
-      const box = this.$refs.card.getBoundingClientRect()
+      if (window.innerWidth >= 1200) {
+        const box = this.$refs.card.getBoundingClientRect()
 
-      this.mouseX = -(e.clientY - box.y - (box.height / 2)) / 100;
-      this.mouseY = (e.clientX - box.x - (box.width / 2)) / 100;
+        this.mouseX = -(e.clientY - box.y - box.height / 2) / 100
+        this.mouseY = (e.clientX - box.x - box.width / 2) / 100
+      }
     },
     handleMouseEnter() {
-      clearTimeout(this.mouseLeaveDelay);
+      clearTimeout(this.mouseLeaveDelay)
     },
     handleMouseLeave() {
-      setTimeout(()=>{
+      setTimeout(() => {
         this.mouseX = 0
         this.mouseY = 0
-      }, 500);
+      }, 500)
     },
-  }
+  },
 }
 </script>
 
@@ -87,6 +90,10 @@ export default {
   padding: 90px 60px 90px;
   transition: all 0.3s;
 
+  @media screen and (max-width: 991px) {
+    padding: 40px 20px 40px;
+  }
+
   .card-info {
     h2 {
       color: $white;
@@ -96,7 +103,7 @@ export default {
       font-size: 18px;
       line-height: 35px;
 
-      &:nth-last-child(1){
+      &:nth-last-child(1) {
         margin-bottom: 0;
       }
     }
@@ -133,13 +140,14 @@ export default {
   }
 
   &--blog {
-    border-radius: 0;
+    border-radius: 4px;
     justify-content: end;
     margin-bottom: 40px;
     min-height: 445px;
     padding: 30px 25px 15px;
 
     .card-info {
+      border-radius: 4px;
       transition: ease-in-out 0.6s;
       transform: translateY(45px);
 
@@ -158,9 +166,10 @@ export default {
     .card-bg {
       background-position: center !important;
       background-size: cover !important;
-      border-radius: 0;
+      border-radius: 4px;
       &:after {
         background-color: $black;
+        border-radius: 4px;
         content: '';
         height: 100%;
         opacity: 0;
@@ -229,7 +238,6 @@ export default {
         background: url(@/static/images/home/a-promessa-que-traz-vida.jpg);
       }
     }
-
   }
 }
 </style>

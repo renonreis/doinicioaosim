@@ -9,18 +9,30 @@
           </div>
           <h1 class="mb-3">{{ title }}</h1>
           <p>{{ subtitle }}</p>
-          <a :href="urlButton" class="btn large mt-2 mb-5">{{ textInscricao }}</a>
+          <a :href="urlButton" class="btn large mt-2 mb-5">{{
+            textInscricao
+          }}</a>
         </div>
       </div>
     </div>
+    <Modal v-if="isModalVisible" @close="closeModal">
+      <LazyYoutube autoplay="true" max-width="850px" :src="urlYoutube" />
+    </Modal>
   </section>
 </template>
 
 <script>
+import { LazyYoutube } from 'vue-lazytube'
+
+import Modal from '@/components/shared/Modal'
+
 export default {
   name: 'Banner',
 
-  components: {},
+  components: {
+    LazyYoutube,
+    Modal,
+  },
 
   props: {
     title: {
@@ -76,8 +88,8 @@ export default {
       document.body.classList.add('overflow-hidden')
     },
     closeModal() {
-      document.body.classList.remove('overflow-hidden')
       this.isModalVisible = false
+      document.body.classList.remove('overflow-hidden')
     },
   },
 }

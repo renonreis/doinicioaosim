@@ -7,22 +7,36 @@
             <b-collapse id="nav-collapse" is-nav>
               <b-navbar-nav class="mr-auto">
                 <b-nav-item to="/" class="d-none d-lg-flex">INÍCIO</b-nav-item>
-                <b-nav-item to="/sobre" class="d-none d-lg-flex">SOBRE</b-nav-item>
-                <b-nav-item to="/blog" class="d-none d-lg-flex">BLOG</b-nav-item>
-                <b-nav-item to="/curso-na-sua-igreja" class="d-none d-lg-flex">CURSO NA SUA IGREJA</b-nav-item>
+                <b-nav-item to="/sobre" class="d-none d-lg-flex"
+                  >SOBRE</b-nav-item
+                >
+                <b-nav-item to="/blog" class="d-none d-lg-flex"
+                  >BLOG</b-nav-item
+                >
+                <b-nav-item to="/curso-na-sua-igreja" class="d-none d-lg-flex"
+                  >CURSO NA SUA IGREJA</b-nav-item
+                >
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>
         </div>
 
-        <div class="col-md-2 d-none d-lg-flex text-center align-self-center">
+        <div
+          class="
+            col-md-2
+            d-none d-lg-flex
+            text-center
+            justify-content-center
+            align-self-center
+          "
+        >
           <n-link to="/">
             <nuxt-picture
               alt="Do Início ao Sim Logo"
               width="213"
               height="27"
               loading="lazy"
-              class="m-auto"
+              class="d-flex m-auto"
               src="/elements/logo-do-inicio-ao-sim.png"
             />
           </n-link>
@@ -35,14 +49,29 @@
                 <b-nav-item
                   to="/curso-de-noivos-presencial"
                   class="d-none d-lg-flex"
-                >CURSO DE NOIVOS PRESENCIAL</b-nav-item>
+                  >CURSO DE NOIVOS PRESENCIAL</b-nav-item
+                >
                 <b-nav-item
                   to="/curso-de-noivos-online"
                   class="d-none d-lg-flex"
-                >CURSO DE NOIVOS ONLINE</b-nav-item>
-                <b-nav-item href="http://cad.doinicioaosim.com.br/" target="_blank" class="btn-login d-none d-lg-flex">Entrar</b-nav-item>
-                <div v-b-toggle.mobile-sidebar role="button" class="menu-mobile d-lg-none">
-                  <nuxt-picture loading="lazy" src="/icons/menu.png" alt="Menu - Do início ao Sim" />
+                  >CURSO DE NOIVOS ONLINE</b-nav-item
+                >
+                <b-nav-item
+                  href="http://cad.doinicioaosim.com.br/"
+                  target="_blank"
+                  class="btn-login d-none d-lg-flex"
+                  >Entrar</b-nav-item
+                >
+                <div
+                  v-b-toggle.mobile-sidebar
+                  role="button"
+                  class="menu-mobile d-lg-none"
+                >
+                  <nuxt-picture
+                    loading="lazy"
+                    src="/icons/menu.png"
+                    alt="Menu - Do início ao Sim"
+                  />
                 </div>
               </b-navbar-nav>
             </b-collapse>
@@ -75,13 +104,27 @@
                   <b-nav-item to="/">Início</b-nav-item>
                   <b-nav-item to="/sobre">Sobre</b-nav-item>
                   <b-nav-item to="/blog">Blog</b-nav-item>
-                  <b-nav-item to="/curso-na-sua-igreja">Curso na sua Igreja</b-nav-item>
-                  <b-nav-item to="/curso-de-noivos-presencial">Curso de Noivos Presencial</b-nav-item>
-                  <b-nav-item to="/curso-de-noivos-online">Curso de Noivos Online</b-nav-item>
-                  <b-nav-item href="http://cad.doinicioaosim.com.br/" target="_blank" class="btn-login">
+                  <b-nav-item to="/curso-na-sua-igreja"
+                    >Curso na sua Igreja</b-nav-item
+                  >
+                  <b-nav-item to="/curso-de-noivos-presencial"
+                    >Curso de Noivos Presencial</b-nav-item
+                  >
+                  <b-nav-item to="/curso-de-noivos-online"
+                    >Curso de Noivos Online</b-nav-item
+                  >
+                  <b-nav-item
+                    href="http://cad.doinicioaosim.com.br/"
+                    target="_blank"
+                    class="btn-login"
+                  >
                     <span class="px-4 text-center">Entrar</span>
                   </b-nav-item>
-                  <div v-b-toggle.mobile-sidebar role="button" class="menu-mobile d-lg-none">
+                  <div
+                    v-b-toggle.mobile-sidebar
+                    role="button"
+                    class="menu-mobile d-lg-none"
+                  >
                     <IconMenu />
                   </div>
                 </b-navbar-nav>
@@ -101,11 +144,24 @@ export default {
   components: {
     IconMenu,
   },
+
+  mounted() {
+    const fixedMenu = document.querySelector('.fixed-menu')
+    const header = document.querySelector('header')
+    if (fixedMenu && window.innerWidth >= 1200) {
+      window.addEventListener('scroll', function () {
+        if (fixedMenu.offsetTop > window.scrollY) {
+          header.classList.remove('fixed')
+        } else {
+          header.classList.add('fixed')
+        }
+      })
+    }
+  },
 }
 </script>
 
 <style lang="scss">
-
 header {
   position: absolute;
   top: 0;
@@ -117,7 +173,7 @@ header {
   }
 
   .navbar {
-    padding: 12px 0 ;
+    padding: 12px 0;
     .navbar-nav {
       .nav-link {
         font-size: 16px;
@@ -139,7 +195,7 @@ header {
 
       .menu-mobile {
         img {
-          width: 48px;
+          width: 40px;
         }
       }
 
@@ -165,9 +221,14 @@ header {
     }
   }
 
-  @media screen and (min-width: 992px){
+  @media screen and (min-width: 992px) {
     background-color: $white;
-    position: fixed;
+
+    &.fixed {
+      position: fixed;
+      border-top: 8px solid $primary;
+      transition: ease-in-out 0.3s;
+    }
   }
 }
 
@@ -187,5 +248,4 @@ header {
     }
   }
 }
-
 </style>

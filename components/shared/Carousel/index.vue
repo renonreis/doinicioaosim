@@ -1,7 +1,12 @@
 <template>
   <div id="slider">
     <transition-group tag="div" :name="transitionName" class="slides-group">
-      <div v-if="show" :key="current" class="slide" :class="depoimentos[current].id">
+      <div
+        v-if="show"
+        :key="current"
+        class="slide"
+        :class="depoimentos[current].id"
+      >
         <div class="box text-center">
           <div class="cinco_estrelas"></div>
           <p>{{ depoimentos[current].description }}</p>
@@ -64,8 +69,6 @@ export default {
 </script>
 
 <style lang="scss">
-
-
 /* SLIDES CLASSES */
 
 .blue {
@@ -161,9 +164,26 @@ export default {
     background-color: transparent;
   }
 
+  .btn-prev {
+    border: 0;
+    opacity: 0.7;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   .btn-next {
+    border: 0;
     left: auto;
-    right: 0%;
+    opacity: 0.7;
+    right: 0;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   @media screen and (max-width: 992px) {
