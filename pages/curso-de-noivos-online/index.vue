@@ -390,7 +390,7 @@ export default {
       isMobile: false,
 
       urlCursoOnline:
-        'https://www.doinicioaosim.com.br/carrinho/?add-to-cart=10327',
+        'https://www.doinicioaosim.com.br/blog/carrinho/?add-to-cart=10327',
     }
   },
 

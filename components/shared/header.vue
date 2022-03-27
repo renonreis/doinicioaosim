@@ -10,8 +10,12 @@
                 <b-nav-item to="/sobre" class="d-none d-lg-flex"
                   >SOBRE</b-nav-item
                 >
-                <b-nav-item to="/blog" class="d-none d-lg-flex"
-                  >BLOG</b-nav-item
+                <a
+                  href="https://www.doinicioaosim.com.br/blog/"
+                  aria-current="page"
+                  class="nav-link nuxt-link-exact-active"
+                  target="_self"
+                  >BLOG</a
                 >
                 <b-nav-item to="/curso-na-sua-igreja" class="d-none d-lg-flex"
                   >CURSO NA SUA IGREJA</b-nav-item
@@ -103,7 +107,13 @@
                 <b-navbar-nav vertical>
                   <b-nav-item to="/">Início</b-nav-item>
                   <b-nav-item to="/sobre">Sobre</b-nav-item>
-                  <b-nav-item to="/blog">Blog</b-nav-item>
+                  <a
+                    href="https://www.doinicioaosim.com.br/blog/"
+                    aria-current="page"
+                    class="nav-link nuxt-link-exact-active"
+                    target="_self"
+                    >Blog</a
+                  >
                   <b-nav-item to="/curso-na-sua-igreja"
                     >Curso na sua Igreja</b-nav-item
                   >
