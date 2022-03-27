@@ -7,18 +7,23 @@ export default {
   head: {
     title: 'Curso de noivos online Do Início ao Sim',
     htmlAttrs: {
-      lang: 'pt_BR'
+      lang: 'pt_BR',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Faça o Curso de Noivos Online e tenha um tempo de preparação que marcará para sempre a vida de vocês e desfrute de um casamento cheio de paz, amor e alegria.' },
-      { name: 'format-detection', content: 'telephone=no' }
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Faça o Curso de Noivos Online e tenha um tempo de preparação que marcará para sempre a vida de vocês e desfrute de um casamento cheio de paz, amor e alegria.',
+      },
+      { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/doinicioaosim/favicon.png' },
-      { rel: 'apple-touch-icon', href: '/doinicioaosim/icon.png' }
-    ]
+      { rel: 'apple-touch-icon', href: '/doinicioaosim/icon.png' },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -26,13 +31,11 @@ export default {
     // CSS file in the project
     '~/assets/css/main.css',
     // SCSS file in the project
-    '~/assets/css/main.scss'
+    '~/assets/css/main.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
@@ -46,7 +49,7 @@ export default {
     // https://pwa.nuxtjs.org/
     '@nuxtjs/pwa',
     // https://image.nuxtjs.org/
-    '@nuxt/image'
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -60,35 +63,32 @@ export default {
     // https://www.npmjs.com/package/nuxt-compress
     'nuxt-compress',
     // https://www.npmjs.com/package/nuxt-ssr-cache
-    'nuxt-ssr-cache'
+    'nuxt-ssr-cache',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-
-  },
+  build: {},
 
   router: {
     linkActiveClass: 'active-link',
     target: 'static',
-    base: '/doinicioaosim/',
     extendRoutes(routes, resolve) {
       routes.push({
         name: 'custom',
         path: '*',
-        component: resolve(__dirname, 'pages/404')
+        component: resolve(__dirname, 'pages/404'),
       })
-    }
+    },
   },
 
   googleFonts: {
     display: 'swap',
     families: {
-      Montserrat: [300, 400, 500]
-    }
+      Montserrat: [300, 400, 500],
+    },
   },
 
   optimizedImages: {
@@ -98,20 +98,20 @@ export default {
     optimizeImagesInDev: false,
     defaultImageLoader: 'img-loader',
     mozjpeg: {
-      quality: 85
+      quality: 85,
     },
     optipng: false,
     pngquant: {
       speed: 7,
-      quality: [0.65, 0.8]
+      quality: [0.65, 0.8],
     },
     webp: {
-      quality: 85
-    }
+      quality: 85,
+    },
   },
 
   styleResources: {
-    scss: ['./assets/css/global/*.scss']
+    scss: ['./assets/css/global/*.scss'],
   },
 
   pwa: {
@@ -120,15 +120,15 @@ export default {
       name: 'Do Início ao Sim',
       lang: 'pt_BR',
       useWebmanifestExtension: false,
-      theme_color: "#f79301",
+      theme_color: '#f79301',
       icon: {
-        purpose: 'maskable'
-      }
+        purpose: 'maskable',
+      },
     },
     workboxPluginMode: 'InjectManifest',
     workboxOptions: {
       swSrc: 'dev/sw.js',
-    }
+    },
   },
 
   image: {
@@ -140,8 +140,8 @@ export default {
       lg: 1024,
       xl: 1280,
       xxl: 2560,
-      '2xl': 1536
+      '2xl': 1536,
     },
-    staticFilename: '[publicPath]/images/[name][ext]'
-  }
+    staticFilename: '[publicPath]/images/[name][ext]',
+  },
 }
