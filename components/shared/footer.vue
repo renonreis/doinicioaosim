@@ -232,7 +232,7 @@ footer {
       margin: 0;
       text-align: left;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
 
       span {
         align-self: center;
@@ -243,6 +243,10 @@ footer {
   @media screen and (max-width: 991px) {
     p {
       line-height: 25px;
+    }
+
+    .copyright p {
+      justify-content: space-between;
     }
 
     .abba {

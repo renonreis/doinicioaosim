@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <h1>SOBRE</h1>
+            <h1>Em breve</h1>
           </div>
         </div>
       </div>
