@@ -64,7 +64,12 @@ export default {
     'nuxt-compress',
     // https://www.npmjs.com/package/nuxt-ssr-cache
     'nuxt-ssr-cache',
+    '@nuxtjs/google-analytics',
   ],
+
+  googleAnalytics: {
+    id: 'UA-87448214-1',
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

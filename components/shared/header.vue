@@ -51,13 +51,11 @@
             <b-collapse id="nav-collapse" is-nav>
               <b-navbar-nav class="ml-auto">
                 <b-nav-item
-                  to="/curso-de-noivos-presencial"
+                  to="/curso-de-noivos-em-curitiba"
                   class="d-none d-lg-flex"
                   >CURSO DE NOIVOS PRESENCIAL</b-nav-item
                 >
-                <b-nav-item
-                  to="/curso-de-noivos-online"
-                  class="d-none d-lg-flex"
+                <b-nav-item to="/curso-de-noivos" class="d-none d-lg-flex"
                   >CURSO DE NOIVOS ONLINE</b-nav-item
                 >
                 <b-nav-item
@@ -117,10 +115,10 @@
                   <b-nav-item to="/curso-na-sua-igreja"
                     >Curso na sua Igreja</b-nav-item
                   >
-                  <b-nav-item to="/curso-de-noivos-presencial"
+                  <b-nav-item to="/curso-de-noivos-em-curitiba"
                     >Curso de Noivos Presencial</b-nav-item
                   >
-                  <b-nav-item to="/curso-de-noivos-online"
+                  <b-nav-item to="/curso-de-noivos"
                     >Curso de Noivos Online</b-nav-item
                   >
                   <b-nav-item
