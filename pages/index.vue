@@ -20,7 +20,7 @@
               casamento
             </p>
             <n-link
-              to="/curso-de-noivos-em-curitiba"
+              to="/noivos/curso-de-noivos-em-curitiba"
               class="btn btn--outline medium mb-3"
               >Curso de noivos presencial</n-link
             >
@@ -249,7 +249,9 @@
               Uma imersão inesquecível <br />
               que marcará para sempre sua vida
             </h2>
-            <n-link to="/curso-de-noivos-em-curitiba" class="btn medium mb-3"
+            <n-link
+              to="/noivos/curso-de-noivos-em-curitiba"
+              class="btn medium mb-3"
               >Curso de noivos presencial</n-link
             >
             <n-link to="/curso-de-noivos" class="btn medium mb-3"
@@ -337,7 +339,9 @@
               sem medo, com muita paz e alegria em todos os momentos (até nas
               dificuldades)!
             </p>
-            <n-link to="/curso-de-noivos-em-curitiba" class="btn medium mb-3"
+            <n-link
+              to="/noivos/curso-de-noivos-em-curitiba"
+              class="btn medium mb-3"
               >Curso de noivos presencial</n-link
             >
             <n-link to="/curso-de-noivos" class="btn medium mb-3"
