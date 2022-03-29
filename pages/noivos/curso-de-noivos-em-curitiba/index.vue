@@ -167,7 +167,7 @@
               height="514"
               loading="lazy"
               class="darken d-block mt-5 mb-5 pt-5"
-              src="/curso-presencial/como-funciona-o-curso-de-noivos.jpg"
+              src="/curso-presencial/como-funciona-o-curso-de-noivos-presencial.jpg"
             />
           </div>
 

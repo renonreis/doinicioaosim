@@ -14,7 +14,7 @@
         height="1013"
         loading="lazy"
         class="img-banner d-flex d-lg-none"
-        src="/curso-online/curso-de-noivos-mobile.jpg"
+        src="/curso-online/curso-de-noivos-online-mobile.jpg"
       />
       <nuxt-picture
         alt="Curso de noivos online"
@@ -22,7 +22,7 @@
         height="975"
         loading="lazy"
         class="img-banner d-none d-lg-flex"
-        src="/curso-online/curso-de-noivos.jpg"
+        src="/curso-online/curso-de-noivos-online.jpg"
       />
       <video v-if="isMobile" id="myVideo" autoplay muted loop>
         <source
@@ -153,7 +153,7 @@
               height="514"
               loading="lazy"
               class="darken d-block mt-5 mb-5 pt-5"
-              src="/curso-online/como-funciona-o-curso-de-noivos.jpg"
+              src="/curso-online/como-funciona-o-curso-de-noivos-online.jpg"
             />
           </div>
 
