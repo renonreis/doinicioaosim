@@ -1,21 +1,23 @@
 <template>
   <transition name="modal-fade">
-    <div class="modal-backdrop">
+    <div class="modal-backdrop" @click="close">
       <div
         class="modal d-flex align-items-center"
         role="dialog"
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
       >
-        <button
-          type="button"
-          class="btn-close"
-          aria-label="Close modal"
-          @click="close"
-        >
-          x
-        </button>
-        <slot />
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            aria-label="Close modal"
+            @click="close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <slot />
+        </div>
       </div>
     </div>
   </transition>
@@ -39,7 +41,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,15 +61,26 @@ export default {
   padding: 20px 10px;
 }
 
+.modal-content {
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  max-width: 850px;
+  width: 100%;
+}
+
+.modal-content > div {
+  border-radius: 8px;
+}
+
 .btn-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -60px;
+  right: -40px;
   border: none;
-  font-size: 40px;
-  padding: 20px;
+  font-size: 60px;
+  padding: 0;
   cursor: pointer;
-  font-weight: bold;
   color: #ffffff;
   background: transparent;
 }
